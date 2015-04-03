@@ -37,15 +37,17 @@ CREATE TABLE TStolperstein (
     lon                 FLOAT NOT NULL,
     lat                 FLOAT NOT NULL,
     Ortsbeschreibung    VARCHAR(100),
-    OpferID             INT UNSIGNED NOT NUll,
+    OpferID             INT UNSIGNED NOT NULL,
+    BezirksID           INT UNSIGNED NOT NULL,
 
-    CONSTRAINT fk_OpferID FOREIGN KEY (OpferID) REFERENCES TOpfer(OpferID)
+    CONSTRAINT fk_OpferID   FOREIGN KEY (OpferID)   REFERENCES TOpfer(OpferID),
+    CONSTRAINT fk_BezirksID FOREIGN KEY (BezirksID) REFERENCES TStadtbezirk(BezirksID)
 );
 
 
 -- Diese View enthält die einzelnen Features der JSON-Datei
-create view VJSON AS
-SELECT concat('{
+CREATE VIEW VJSON AS
+SELECT CONCAT('{
     "type": "Feature",
     "geometry":
     {

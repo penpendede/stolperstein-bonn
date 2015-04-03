@@ -12,8 +12,8 @@
 -- |
 -- +---------------------------------------------------------------------------
 
-DROP TABLE IF EXISTS TStadtbezirk;
 DROP TABLE IF EXISTS TStolperstein;
 DROP TABLE IF EXISTS TOpfer;
+DROP TABLE IF EXISTS TStadtbezirk;
 
 DROP VIEW IF EXISTS VJSON;
