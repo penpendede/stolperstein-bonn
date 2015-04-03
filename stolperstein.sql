@@ -3190,7 +3190,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.73863,
     7.1174091,
-    'Friedrich-Breuer-Straße / Gottfried-Claren-Straße', -- Friedrich-Breuer-Str. 26-28
+    'Friedrich-Breuer-Straße / Gottfried-Claren-Straße',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -3215,7 +3215,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.7386325,
     7.1174067,
-    'Friedrich-Breuer-Straße / Gottfried-Claren-Straße', -- Friedrich-Breuer-Str. 26-28
+    'Friedrich-Breuer-Straße / Gottfried-Claren-Straße',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -3239,7 +3239,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.7386336,
     7.1174087,
-    'Friedrich-Breuer-Straße / Gottfried-Claren-Straße', -- Friedrich-Breuer-Str. 26-28
+    'Friedrich-Breuer-Straße / Gottfried-Claren-Straße',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -4981,7 +4981,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.7357484,
     7.0988051,
-    null, -- Sternstraße 30
+    'Sternstraße 60',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -5076,7 +5076,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.7357402,
     7.0987992,
-    null, -- Sternstraße 30
+    'Sternstraße 60',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -6398,7 +6398,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.7283177,
     7.0733496,
-    null, -- Auf dem Hügel 7
+    'Auf dem Hügel 1 / Wanderslebring',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -6421,7 +6421,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.7283173,
     7.0733495,
-    null, -- Auf dem Hügel 7
+    'Auf dem Hügel 1 / Wanderslebring',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -6444,7 +6444,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.7283175,
     7.0733499,
-    null, -- Auf dem Hügel 7
+    'Auf dem Hügel 1 / Wanderslebring',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -6675,7 +6675,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.7502905,
     7.1261445,
-    null, -- Stroofstraße 1
+    'Stroofstraße',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -6791,7 +6791,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.7502877,
     7.1261364,
-    null, -- Stroofstraße 1
+    'Stroofstraße',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -6862,7 +6862,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.750289,
     7.1261405,
-    null, -- Stroofstraße 1
+    'Stroofstraße',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -8039,7 +8039,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.710016,
     7.1104453,
-    null, -- Burbacher Str. 240
+    'Burbacher Straße 88',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -8062,7 +8062,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.7100154,
     7.1104453,
-    null, -- Burbacher Str. 240
+    'Burbacher Straße 88',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -8085,7 +8085,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.682074,
     7.1486897,
-    null, -- Burgstraße 81
+    'Burgstraße / Im Äuelchen',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -8108,7 +8108,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.6820751,
     7.1486878,
-    null, -- Burgstraße 81
+    'Burgstraße / Im Äuelchen',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -8131,7 +8131,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.6820751,
     7.148689,
-    null, -- Burgstraße 81
+    'Burgstraße / Im Äuelchen',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -8154,7 +8154,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.6820747,
     7.1486885,
-    null, -- Burgstraße 81
+    'Burgstraße / Im Äuelchen',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -8178,7 +8178,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.6820747,
     7.1486896,
-    null, -- Burgstraße 81
+    'Burgstraße / Im Äuelchen',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -8202,7 +8202,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.6820744,
     7.1486901,
-    null, -- Burgstraße 81
+    'Burgstraße / Im Äuelchen',
     (
         SELECT OpferID
         FROM   TOpfer
@@ -8760,7 +8760,7 @@ INSERT INTO TStolperstein (
 ) VALUES (
     50.7389336,
     7.1138935,
-    null, -- Rheinaustraße 127
+    'Rheinstraße 23',
     (
         SELECT OpferID
         FROM   TOpfer
