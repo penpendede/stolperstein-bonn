@@ -1,15 +1,20 @@
 # stolperstein-bonn
-Zweck dieses Projekts ist, die Bonner Stolpersteine in einem möglichst offenen
-Format digital aufzubereiten. Weiteres in Kürze.
-
-## Die Idee hinter dieser Datenbank
 
 In Bonn sind bislang (Stand 12/2014) 275 Stolpersteine verlegt worden, die an
 Opfer der NS-Gräuel erinnern sollen. Die Absicht dieses Projekts besteht darin,
-die realen Stolpersteine mit der virtuellen Datenwelt zu verknüpfen.
+die Bonner Stolpersteine in einem möglichst offenen Format digital
+aufzubereiten. Auf diese Weise sollen die Schicksale, für die diese
+Stolpersteine stehen, auch in der der virtuellen Datenwelt präsent werden.
 
-In einem ersten Schritt sollen SQL-Skripte entstehen, um eine SQL-Datenbank mit
-den Stolpersteinen zu befüllen.
 
-Eine erste Fassung der Skripte liegt bereits vor, sie sind aber noch weit von
-Perfektion entfernt.
+In einem ersten Schritt sind SQL-Skripte entstanden, die eine SQL-Datenbank mit
+den Stolpersteinen befüllen können.
+
+Der Code einer Internetseite, die diese Stolpersteine mit Hilfe von Leaflet auf
+einer Karte von Bonn anzeigt, nun ebenfalls fertig.
+
+Die angezeigten Marker werden aktuell noch nicht automatisch aus der Datenbasis
+erzeugt und sind daher noch nicht auf dem aktuellen Stand. Für einen ersten Eindruck
+genügen die Daten jedoch völlig:
+
+![Screenshot](screenshot.png)

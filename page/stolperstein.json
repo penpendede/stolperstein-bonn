@@ -1,0 +1,3070 @@
+{ "type": "FeatureCollection",
+    "features": [
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.07335,50.7283]
+           },
+           "properties":
+           {
+               "Vorname":      "Irma",
+               "Familienname": "Apfel",
+               "Jahrgang":     1903
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.07335,50.7283]
+           },
+           "properties":
+           {
+               "Vorname":      "Jenny",
+               "Familienname": "Apfel",
+               "Jahrgang":     1864
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.07335,50.7283]
+           },
+           "properties":
+           {
+               "Vorname":      "Julius",
+               "Familienname": "Apfel",
+               "Jahrgang":     1888
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09448,50.7361]
+           },
+           "properties":
+           {
+               "Vorname":      "Minna",
+               "Familienname": "Apfel",
+               "Jahrgang":     1886
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.07335,50.7283]
+           },
+           "properties":
+           {
+               "Vorname":      "MirJam",
+               "Familienname": "Apfel",
+               "Jahrgang":     1942
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09448,50.7361]
+           },
+           "properties":
+           {
+               "Vorname":      "Siegmund",
+               "Familienname": "Apfel",
+               "Jahrgang":     1881
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.07335,50.7283]
+           },
+           "properties":
+           {
+               "Vorname":      "Ursula",
+               "Familienname": "Apfel",
+               "Jahrgang":     1929
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.07102,50.7259]
+           },
+           "properties":
+           {
+               "Vorname":      "Henriette",
+               "Familienname": "Appel",
+               "Jahrgang":     1866
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.07101,50.7259]
+           },
+           "properties":
+           {
+               "Vorname":      "Martha",
+               "Familienname": "Appel",
+               "Jahrgang":     1895
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09762,50.7414]
+           },
+           "properties":
+           {
+               "Vorname":      "Bernhard",
+               "Familienname": "Arensberg",
+               "Jahrgang":     1865
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09762,50.7414]
+           },
+           "properties":
+           {
+               "Vorname":      "Ida",
+               "Familienname": "Arensberg",
+               "Jahrgang":     1870
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.08099,50.7349]
+           },
+           "properties":
+           {
+               "Vorname":      "Isaak",
+               "Familienname": "Arensberg",
+               "Jahrgang":     1871
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.08094,50.7348]
+           },
+           "properties":
+           {
+               "Vorname":      "Karl",
+               "Familienname": "Arensberg",
+               "Jahrgang":     1868
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09846,50.7328]
+           },
+           "properties":
+           {
+               "Vorname":      "Leopold",
+               "Familienname": "Arensberg",
+               "Jahrgang":     1897
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09846,50.7328]
+           },
+           "properties":
+           {
+               "Vorname":      "Marta",
+               "Familienname": "Arensberg",
+               "Jahrgang":     1896
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.08104,50.7349]
+           },
+           "properties":
+           {
+               "Vorname":      "Sara",
+               "Familienname": "Arensberg",
+               "Jahrgang":     1876
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11787,50.7378]
+           },
+           "properties":
+           {
+               "Vorname":      "Johanna",
+               "Familienname": "Aron",
+               "Jahrgang":     1889
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11787,50.7378]
+           },
+           "properties":
+           {
+               "Vorname":      "Leopold",
+               "Familienname": "Aron",
+               "Jahrgang":     1879
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.15991,50.6912]
+           },
+           "properties":
+           {
+               "Vorname":      "Sara",
+               "Familienname": "Auerbach",
+               "Jahrgang":     1871
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.15856,50.6899]
+           },
+           "properties":
+           {
+               "Vorname":      "Ida",
+               "Familienname": "Baer",
+               "Jahrgang":     1876
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.13219,50.7373]
+           },
+           "properties":
+           {
+               "Vorname":      "Edith",
+               "Familienname": "Boers",
+               "Jahrgang":     1906
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.13219,50.7373]
+           },
+           "properties":
+           {
+               "Vorname":      "Günter",
+               "Familienname": "Boers",
+               "Jahrgang":     1925
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.0988,50.7357]
+           },
+           "properties":
+           {
+               "Vorname":      "Philipp",
+               "Familienname": "Bucki",
+               "Jahrgang":     1885
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09726,50.7271]
+           },
+           "properties":
+           {
+               "Vorname":      "Cäsar",
+               "Familienname": "Bukofzer",
+               "Jahrgang":     1886
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09726,50.7271]
+           },
+           "properties":
+           {
+               "Vorname":      "Julie",
+               "Familienname": "Bukofzer",
+               "Jahrgang":     1878
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12463,50.7384]
+           },
+           "properties":
+           {
+               "Vorname":      "Bertha",
+               "Familienname": "Cahn",
+               "Jahrgang":     1874
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09497,50.7295]
+           },
+           "properties":
+           {
+               "Vorname":      "Leopold",
+               "Familienname": "Cossmann",
+               "Jahrgang":     1863
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09497,50.7295]
+           },
+           "properties":
+           {
+               "Vorname":      "Walter",
+               "Familienname": "Cossmann",
+               "Jahrgang":     1897
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.16305,50.6909]
+           },
+           "properties":
+           {
+               "Vorname":      "Paula",
+               "Familienname": "Dammann",
+               "Jahrgang":     1879
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.16427,50.6881]
+           },
+           "properties":
+           {
+               "Vorname":      "Elli",
+               "Familienname": "Daniel",
+               "Jahrgang":     1894
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.16429,50.6882]
+           },
+           "properties":
+           {
+               "Vorname":      "Ernst",
+               "Familienname": "Daniel",
+               "Jahrgang":     1901
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14839,50.688]
+           },
+           "properties":
+           {
+               "Vorname":      "Frieda",
+               "Familienname": "Daniel",
+               "Jahrgang":     1887
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.06736,50.7241]
+           },
+           "properties":
+           {
+               "Vorname":      "Jacob",
+               "Familienname": "Daniel",
+               "Jahrgang":     1893
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14838,50.688]
+           },
+           "properties":
+           {
+               "Vorname":      "Josef",
+               "Familienname": "Daniel",
+               "Jahrgang":     1894
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09374,50.7362]
+           },
+           "properties":
+           {
+               "Vorname":      "Nathan",
+               "Familienname": "Daniel",
+               "Jahrgang":     1858
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09374,50.7362]
+           },
+           "properties":
+           {
+               "Vorname":      "Philippine",
+               "Familienname": "Daniel",
+               "Jahrgang":     1877
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.06736,50.7241]
+           },
+           "properties":
+           {
+               "Vorname":      "Ruth",
+               "Familienname": "Daniel",
+               "Jahrgang":     1927
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.06736,50.7241]
+           },
+           "properties":
+           {
+               "Vorname":      "Selma",
+               "Familienname": "Daniel",
+               "Jahrgang":     1895
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.08741,50.7359]
+           },
+           "properties":
+           {
+               "Vorname":      "Emma",
+               "Familienname": "Dornbusch",
+               "Jahrgang":     1870
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.08741,50.7359]
+           },
+           "properties":
+           {
+               "Vorname":      "Simon",
+               "Familienname": "Dornbusch",
+               "Jahrgang":     1870
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12614,50.7503]
+           },
+           "properties":
+           {
+               "Vorname":      "Hermann",
+               "Familienname": "Drong",
+               "Jahrgang":     1881
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12614,50.7503]
+           },
+           "properties":
+           {
+               "Vorname":      "Samuel",
+               "Familienname": "Drong",
+               "Jahrgang":     1820
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12614,50.7503]
+           },
+           "properties":
+           {
+               "Vorname":      "Scheva",
+               "Familienname": "Drong",
+               "Jahrgang":     1889
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09682,50.7247]
+           },
+           "properties":
+           {
+               "Vorname":      "Dorothea",
+               "Familienname": "Fauerbach",
+               "Jahrgang":     1905
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09682,50.7247]
+           },
+           "properties":
+           {
+               "Vorname":      "Elisabeth",
+               "Familienname": "Fauerbach",
+               "Jahrgang":     1891
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09682,50.7247]
+           },
+           "properties":
+           {
+               "Vorname":      "Hans Peter",
+               "Familienname": "Fauerbach",
+               "Jahrgang":     1929
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09683,50.7247]
+           },
+           "properties":
+           {
+               "Vorname":      "Helene",
+               "Familienname": "Fauerbach",
+               "Jahrgang":     1897
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09683,50.7247]
+           },
+           "properties":
+           {
+               "Vorname":      "Siegmund",
+               "Familienname": "Fauerbach",
+               "Jahrgang":     1858
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.0891,50.7385]
+           },
+           "properties":
+           {
+               "Vorname":      "Josef",
+               "Familienname": "Faust",
+               "Jahrgang":     1933
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12489,50.7399]
+           },
+           "properties":
+           {
+               "Vorname":      "Elsa",
+               "Familienname": "Frank",
+               "Jahrgang":     1899
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11531,50.7383]
+           },
+           "properties":
+           {
+               "Vorname":      "Erna",
+               "Familienname": "Frank",
+               "Jahrgang":     1906
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.1153,50.7383]
+           },
+           "properties":
+           {
+               "Vorname":      "Isaak",
+               "Familienname": "Frank",
+               "Jahrgang":     1860
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11531,50.7383]
+           },
+           "properties":
+           {
+               "Vorname":      "Karola",
+               "Familienname": "Frank",
+               "Jahrgang":     1919
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.1249,50.7399]
+           },
+           "properties":
+           {
+               "Vorname":      "Max",
+               "Familienname": "Frank",
+               "Jahrgang":     1889
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14869,50.6821]
+           },
+           "properties":
+           {
+               "Vorname":      "Bertha",
+               "Familienname": "Frenkel",
+               "Jahrgang":     1873
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14869,50.6821]
+           },
+           "properties":
+           {
+               "Vorname":      "Erna",
+               "Familienname": "Frenkel",
+               "Jahrgang":     1911
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14869,50.6821]
+           },
+           "properties":
+           {
+               "Vorname":      "Erna",
+               "Familienname": "Frenkel",
+               "Jahrgang":     1908
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14869,50.6821]
+           },
+           "properties":
+           {
+               "Vorname":      "Isidor",
+               "Familienname": "Frenkel",
+               "Jahrgang":     1901
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14869,50.6821]
+           },
+           "properties":
+           {
+               "Vorname":      "Ralf",
+               "Familienname": "Frenkel",
+               "Jahrgang":     1936
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14869,50.6821]
+           },
+           "properties":
+           {
+               "Vorname":      "Raphael",
+               "Familienname": "Frenkel",
+               "Jahrgang":     1873
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10621,50.7267]
+           },
+           "properties":
+           {
+               "Vorname":      "Emmy",
+               "Familienname": "Goldschmidt",
+               "Jahrgang":     1877
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.08846,50.7321]
+           },
+           "properties":
+           {
+               "Vorname":      "Ernst",
+               "Familienname": "Gottschalk",
+               "Jahrgang":     1906
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.08846,50.7321]
+           },
+           "properties":
+           {
+               "Vorname":      "Frieda",
+               "Familienname": "Gottschalk",
+               "Jahrgang":     1908
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11392,50.7382]
+           },
+           "properties":
+           {
+               "Vorname":      "Regina",
+               "Familienname": "Grüneberg",
+               "Jahrgang":     1859
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09765,50.724]
+           },
+           "properties":
+           {
+               "Vorname":      "Anna",
+               "Familienname": "Hanau",
+               "Jahrgang":     1887
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09765,50.724]
+           },
+           "properties":
+           {
+               "Vorname":      "Karl",
+               "Familienname": "Hanau",
+               "Jahrgang":     1878
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10797,50.7173]
+           },
+           "properties":
+           {
+               "Vorname":      "Charlotte",
+               "Familienname": "Hausdorff",
+               "Jahrgang":     1873
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10796,50.7173]
+           },
+           "properties":
+           {
+               "Vorname":      "Felix",
+               "Familienname": "Hausdorff",
+               "Jahrgang":     1868
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.15628,50.6878]
+           },
+           "properties":
+           {
+               "Vorname":      "Denny",
+               "Familienname": "Heidenheim",
+               "Jahrgang":     1942
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.15628,50.6878]
+           },
+           "properties":
+           {
+               "Vorname":      "Ellen",
+               "Familienname": "Heidenheim",
+               "Jahrgang":     1920
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.15628,50.6878]
+           },
+           "properties":
+           {
+               "Vorname":      "Friedrich",
+               "Familienname": "Heidenheim",
+               "Jahrgang":     1878
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.15628,50.6878]
+           },
+           "properties":
+           {
+               "Vorname":      "Helene",
+               "Familienname": "Heidenheim",
+               "Jahrgang":     1886
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09463,50.738]
+           },
+           "properties":
+           {
+               "Vorname":      "Adele",
+               "Familienname": "Heimann",
+               "Jahrgang":     1886
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09464,50.738]
+           },
+           "properties":
+           {
+               "Vorname":      "Sophie",
+               "Familienname": "Heimann",
+               "Jahrgang":     1892
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14927,50.6841]
+           },
+           "properties":
+           {
+               "Vorname":      "Mathilde",
+               "Familienname": "Henle",
+               "Jahrgang":     1876
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11995,50.7385]
+           },
+           "properties":
+           {
+               "Vorname":      "Alex",
+               "Familienname": "Herz",
+               "Jahrgang":     1893
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11673,50.7386]
+           },
+           "properties":
+           {
+               "Vorname":      "Alfred",
+               "Familienname": "Herz",
+               "Jahrgang":     1896
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10356,50.7236]
+           },
+           "properties":
+           {
+               "Vorname":      "Bertha",
+               "Familienname": "Herz",
+               "Jahrgang":     1871
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11616,50.7405]
+           },
+           "properties":
+           {
+               "Vorname":      "Edith",
+               "Familienname": "Herz",
+               "Jahrgang":     1893
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11674,50.7386]
+           },
+           "properties":
+           {
+               "Vorname":      "Ella",
+               "Familienname": "Herz",
+               "Jahrgang":     1867
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09584,50.7373]
+           },
+           "properties":
+           {
+               "Vorname":      "Else",
+               "Familienname": "Herz",
+               "Jahrgang":     1901
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11995,50.7385]
+           },
+           "properties":
+           {
+               "Vorname":      "Frieda",
+               "Familienname": "Herz",
+               "Jahrgang":     1922
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11995,50.7385]
+           },
+           "properties":
+           {
+               "Vorname":      "Günther",
+               "Familienname": "Herz",
+               "Jahrgang":     1827
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11995,50.7385]
+           },
+           "properties":
+           {
+               "Vorname":      "Helene",
+               "Familienname": "Herz",
+               "Jahrgang":     1880
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11674,50.7386]
+           },
+           "properties":
+           {
+               "Vorname":      "Ingeborg",
+               "Familienname": "Herz",
+               "Jahrgang":     1927
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11674,50.7386]
+           },
+           "properties":
+           {
+               "Vorname":      "Luzie",
+               "Familienname": "Herz",
+               "Jahrgang":     1900
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11616,50.7405]
+           },
+           "properties":
+           {
+               "Vorname":      "Max",
+               "Familienname": "Herz",
+               "Jahrgang":     1894
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11834,50.7412]
+           },
+           "properties":
+           {
+               "Vorname":      "Moses",
+               "Familienname": "Herz",
+               "Jahrgang":     1863
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10356,50.7236]
+           },
+           "properties":
+           {
+               "Vorname":      "Robert",
+               "Familienname": "Herz",
+               "Jahrgang":     1873
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11616,50.7405]
+           },
+           "properties":
+           {
+               "Vorname":      "Ruth",
+               "Familienname": "Herz",
+               "Jahrgang":     1925
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09584,50.7373]
+           },
+           "properties":
+           {
+               "Vorname":      "Siegmund",
+               "Familienname": "Herz",
+               "Jahrgang":     1897
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10356,50.7236]
+           },
+           "properties":
+           {
+               "Vorname":      "Wilhelmine",
+               "Familienname": "Herz",
+               "Jahrgang":     1881
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12107,50.7389]
+           },
+           "properties":
+           {
+               "Vorname":      "Amalie",
+               "Familienname": "Heumann",
+               "Jahrgang":     1881
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09313,50.7374]
+           },
+           "properties":
+           {
+               "Vorname":      "Emma",
+               "Familienname": "Heumann",
+               "Jahrgang":     1890
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11353,50.7407]
+           },
+           "properties":
+           {
+               "Vorname":      "Franziska",
+               "Familienname": "Heumann",
+               "Jahrgang":     1875
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12108,50.7389]
+           },
+           "properties":
+           {
+               "Vorname":      "Frieda",
+               "Familienname": "Heumann",
+               "Jahrgang":     1884
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12107,50.7389]
+           },
+           "properties":
+           {
+               "Vorname":      "Samuel",
+               "Familienname": "Heumann",
+               "Jahrgang":     1887
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10589,50.736]
+           },
+           "properties":
+           {
+               "Vorname":      "Regina",
+               "Familienname": "Heymann",
+               "Jahrgang":     1881
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12518,50.7399]
+           },
+           "properties":
+           {
+               "Vorname":      "Else",
+               "Familienname": "Hirsch",
+               "Jahrgang":     1893
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12519,50.7399]
+           },
+           "properties":
+           {
+               "Vorname":      "Günter",
+               "Familienname": "Hirsch",
+               "Jahrgang":     1942
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09397,50.7306]
+           },
+           "properties":
+           {
+               "Vorname":      "Hermann",
+               "Familienname": "Hirsch",
+               "Jahrgang":     1876
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09397,50.7306]
+           },
+           "properties":
+           {
+               "Vorname":      "Ida",
+               "Familienname": "Hirsch",
+               "Jahrgang":     1873
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12518,50.7399]
+           },
+           "properties":
+           {
+               "Vorname":      "Julius",
+               "Familienname": "Hirsch",
+               "Jahrgang":     1873
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14814,50.6881]
+           },
+           "properties":
+           {
+               "Vorname":      "Max",
+               "Familienname": "Isaak",
+               "Jahrgang":     1876
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14816,50.6881]
+           },
+           "properties":
+           {
+               "Vorname":      "Sara",
+               "Familienname": "Isaak",
+               "Jahrgang":     1874
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.04775,50.7146]
+           },
+           "properties":
+           {
+               "Vorname":      "Alfred",
+               "Familienname": "Israel",
+               "Jahrgang":     1925
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.04775,50.7146]
+           },
+           "properties":
+           {
+               "Vorname":      "Eva",
+               "Familienname": "Israel",
+               "Jahrgang":     1888
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14814,50.688]
+           },
+           "properties":
+           {
+               "Vorname":      "Lina",
+               "Familienname": "Israel",
+               "Jahrgang":     1878
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.04775,50.7146]
+           },
+           "properties":
+           {
+               "Vorname":      "Sally",
+               "Familienname": "Israel",
+               "Jahrgang":     1890
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.16124,50.7164]
+           },
+           "properties":
+           {
+               "Vorname":      "Sofie",
+               "Familienname": "Israel",
+               "Jahrgang":     1861
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.04775,50.7146]
+           },
+           "properties":
+           {
+               "Vorname":      "Wilhelmine",
+               "Familienname": "Israel",
+               "Jahrgang":     1922
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.17362,50.684]
+           },
+           "properties":
+           {
+               "Vorname":      "Else",
+               "Familienname": "Jacobs",
+               "Jahrgang":     1884
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09629,50.7371]
+           },
+           "properties":
+           {
+               "Vorname":      "Paula",
+               "Familienname": "Jonas",
+               "Jahrgang":     1892
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.08634,50.733]
+           },
+           "properties":
+           {
+               "Vorname":      "Klara",
+               "Familienname": "Juda",
+               "Jahrgang":     1888
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.16553,50.6864]
+           },
+           "properties":
+           {
+               "Vorname":      "Betty",
+               "Familienname": "Jülich",
+               "Jahrgang":     1891
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.15629,50.6878]
+           },
+           "properties":
+           {
+               "Vorname":      "Karoline",
+               "Familienname": "Kaczka",
+               "Jahrgang":     1873
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.13219,50.7373]
+           },
+           "properties":
+           {
+               "Vorname":      "Bertha",
+               "Familienname": "Kahn",
+               "Jahrgang":     1899
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09321,50.7374]
+           },
+           "properties":
+           {
+               "Vorname":      "Edith",
+               "Familienname": "Kahn",
+               "Jahrgang":     1929
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.13219,50.7373]
+           },
+           "properties":
+           {
+               "Vorname":      "Ernst",
+               "Familienname": "Kahn",
+               "Jahrgang":     1932
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.13219,50.7373]
+           },
+           "properties":
+           {
+               "Vorname":      "Heinz",
+               "Familienname": "Kahn",
+               "Jahrgang":     1929
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.13219,50.7373]
+           },
+           "properties":
+           {
+               "Vorname":      "Kurt",
+               "Familienname": "Kahn",
+               "Jahrgang":     1930
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09316,50.7374]
+           },
+           "properties":
+           {
+               "Vorname":      "Nettchen",
+               "Familienname": "Kahn",
+               "Jahrgang":     1901
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09327,50.7375]
+           },
+           "properties":
+           {
+               "Vorname":      "Robert",
+               "Familienname": "Kahn",
+               "Jahrgang":     1891
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.08556,50.7324]
+           },
+           "properties":
+           {
+               "Vorname":      "Johanna",
+               "Familienname": "Katzky",
+               "Jahrgang":     1883
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11741,50.7386]
+           },
+           "properties":
+           {
+               "Vorname":      "Erna",
+               "Familienname": "Kaufmann",
+               "Jahrgang":     1903
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11741,50.7386]
+           },
+           "properties":
+           {
+               "Vorname":      "Karl",
+               "Familienname": "Kaufmann",
+               "Jahrgang":     1894
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11741,50.7386]
+           },
+           "properties":
+           {
+               "Vorname":      "Ludwig",
+               "Familienname": "Kaufmann",
+               "Jahrgang":     1896
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11741,50.7386]
+           },
+           "properties":
+           {
+               "Vorname":      "Ruth",
+               "Familienname": "Kaufmann",
+               "Jahrgang":     1937
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.1166,50.7377]
+           },
+           "properties":
+           {
+               "Vorname":      "Selma",
+               "Familienname": "Kaufmann",
+               "Jahrgang":     1879
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11662,50.7377]
+           },
+           "properties":
+           {
+               "Vorname":      "Simon",
+               "Familienname": "Kaufmann",
+               "Jahrgang":     1873
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.13215,50.746]
+           },
+           "properties":
+           {
+               "Vorname":      "Lotte",
+               "Familienname": "Klein",
+               "Jahrgang":     1923
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.13215,50.746]
+           },
+           "properties":
+           {
+               "Vorname":      "Walter",
+               "Familienname": "Klein",
+               "Jahrgang":     1898
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12405,50.7389]
+           },
+           "properties":
+           {
+               "Vorname":      "Emilie",
+               "Familienname": "Kober",
+               "Jahrgang":     1891
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12405,50.7389]
+           },
+           "properties":
+           {
+               "Vorname":      "Julius Erwin",
+               "Familienname": "Kober",
+               "Jahrgang":     1887
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10767,50.7209]
+           },
+           "properties":
+           {
+               "Vorname":      "Heinrich",
+               "Familienname": "Körner",
+               "Jahrgang":     1892
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09846,50.7328]
+           },
+           "properties":
+           {
+               "Vorname":      "Adele",
+               "Familienname": "Kussel",
+               "Jahrgang":     1899
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10306,50.7362]
+           },
+           "properties":
+           {
+               "Vorname":      "Ludwig",
+               "Familienname": "Kussel",
+               "Jahrgang":     1905
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12727,50.7122]
+           },
+           "properties":
+           {
+               "Vorname":      "Anna",
+               "Familienname": "Landsberg",
+               "Jahrgang":     1878
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12726,50.7122]
+           },
+           "properties":
+           {
+               "Vorname":      "Paul Ludwig",
+               "Familienname": "Landsberg",
+               "Jahrgang":     1901
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.17968,50.7423]
+           },
+           "properties":
+           {
+               "Vorname":      "Paul",
+               "Familienname": "Langen",
+               "Jahrgang":     1893
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11667,50.7337]
+           },
+           "properties":
+           {
+               "Vorname":      "Albert",
+               "Familienname": "Lehmann",
+               "Jahrgang":     1907
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.16246,50.684]
+           },
+           "properties":
+           {
+               "Vorname":      "Adele",
+               "Familienname": "Levy",
+               "Jahrgang":     1865
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12385,50.7398]
+           },
+           "properties":
+           {
+               "Vorname":      "Henny",
+               "Familienname": "Levy",
+               "Jahrgang":     1881
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11916,50.7383]
+           },
+           "properties":
+           {
+               "Vorname":      "Julia",
+               "Familienname": "Levy",
+               "Jahrgang":     1883
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12385,50.7398]
+           },
+           "properties":
+           {
+               "Vorname":      "Samuel",
+               "Familienname": "Levy",
+               "Jahrgang":     1877
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10532,50.7239]
+           },
+           "properties":
+           {
+               "Vorname":      "Dora",
+               "Familienname": "Loeb",
+               "Jahrgang":     1905
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.1053,50.7239]
+           },
+           "properties":
+           {
+               "Vorname":      "Gertrud",
+               "Familienname": "Loeb",
+               "Jahrgang":     1903
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09504,50.7314]
+           },
+           "properties":
+           {
+               "Vorname":      "Bernhard",
+               "Familienname": "Loew",
+               "Jahrgang":     1886
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09504,50.7314]
+           },
+           "properties":
+           {
+               "Vorname":      "Hermine",
+               "Familienname": "Loew",
+               "Jahrgang":     1893
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09144,50.7409]
+           },
+           "properties":
+           {
+               "Vorname":      "Clara",
+               "Familienname": "Löwenstein",
+               "Jahrgang":     1893
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09435,50.7284]
+           },
+           "properties":
+           {
+               "Vorname":      "Frieda",
+               "Familienname": "Maier",
+               "Jahrgang":     1889
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09959,50.7284]
+           },
+           "properties":
+           {
+               "Vorname":      "Berta",
+               "Familienname": "Mamlock",
+               "Jahrgang":     1883
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09957,50.7284]
+           },
+           "properties":
+           {
+               "Vorname":      "Louis",
+               "Familienname": "Mamlock",
+               "Jahrgang":     1878
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11354,50.7407]
+           },
+           "properties":
+           {
+               "Vorname":      "Alice",
+               "Familienname": "Marx",
+               "Jahrgang":     1910
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11042,50.7106]
+           },
+           "properties":
+           {
+               "Vorname":      "Bernhard",
+               "Familienname": "Marx",
+               "Jahrgang":     1897
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.1074,50.7112]
+           },
+           "properties":
+           {
+               "Vorname":      "Elisabeth",
+               "Familienname": "Marx",
+               "Jahrgang":     1874
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.1074,50.7112]
+           },
+           "properties":
+           {
+               "Vorname":      "Erich",
+               "Familienname": "Marx",
+               "Jahrgang":     1901
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11042,50.7106]
+           },
+           "properties":
+           {
+               "Vorname":      "Erna",
+               "Familienname": "Marx",
+               "Jahrgang":     1899
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11041,50.7106]
+           },
+           "properties":
+           {
+               "Vorname":      "Helena",
+               "Familienname": "Marx",
+               "Jahrgang":     1927
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10448,50.7237]
+           },
+           "properties":
+           {
+               "Vorname":      "Helene",
+               "Familienname": "Marx",
+               "Jahrgang":     1879
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10043,50.7303]
+           },
+           "properties":
+           {
+               "Vorname":      "Henriette",
+               "Familienname": "Marx",
+               "Jahrgang":     1878
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10448,50.7237]
+           },
+           "properties":
+           {
+               "Vorname":      "Hermann",
+               "Familienname": "Marx",
+               "Jahrgang":     1870
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.0914,50.7406]
+           },
+           "properties":
+           {
+               "Vorname":      "Jakob",
+               "Familienname": "Marx",
+               "Jahrgang":     1867
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11042,50.7106]
+           },
+           "properties":
+           {
+               "Vorname":      "Julie",
+               "Familienname": "Marx",
+               "Jahrgang":     1936
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11353,50.7407]
+           },
+           "properties":
+           {
+               "Vorname":      "Max",
+               "Familienname": "Marx",
+               "Jahrgang":     1906
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.1074,50.7112]
+           },
+           "properties":
+           {
+               "Vorname":      "Rosa",
+               "Familienname": "Marx",
+               "Jahrgang":     1907
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09694,50.7247]
+           },
+           "properties":
+           {
+               "Vorname":      "Paula",
+               "Familienname": "Mendel",
+               "Jahrgang":     1863
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.08916,50.7331]
+           },
+           "properties":
+           {
+               "Vorname":      "Eva",
+               "Familienname": "Merkelbach",
+               "Jahrgang":     1874
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.13735,50.7314]
+           },
+           "properties":
+           {
+               "Vorname":      "Josef",
+               "Familienname": "Messinger",
+               "Jahrgang":     1907
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09281,50.7307]
+           },
+           "properties":
+           {
+               "Vorname":      "Anna",
+               "Familienname": "Meyer",
+               "Jahrgang":     1872
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12963,50.6923]
+           },
+           "properties":
+           {
+               "Vorname":      "Ella Maria",
+               "Familienname": "Michaelis",
+               "Jahrgang":     1886
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09016,50.7332]
+           },
+           "properties":
+           {
+               "Vorname":      "Erna",
+               "Familienname": "Müller",
+               "Jahrgang":     1873
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14838,50.688]
+           },
+           "properties":
+           {
+               "Vorname":      "n.n.",
+               "Familienname": "n.n.",
+               "Jahrgang":     0
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.14816,50.688]
+           },
+           "properties":
+           {
+               "Vorname":      "Paula",
+               "Familienname": "Nachmann",
+               "Jahrgang":     1906
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10796,50.7173]
+           },
+           "properties":
+           {
+               "Vorname":      "Edith",
+               "Familienname": "Pappenheim",
+               "Jahrgang":     1883
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10764,50.7265]
+           },
+           "properties":
+           {
+               "Vorname":      "Paula",
+               "Familienname": "Rhée",
+               "Jahrgang":     1869
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.08544,50.7317]
+           },
+           "properties":
+           {
+               "Vorname":      "Gertrud",
+               "Familienname": "Rosenbaum",
+               "Jahrgang":     1896
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.08544,50.7317]
+           },
+           "properties":
+           {
+               "Vorname":      "Helene",
+               "Familienname": "Rosenbaum",
+               "Jahrgang":     1892
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11045,50.71]
+           },
+           "properties":
+           {
+               "Vorname":      "Johanna",
+               "Familienname": "Rosenberg",
+               "Jahrgang":     1866
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11045,50.71]
+           },
+           "properties":
+           {
+               "Vorname":      "Karl",
+               "Familienname": "Rosenberg",
+               "Jahrgang":     1866
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09015,50.7332]
+           },
+           "properties":
+           {
+               "Vorname":      "Hedwig",
+               "Familienname": "Rosenstock",
+               "Jahrgang":     1895
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12798,50.7403]
+           },
+           "properties":
+           {
+               "Vorname":      "Johanna",
+               "Familienname": "Rosenthal",
+               "Jahrgang":     1897
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.16187,50.6849]
+           },
+           "properties":
+           {
+               "Vorname":      "Rosa",
+               "Familienname": "Rosenthal",
+               "Jahrgang":     1869
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12798,50.7403]
+           },
+           "properties":
+           {
+               "Vorname":      "Therese",
+               "Familienname": "Rosenthal",
+               "Jahrgang":     1880
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.13167,50.6992]
+           },
+           "properties":
+           {
+               "Vorname":      "Joseph",
+               "Familienname": "Roth",
+               "Jahrgang":     1896
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09472,50.7394]
+           },
+           "properties":
+           {
+               "Vorname":      "Michael",
+               "Familienname": "Sajonz",
+               "Jahrgang":     1923
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09465,50.7394]
+           },
+           "properties":
+           {
+               "Vorname":      "Perla",
+               "Familienname": "Sajonz",
+               "Jahrgang":     1886
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.0457,50.7138]
+           },
+           "properties":
+           {
+               "Vorname":      "Wilhelmine",
+               "Familienname": "Salomon",
+               "Jahrgang":     1871
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11389,50.7389]
+           },
+           "properties":
+           {
+               "Vorname":      "Nathan",
+               "Familienname": "Scheuer",
+               "Jahrgang":     1877
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09841,50.7358]
+           },
+           "properties":
+           {
+               "Vorname":      "Berta",
+               "Familienname": "Schönbaum",
+               "Jahrgang":     1865
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11658,50.7363]
+           },
+           "properties":
+           {
+               "Vorname":      "Moritz",
+               "Familienname": "Schubach",
+               "Jahrgang":     1879
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11658,50.7363]
+           },
+           "properties":
+           {
+               "Vorname":      "Rosa",
+               "Familienname": "Schubach",
+               "Jahrgang":     1892
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09015,50.7332]
+           },
+           "properties":
+           {
+               "Vorname":      "Felix",
+               "Familienname": "Simons",
+               "Jahrgang":     1874
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12122,50.7389]
+           },
+           "properties":
+           {
+               "Vorname":      "Helene",
+               "Familienname": "Sommer",
+               "Jahrgang":     1877
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12122,50.7389]
+           },
+           "properties":
+           {
+               "Vorname":      "Henriette",
+               "Familienname": "Sommer",
+               "Jahrgang":     1873
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.15834,50.6707]
+           },
+           "properties":
+           {
+               "Vorname":      "Jetta",
+               "Familienname": "Sommer",
+               "Jahrgang":     1866
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.0718,50.7265]
+           },
+           "properties":
+           {
+               "Vorname":      "Karl",
+               "Familienname": "Sommer",
+               "Jahrgang":     1895
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09497,50.7295]
+           },
+           "properties":
+           {
+               "Vorname":      "Lilli",
+               "Familienname": "Sommer",
+               "Jahrgang":     1901
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12122,50.7389]
+           },
+           "properties":
+           {
+               "Vorname":      "Seligmann",
+               "Familienname": "Sommer",
+               "Jahrgang":     1872
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.0718,50.7265]
+           },
+           "properties":
+           {
+               "Vorname":      "Sybilla",
+               "Familienname": "Sommer",
+               "Jahrgang":     1862
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.0718,50.7265]
+           },
+           "properties":
+           {
+               "Vorname":      "Walter",
+               "Familienname": "Sommer",
+               "Jahrgang":     1902
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.15936,50.686]
+           },
+           "properties":
+           {
+               "Vorname":      "Sally",
+               "Familienname": "Spiegel",
+               "Jahrgang":     1873
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.11659,50.7363]
+           },
+           "properties":
+           {
+               "Vorname":      "Edith",
+               "Familienname": "Sternschein",
+               "Jahrgang":     1908
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09824,50.7255]
+           },
+           "properties":
+           {
+               "Vorname":      "Bernhard",
+               "Familienname": "Strauß",
+               "Jahrgang":     1860
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09824,50.7255]
+           },
+           "properties":
+           {
+               "Vorname":      "Erna",
+               "Familienname": "Strauß",
+               "Jahrgang":     1915
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09825,50.7255]
+           },
+           "properties":
+           {
+               "Vorname":      "Rosa",
+               "Familienname": "Strauß",
+               "Jahrgang":     1882
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10532,50.7304]
+           },
+           "properties":
+           {
+               "Vorname":      "Franz",
+               "Familienname": "Virnich",
+               "Jahrgang":     1882
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09538,50.7453]
+           },
+           "properties":
+           {
+               "Vorname":      "Karola",
+               "Familienname": "Waldmann",
+               "Jahrgang":     1911
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.10886,50.7203]
+           },
+           "properties":
+           {
+               "Vorname":      "Hedwig",
+               "Familienname": "Walzel",
+               "Jahrgang":     1878
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12164,50.7391]
+           },
+           "properties":
+           {
+               "Vorname":      "Julie",
+               "Familienname": "Weidenbaum",
+               "Jahrgang":     1890
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12164,50.7391]
+           },
+           "properties":
+           {
+               "Vorname":      "Lambert",
+               "Familienname": "Weidenbaum",
+               "Jahrgang":     1857
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12164,50.7391]
+           },
+           "properties":
+           {
+               "Vorname":      "Luise",
+               "Familienname": "Weidenbaum",
+               "Jahrgang":     1856
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.12164,50.7391]
+           },
+           "properties":
+           {
+               "Vorname":      "Martha",
+               "Familienname": "Weidenbaum",
+               "Jahrgang":     1896
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.08947,50.7235]
+           },
+           "properties":
+           {
+               "Vorname":      "Amalie",
+               "Familienname": "Wolff",
+               "Jahrgang":     1870
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09585,50.7377]
+           },
+           "properties":
+           {
+               "Vorname":      "Arno",
+               "Familienname": "Wolff",
+               "Jahrgang":     1928
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09583,50.7377]
+           },
+           "properties":
+           {
+               "Vorname":      "Karl",
+               "Familienname": "Wolff",
+               "Jahrgang":     1897
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09585,50.7377]
+           },
+           "properties":
+           {
+               "Vorname":      "Lina",
+               "Familienname": "Wolff",
+               "Jahrgang":     1904
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09013,50.7332]
+           },
+           "properties":
+           {
+               "Vorname":      "Dr. Hans",
+               "Familienname": "Wollstein",
+               "Jahrgang":     1895
+           }
+        },
+        {
+           "type": "Feature",
+           "geometry":
+           {
+               "type": "Point",
+               "coordinates": [7.09673,50.7274]
+           },
+           "properties":
+           {
+               "Vorname":      "Maria",
+               "Familienname": "Zuntz",
+               "Jahrgang":     1872
+           }
+        }
+    ]
+}
