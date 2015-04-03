@@ -7,8 +7,8 @@ aufzubereiten. Auf diese Weise sollen die Schicksale, für die diese
 Stolpersteine stehen, auch in der der virtuellen Datenwelt präsent werden.
 
 
-In einem ersten Schritt sind SQL-Skripte entstanden, die eine SQL-Datenbank mit
-den Stolpersteinen befüllen können.
+In einem ersten Schritt sind SQL-Skripte entstanden, die eine SQLite3-Datenbank
+mit den Stolpersteinen befüllen können.
 
 Der Code einer Internetseite, die diese Stolpersteine mit Hilfe von Leaflet auf
 einer Karte von Bonn anzeigt, nun ebenfalls fertig.
@@ -18,3 +18,6 @@ erzeugt und sind daher noch nicht auf dem aktuellen Stand. Für einen ersten Ein
 genügen die Daten jedoch völlig:
 
 ![Screenshot](screenshot.png)
+
+Das Repository enthält zudem eine fertige SQLite3-Datenbank mit den bislang
+erfassten Stolperstein-Daten.

@@ -16,14 +16,14 @@
 --  Namen der Bonner Stadtbezirke
 
 CREATE TABLE TStadtbezirk (
-    BezirksID   INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    BezirksID   INTEGER PRIMARY KEY AUTOINCREMENT,
     Bezirksname VARCHAR(40) NOT NULL
 );
 
 -- Vorname und Familienname des Opfers, ggf. Familienname bei Geburt
 
 CREATE TABLE TOpfer (
-    OpferID         INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    OpferID         INTEGER PRIMARY KEY AUTOINCREMENT,
     Vorname         VARCHAR(40) NOT NULL,
     Familienname    VARCHAR(40) NOT NULL,
     Jahrgang        INT,
@@ -33,7 +33,7 @@ CREATE TABLE TOpfer (
 -- Die Stolpersteine
 
 CREATE TABLE TStolperstein (
-    StolpersteinID      INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    StolpersteinID      INTEGER PRIMARY KEY AUTOINCREMENT,
     lon                 FLOAT NOT NULL,
     lat                 FLOAT NOT NULL,
     Ortsbeschreibung    VARCHAR(100),
@@ -43,21 +43,3 @@ CREATE TABLE TStolperstein (
     CONSTRAINT fk_OpferID   FOREIGN KEY (OpferID)   REFERENCES TOpfer(OpferID),
     CONSTRAINT fk_BezirksID FOREIGN KEY (BezirksID) REFERENCES TStadtbezirk(BezirksID)
 );
-
-
--- Diese View enthält die einzelnen Features der JSON-Datei
-CREATE VIEW VJSON AS
-SELECT CONCAT('{
-    "type": "Feature",
-    "geometry":
-    {
-        "type": "Point",
-        "coordinates": [', lon, ',', lat, '"]
-    },
-    "properties":
-    {
-        "Vorname":      "', vorname, '",
-        "Familienname": "', familienname, '",
-        "Jahrgang":     ',  jahrgang, '
-    }
-},') FROM TOpfer NATURAL JOIN TStolperstein ORDER BY Familienname, Vorname;
