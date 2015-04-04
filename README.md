@@ -15,7 +15,7 @@ einer Karte von Bonn anzeigt, nun ebenfalls fertig.
 Die angezeigten Marker werden jetzt automatisch aus der Datenbasis erzeugt. So
 sieht der aktuelle Stand der Dinge aus:
 
-![Screenshot](screenshot.png)
+![Screenshot](files/screenshot.png)
 
 Das Repository enthält zudem eine fertige SQLite3-Datenbank mit den bislang
 erfassten Stolperstein-Daten.
