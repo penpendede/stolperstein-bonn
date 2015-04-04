@@ -12,8 +12,9 @@ mit den Stolpersteinen befüllen können.
 Der Code einer Internetseite, die diese Stolpersteine mit Hilfe von Leaflet auf
 einer Karte von Bonn anzeigt, nun ebenfalls fertig.
 
-Die angezeigten Marker werden jetzt automatisch aus der Datenbasis erzeugt. So
-sieht der aktuelle Stand der Dinge aus:
+Die angezeigten Marker werden jetzt automatisch aus der Datenbasis erzeugt und
+Informationen werden nach Anklicken des Markers in einem Popup-Fenster
+angezeigt:
 
 ![Screenshot](files/screenshot.png)
 

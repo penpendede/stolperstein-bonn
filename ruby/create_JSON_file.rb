@@ -30,7 +30,7 @@ def feature(row)
                 'coordinates'   => [lon, lat]
                 },
             'properties'    => {
-                'ort'           => ort + ', ' +bezirk,
+                'ort'           => ort + ', ' + bezirk,
                 'vorname'       => vorname,
                 'familienname'  => familienname,
                 'verlegejahr'   => jahr
