@@ -12,7 +12,8 @@ query =
     '           Vorname,'                       + "\n" +
     '           Familienname,'                  + "\n" +
     '           Ortsbeschreibung,'              + "\n" +
-    '           Bezirksname'                    + "\n" +
+    '           Bezirksname,'                   + "\n" +
+    '           Verlegejahr'                    + "\n" +
     'FROM       TOpfer          NATURAL JOIN'   + "\n" +
     '           TStolperstein   NATURAL JOIN'   + "\n" +
     '           TStadtbezirk'                   + "\n" +
@@ -20,7 +21,7 @@ query =
     '           Vorname'
 
 def feature(row)
-    lon, lat, geborene, jahrgang, vorname, familienname, ort, bezirk = row
+    lon, lat, geborene, jg, vorname, familienname, ort, bezirk, jahr = row
     result =
         {
             'type'          => 'Feature',
@@ -31,14 +32,15 @@ def feature(row)
             'properties'    => {
                 'ort'           => ort + ', ' +bezirk,
                 'vorname'       => vorname,
-                'familienname'  => familienname
+                'familienname'  => familienname,
+                'verlegejahr'   => jahr
                 }
             }
     unless geborene.nil?
         result['properties']['geborene'] = geborene
     end
-    unless jahrgang.nil?
-        result['properties']['jahrgang'] = jahrgang
+    unless jg.nil?
+        result['properties']['jahrgang'] = jg
     end
     result
 end

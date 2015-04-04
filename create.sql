@@ -26,7 +26,7 @@ CREATE TABLE TOpfer (
     OpferID         INTEGER PRIMARY KEY AUTOINCREMENT,
     Vorname         VARCHAR(40) NOT NULL,
     Familienname    VARCHAR(40) NOT NULL,
-    Jahrgang        INT,
+    Jahrgang        VARCHAR(11),
     Geborene        VARCHAR(40)
 );
 
@@ -37,8 +37,9 @@ CREATE TABLE TStolperstein (
     lon                 FLOAT NOT NULL,
     lat                 FLOAT NOT NULL,
     Ortsbeschreibung    VARCHAR(100),
-    OpferID             INT UNSIGNED NOT NULL,
-    BezirksID           INT UNSIGNED NOT NULL,
+    Verlegejahr         INTEGER,
+    OpferID             INTEGER UNSIGNED NOT NULL,
+    BezirksID           INTEGER UNSIGNED NOT NULL,
 
     CONSTRAINT fk_OpferID   FOREIGN KEY (OpferID)   REFERENCES TOpfer(OpferID),
     CONSTRAINT fk_BezirksID FOREIGN KEY (BezirksID) REFERENCES TStadtbezirk(BezirksID)
