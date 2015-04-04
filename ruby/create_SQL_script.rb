@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
-targetFilename='stolperstein.sql'
+targetFilename='sql/stolperstein.sql'
 sourceFilenameArray = [
-    'cleanup.sql',
-    'create.sql',
-    'insert_stadtbezirk_name.sql',
-    'insert_opfer.sql',
-    'insert_stolperstein.sql'
+    'sql/cleanup.sql',
+    'sql/create.sql',
+    'sql/insert_stadtbezirk_name.sql',
+    'sql/insert_opfer.sql',
+    'sql/insert_stolperstein.sql'
     ]
 
 File.open(targetFilename, 'w') do |target|
