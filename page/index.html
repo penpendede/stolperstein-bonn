@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <link rel="icon" href="images/star-of-david-16.png" type="image/png" />
         <link rel="stylesheet" type="text/css" href="css/leaflet.css" />
         <link rel="stylesheet" type="text/css" href="css/leaflet.fullscreen.css" />
@@ -8,53 +9,17 @@
         <script src="js/Leaflet.fullscreen.js"></script>
         <script src="js/jquery-1.11.2.js"></script>
         <style>
-            * {font-family: "Century Gothic", Arial, sans-serif}
+            * {padding: 0; margin: 0;}
+            html, body {height: 100%;}
             #map {
-                width: 800px;
-                height: 600px;
+                width: 100%;
+                height: 100%;
             }
         </style>
         <title>Stolperstein / שטולפרשטיין</title>
     </head>
     <body>
-        <h1>Stolperstein / שטולפרשטיין</h1>
         <div id="map"></div>
-        <script type="text/javascript">
-            var map = L.map('map', {
-                center: [50.7085234, 7.115605],
-                zoom: 12,
-                maxZoom: 19 ,
-                fullscreenControl: true
-            });
-            L.tileLayer('http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap contributors'
-            }).addTo(map);
-
-            $.ajax({
-                dataType: "json",
-                url: "stolperstein.json",
-                success: function(data) {
-                    $(data.features).each(function(key, data) {
-                        lat = data['geometry']['coordinates'][0]
-                        lon = data['geometry']['coordinates'][1]
-                        props = data['properties']
-                        description = [ '<table>' ]
-                        opfer = props['vorname'] + ' ' + props['familienname']
-                        if (props['geborene']) {
-                            opfer += " geb. " + props['geborene']
-                        }
-                        if (props['jahrgang']) {
-                            opfer += ", Jahrgang " + props['jahrgang']
-                        }
-                        description.push("<tr><th>Opfer:</th><td>" + opfer + "</td></tr>")
-                        description.push("<tr><th>Ort:</th><td>" + props['ort'] + "</td></tr>")
-                        description.push("<tr><th>Verlegejahr:</th><td>" + props['verlegejahr'] + "</td></tr>")
-                        description.push("</table>")
-                        marker = L.marker([lon, lat])
-                        marker.bindPopup(description.join(''))
-                        marker.addTo(map);
-                    });
-                }}).error(function() {});
-        </script>
+        <script src="js/stolperstein.js"></script>
     </body>
 </html>
