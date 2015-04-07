@@ -22,13 +22,13 @@ $.ajax({
             lat = data.geometry.coordinates[0];
             lon = data.geometry.coordinates[1];
             props = data.properties;
-            description = [ '<table style="max-width: 80%;">' ];
+            description = [ '<table>' ];
             opfer = props.vorname + ' ' + props.familienname;
             if (props.geborene) {
                 opfer += " geb. " + props.geborene;
             }
             if (props.jahrgang) {
-                opfer += ", Jahrgang " + props.jahrgang;
+                opfer += "<br />Jahrgang " + props.jahrgang;
             }
             description.push("<tr><th>Opfer:</th><td>" + opfer + "</td></tr>");
             description.push("<tr><th>Ort:</th><td>" + props.ort + "</td></tr>");
