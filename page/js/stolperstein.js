@@ -40,7 +40,6 @@ $.ajax({
             }
         });
         markers.addLayer(geoJsonLayer);
-        markers.addLayer(geoJsonLayer);
         map.addLayer(markers);
 
     }
