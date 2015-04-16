@@ -20,3 +20,7 @@ Markers erscheinen die zugehörigen Informationen in einem Popup-Fenster.
 
 Das Repository enthält zudem eine fertige SQLite3-Datenbank mit den bislang
 erfassten Stolperstein-Daten.
+
+## Demo
+
+Eine Demo findet sich unter [[http://penpendede.github.io/stolperstein-bonn/][http://penpendede.github.io/stolperstein-bonn/]]
