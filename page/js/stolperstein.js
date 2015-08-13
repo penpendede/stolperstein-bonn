@@ -34,10 +34,16 @@ $(document).ready(
 			dataType: 'json',
 			url: 'files/Ortsteile_Bonn.geojson',
 			success: function (jsonData) {
-				window.console.log(jsonData);
+
 				L.geoJson(jsonData, {
 					style: function (feature) {
-						return {weight: 1, color: '#000'};
+						return {
+							weight: 1,
+							color: '#000',
+							opacity: 1,
+							fillOpacity: 0,
+							fillColor: '#000'
+						};
 					}
 				}).addTo(map);
 			},
@@ -49,10 +55,15 @@ $(document).ready(
 			dataType: 'json',
 			url: 'files/Stadtbezirke_Bonn.geojson',
 			success: function (jsonData) {
-				window.console.log(jsonData);
 				L.geoJson(jsonData, {
 					style: function (feature) {
-						return {weight: 2, color: '#000', opacity: 1 };
+						return {
+							weight: 2,
+							color: '#000',
+							opacity: 1,
+							fillOpacity: 0,
+							fillColor: '#000'
+						};
 					}
 				}).addTo(map);
 			},
@@ -65,17 +76,21 @@ $(document).ready(
 			dataType: 'json',
 			url: 'files/Stadt_Bonn.geojson',
 			success: function (jsonData) {
-				window.console.log(jsonData);
 				L.geoJson(jsonData, {
 					style: function (feature) {
-						return {weight: 3, color: '#f00', opacity: 1};
+						return {
+							weight: 3,
+							color: '#f00',
+							opacity: 1,
+							fillOpacity: 0.2,
+							fillColor: '#f00'
+						};
 					}
 				}).addTo(map);
 			},
 			error: function(XMLHttpRequest, textStatus, errorThrown) {
 			}
 		});
-
 		var markers = L.markerClusterGroup();
 
 		var popup = L.popup().setLatLng([50.7085234, 7.115605]).setContent('<h3 style="text-align:center;">Einen Moment bitte</h3><p style="text-align:center;">Die aktuellen Stolperstein-Informationen werden bei OpenStreetMap abgefragt.</p>').openOn(map);
