@@ -1,23 +1,37 @@
 table {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
+
 .map {
-    height: 100%;
-    width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 th, td {
-    padding: 0.5em;
+	padding: 0.5em;
 }
 tr:first-child {
-    font-size: larger;
-    text-align: center;
+	font-size: larger;
+	text-align: center;
 }
 tr:first-child th {
-    border-bottom: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.leaflet-popup-content-wrapper {
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.95);
+}
+.leaflet-container .leaflet-control-infobox {
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.95);
+	border: 2px solid #00f;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	padding: 0.2em 0.5em;
 }

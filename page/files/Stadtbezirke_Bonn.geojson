@@ -6,7 +6,8 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Grenzen des Bonner Stadtbezirks Bad Godesberg"
+				"name":"Grenzen des Bonner Stadtbezirks Bad Godesberg",
+				"stolpersteine":51
 			},
 			"geometry":
 			{
@@ -399,7 +400,8 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Grenzen des Bonner Stadtbezirks Beuel"
+				"name":"Grenzen des Bonner Stadtbezirks Beuel",
+				"stolpersteine":69
 			},
 			"geometry":
 			{
@@ -948,7 +950,8 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Grenzen des Bonner Stadtbezirks Bonn"
+				"name":"Grenzen des Bonner Stadtbezirks Bonn",
+				"stolpersteine":150
 			},
 			"geometry":
 			{
@@ -1487,7 +1490,8 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Grenzen des Bonner Stadtbezirks Hardtberg"
+				"name":"Grenzen des Bonner Stadtbezirks Hardtberg",
+				"stolpersteine":5
 			},
 			"geometry":
 			{

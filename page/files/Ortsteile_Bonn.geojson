@@ -6,7 +6,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Alt-Godesberg"
+				"name":"Alt-Godesberg",
+				"stadtbezirk":"Bad Godesberg",
+				"stolpersteine":29
 			},
 			"geometry":
 			{
@@ -104,7 +106,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Auerberg"
+				"name":"Auerberg",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -210,7 +214,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Beuel-Mitte"
+				"name":"Beuel-Mitte",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":53
 			},
 			"geometry":
 			{
@@ -348,7 +354,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Beuel-Ost"
+				"name":"Beuel-Ost",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":8
 			},
 			"geometry":
 			{
@@ -468,7 +476,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Bonn-Castell"
+				"name":"Bonn-Castell",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":1
 			},
 			"geometry":
 			{
@@ -539,7 +549,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Bonn-Zentrum"
+				"name":"Bonn-Zentrum",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":27
 			},
 			"geometry":
 			{
@@ -641,7 +653,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Brüser Berg"
+				"name":"Brüser Berg",
+				"stadtbezirk":"Hardtberg",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -751,7 +765,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Buschdorf"
+				"name":"Buschdorf",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -818,7 +834,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Dottendorf"
+				"name":"Dottendorf",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -944,7 +962,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Dransdorf"
+				"name":"Dransdorf",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -1044,7 +1064,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Duisdorf"
+				"name":"Duisdorf",
+				"stadtbezirk":"Hardtberg",
+				"stolpersteine":5
 			},
 			"geometry":
 			{
@@ -1336,7 +1358,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Endenich"
+				"name":"Endenich",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":16
 			},
 			"geometry":
 			{
@@ -1498,7 +1522,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Friesdorf"
+				"name":"Friesdorf",
+				"stadtbezirk":"Bad Godesberg",
+				"stolpersteine":2
 			},
 			"geometry":
 			{
@@ -1578,7 +1604,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Geislar"
+				"name":"Geislar",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -1725,7 +1753,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Godesberg-Villenviertel"
+				"name":"Godesberg-Villenviertel",
+				"stadtbezirk":"Bad Godesberg",
+				"stolpersteine":11
 			},
 			"geometry":
 			{
@@ -1803,7 +1833,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Godesberg-Nord"
+				"name":"Godesberg-Nord",
+				"stadtbezirk":"Bad Godesberg",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -1850,7 +1882,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Graurheindorf"
+				"name":"Graurheindorf",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -1929,7 +1963,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Gronau"
+				"name":"Gronau",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":4
 			},
 			"geometry":
 			{
@@ -2011,7 +2047,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Hardthöhe"
+				"name":"Hardthöhe",
+				"stadtbezirk":"Hardtberg",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -2092,7 +2130,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Heiderhof"
+				"name":"Heiderhof",
+				"stadtbezirk":"Bad Godesberg",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -2258,7 +2298,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Hochkreuz"
+				"name":"Hochkreuz",
+				"stadtbezirk":"Bad Godesberg",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -2371,7 +2413,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Hoholz"
+				"name":"Hoholz",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -2468,7 +2512,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Holtorf"
+				"name":"Holtorf",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -2657,7 +2703,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Holzlar"
+				"name":"Holzlar",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":1
 			},
 			"geometry":
 			{
@@ -2825,7 +2873,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Ippendorf"
+				"name":"Ippendorf",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -2954,7 +3004,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Kessenich"
+				"name":"Kessenich",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":16
 			},
 			"geometry":
 			{
@@ -3069,7 +3121,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Küdinghoven"
+				"name":"Küdinghoven",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -3186,7 +3240,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Lannesdorf"
+				"name":"Lannesdorf",
+				"stadtbezirk":"Bad Godesberg",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -3312,7 +3368,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Lengsdorf"
+				"name":"Lengsdorf",
+				"stadtbezirk":"Hardtberg",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -3416,7 +3474,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Lessenich/Meßdorf"
+				"name":"Lessenich/Meßdorf",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -3511,7 +3571,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Limperich"
+				"name":"Limperich",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":1
 			},
 			"geometry":
 			{
@@ -3635,7 +3697,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Mehlem"
+				"name":"Mehlem",
+				"stadtbezirk":"Bad Godesberg",
+				"stolpersteine":4
 			},
 			"geometry":
 			{
@@ -3801,7 +3865,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Muffendorf"
+				"name":"Muffendorf",
+				"stadtbezirk":"Bad Godesberg",
+				"stolpersteine":1
 			},
 			"geometry":
 			{
@@ -3905,7 +3971,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Nordstadt"
+				"name":"Nordstadt",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":29
 			},
 			"geometry":
 			{
@@ -4020,7 +4088,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Oberkassel"
+				"name":"Oberkassel",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":1
 			},
 			"geometry":
 			{
@@ -4310,7 +4380,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Pennenfeld"
+				"name":"Pennenfeld",
+				"stadtbezirk":"Bad Godesberg",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -4365,7 +4437,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Plittersdorf"
+				"name":"Plittersdorf",
+				"stadtbezirk":"Bad Godesberg",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -4503,7 +4577,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Poppelsdorf"
+				"name":"Poppelsdorf",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":2
 			},
 			"geometry":
 			{
@@ -4659,7 +4735,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Pützchen-Bechlinghoven"
+				"name":"Pützchen-Bechlinghoven",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -4741,7 +4819,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Ramersdorf"
+				"name":"Ramersdorf",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -4886,7 +4966,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Röttgen"
+				"name":"Röttgen",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -5134,7 +5216,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Rüngsdorf"
+				"name":"Rüngsdorf",
+				"stadtbezirk":"Bad Godesberg",
+				"stolpersteine":4
 			},
 			"geometry":
 			{
@@ -5230,7 +5314,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Schwarzrheindorf/Vilich-Rheindorf"
+				"name":"Schwarzrheindorf/Vilich-Rheindorf",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -5393,7 +5479,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Schweinheim"
+				"name":"Schweinheim",
+				"stadtbezirk":"Bad Godesberg",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -5514,7 +5602,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Südstadt"
+				"name":"Südstadt",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":27
 			},
 			"geometry":
 			{
@@ -5604,7 +5694,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Tannenbusch"
+				"name":"Tannenbusch",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -5699,7 +5791,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Ückesdorf"
+				"name":"Ückesdorf",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -5764,7 +5858,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Venusberg"
+				"name":"Venusberg",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -5940,7 +6036,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Vilich"
+				"name":"Vilich",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":5
 			},
 			"geometry":
 			{
@@ -6057,7 +6155,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Vilich-Müldorf"
+				"name":"Vilich-Müldorf",
+				"stadtbezirk":"Beuel",
+				"stolpersteine":0
 			},
 			"geometry":
 			{
@@ -6156,7 +6256,9 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Weststadt"
+				"name":"Weststadt",
+				"stadtbezirk":"Bonn",
+				"stolpersteine":28
 			},
 			"geometry":
 			{

@@ -6,7 +6,8 @@
 			"type":"Feature",
 			"properties":
 			{
-				"name":"Stadtgrenze von Bonn"
+				"name":"Stadtgrenze von Bonn",
+				"stolpersteine":275
 			},
 			"geometry":
 			{
