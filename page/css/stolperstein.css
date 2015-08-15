@@ -26,12 +26,31 @@ tr:first-child th {
 	background-color: #fff;
 	background-color: rgba(255,255,255,0.95);
 }
-.leaflet-container .leaflet-control-infobox {
+.leaflet-control-container leaflet-control-attribution {
 	background-color: #fff;
 	background-color: rgba(255, 255, 255, 0.95);
 	border: 2px solid #00f;
-	color: #333;
+	border-radius: 0.5em;
+	color: #000;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
+	margin: 0.2em;
 	padding: 0.2em 0.5em;
+}
+
+.leaflet-control a {
+	font-weight: bold;
+}
+.leaflet-control a:link {
+	color: #00f;
+}
+.leaflet-control a:visited {
+	color: #00f;
+}
+.leaflet-control a:hover {
+	color: #066;
+}
+.leaflet-control a:active {
+	background: #ff0;
+	color: #00f;
 }
