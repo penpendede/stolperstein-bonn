@@ -3,11 +3,11 @@ table {
 	font-size: 10pt;
 }
 
-html, body {
-	height: 100%;
+body {
+	margin: 0;
+	padding: 0;
 }
-
-.map {
+html, body, .map {
 	height: 100%;
 	width: 100%;
 }
@@ -21,6 +21,9 @@ tr:first-child {
 }
 tr:first-child th {
 	border-bottom: 1px solid black;
+}
+.leaflet-control a:link, .leaflet-control a:visited {
+	color: black;
 }
 .leaflet-popup-content-wrapper {
 	background-color: #fff;
