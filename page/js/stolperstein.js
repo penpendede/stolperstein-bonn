@@ -2,7 +2,7 @@
 /*global $, jQuery, L, osmtogeojson, console*/
 
 /*
-Copyright 2015 Josef 'Jupp' Schugt <penpendede@mail.ru>. All rights reserved.
+Copyright 2016 Josef 'Jupp' Schugt <penpendede@mail.ru>. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -43,6 +43,10 @@ var tokens = {
         "url": "https://de.wikipedia.org/wiki/KZ_Auschwitz",
         "short": "Der nationalsozalistische Lagerkomplex Auschwitz war sowohl Konzentrations- als auch Vernichtungslager. Er bestand aus dem Stammlager Auschwitz, dem Vernichtungslager Birkenau, dem Arbeitslager Monowitz und rund 50 weiteren Außenlagern. Die SS betrieb ihn von 1940 bis 1945 am Westrand der polnischen Stadt Oświęcim."
     },
+    "Brandenburg-Görden": {
+        "url": "https://de.wikipedia.org/wiki/Altes_Zuchthaus_Brandenburg_an_der_Havel",
+        "short": "Das Alte Zuchthaus hat eine wechselhafte Geschichte als Armenhaus, Gefängnis, KZ und Tötungsanstalt hinter sich. Heute ist dort die Stadtverwaltung und eine Gedenkstätte untergebracht."
+    },
     "Buchenwald": {
         "url": "https://de.wikipedia.org/wiki/KZ_Buchenwald",
         "short": "Das Konzentrationslager Buchenwald war eines der größten KZs auf deutschem Boden. Es wurde zwischen Juli 1937 und April 1945 auf dem Ettersberg bei Weimar als Arbeitslager betrieben. Insgesamt waren in diesem Zeitraum etwa 266.000 Menschen aus allen Ländern Europas im Konzentrationslager Buchenwald inhaftiert."
@@ -67,6 +71,10 @@ var tokens = {
         "url": "https://de.wikipedia.org/wiki/KZ_Flossenbürg",
         "short": "Das Konzentrationslager Flossenbürg bestand von 1938 bis 1945 und befand sich bei Weiden im Oberpfälzer Wald, nahe der Grenze zum heutigen Tschechien und war von Anfang an als ein Konzentrationslager zur Ausbeutung von Zwangsarbeitern, als ein Lager zur 'Vernichtung durch Arbeit' geplant."
     },
+    "Franz-Sales-Haus": {
+        "url": "https://de.wikipedia.org/wiki/Franz_Sales_Haus",
+        "short": "Das Franz Sales Haus (sic) im Essener Stadtteil Huttrop ist eine katholische Einrichtung der Behindertenhilfe. Vor dem Beginn der Aktion-T4-Deportationen (Vernichtung lebensunwerten Lebens, NS-Krankenmorde) 1940 lebten in der Einrichtung 1.096 Männer, Frauen und Kinder. Bis 1943 wurden insgesamt 832 behinderte Menschen deportiert."
+    },
     "Izbica": {
         "url": "https://de.wikipedia.org/wiki/Ghetto_Izbica",
         "short": "Das Ghetto Izbica war ab 1942 eine Durchgangsstation für deportierte Juden. Von dort führte der Weg in die Vernichtungslager des Holocausts, insbesondere nach Belzec und Sobibor."
@@ -79,7 +87,15 @@ var tokens = {
         "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Kulmhof",
         "short": "Das Vernichtungslager Kulmhof befand sich in Chełmno nad Nerem nahe der Stadt Dąbie. Es lag etwa 130 km östlich von Poznań und nordwestlich von Łódź. Kulmhof wurde hauptsächlich zwischen Dezember 1941 und März 1943 als Vernichtungsstätte benutzt, danach geräumt und nochmals im Sommer 1944 zur Ermordung von Juden des Ghettos Litzmannstadt verwendet."
     },
+    "Leipzig-Dösen ": {
+        "url": "https://de.wikipedia.org/wiki/Park-Klinikum_Leipzig#Landesheil-_und_Pflegeanstalt_Leipzig-D.C3.B6sen",
+        "short": "Im Oktober 1940 wurde in Leipzig-Dösen im Rahmen der nationalsozialistischen Kindereuthanasieverbrechen eine kinderpsychiatrische Abteilung neu gegründet. In ihr sind zwischen November 1940 und 7. Dezember 1943 (dem Tag der Verlegung der Kinderfachabteilung in die Landesanstalt Großschweidnitz bei Löbau) 551 Kinder und Jugendliche getötet worden."
+    },
     "Litzmannstadt": {
+        "url": "https://de.wikipedia.org/wiki/Ghetto_Litzmannstadt",
+        "short": "Das Ghetto Litzmannstadt befand sich in Łódź und war von 1939 bis 1944 das am längsten existierende nationalsozialistische Ghetto und nach dem Warschauer Ghetto das zweitgrößte. Es diente, wie die anderen NS-Ghettos auch, vor allem als Zwischenstation vor der Deportation in die Vernichtungslager Kulmhof (Chełmno nad Nerem), Auschwitz II, Majdanek, Treblinka und Sobibor."
+    },
+    "Lodz": {
         "url": "https://de.wikipedia.org/wiki/Ghetto_Litzmannstadt",
         "short": "Das Ghetto Litzmannstadt befand sich in Łódź und war von 1939 bis 1944 das am längsten existierende nationalsozialistische Ghetto und nach dem Warschauer Ghetto das zweitgrößte. Es diente, wie die anderen NS-Ghettos auch, vor allem als Zwischenstation vor der Deportation in die Vernichtungslager Kulmhof (Chełmno nad Nerem), Auschwitz II, Majdanek, Treblinka und Sobibor."
     },
@@ -102,6 +118,10 @@ var tokens = {
     "Minsk": {
         "url": "https://de.wikipedia.org/wiki/Ghetto_Minsk",
         "short": "Im Ghetto Minsk wurden von Juli 1941 bis zum Oktober 1943 die jüdische Einwohner der weißrussischen Hauptstadt, ab November 1941 auch deportierte Juden aus deutschen Städten, gefangen gehalten. Als 'arbeitsfähig' betrachtete Juden wurden von dort teilweise zu Zwangsarbeiten abkommandiert. Die 'nicht arbeitsfähigen' Menschen wurden von Deutschen umgebracht. Am 21.10.1943 wurde das Ghetto durch Mord an den meisten Gefangenen ausgelöscht, nur wenige überlebten."
+    },
+    "Pflegeanstalt Brandenburg": {
+        "url": "https://de.wikipedia.org/wiki/Altes_Zuchthaus_Brandenburg_an_der_Havel",
+        "short": "Das Alte Zuchthaus hat eine wechselhafte Geschichte als Armenhaus, Gefängnis, KZ und Tötungsanstalt hinter sich. Heute ist dort die Stadtverwaltung und eine Gedenkstätte untergebracht."
     },
     "Ravensbrück": {
         "url": "https://de.wikipedia.org/wiki/KZ_Ravensbrück",
@@ -403,12 +423,12 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, status) {
                         description.push(
                             '<a href="' +
                             tags.image +
-                            '" target="_blank"><img width="300" height="225" src="' +
+                            '" target="_blank"><img src="' +
                             tags.image.replace(
                                 'https://upload.wikimedia.org/wikipedia/commons',
                                 'https://upload.wikimedia.org/wikipedia/commons/thumb'
                             ) +
-                            '/300px-' +
+                            '/240px-' +
                             tags.image.split('/')[tags.image.split('/').length - 1] +
                             '" /></a>'
                         );
@@ -487,7 +507,6 @@ $(document).ready(
             'map',
             {
                 center: [50.7085234, 7.115605],
-                //maxBounds: [[50.63, 7.01], [50.78, 7.22]],
                 zoom: 12,
                 maxZoom: 18,
                 loadingControl: true,
