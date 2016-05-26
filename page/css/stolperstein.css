@@ -1,3 +1,7 @@
+.fullscreen-icon { background-image: url(../images/icon-fullscreen.png); }
+.leaflet-retina .fullscreen-icon { background-image: url(../images/icon-fullscreen-2x.png); background-size: 26px 26px; }
+.leaflet-control-layers-toggle { background-image: url(../images/layers.png); height: 36px; width: 36px;}
+.leaflet-retina .leaflet-control-layers-toggle { background-image: url(../images/layers-2x.png); background-size: 26px 26px;}
 table {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;

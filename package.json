@@ -1,0 +1,20 @@
+{
+  "name": "stolperstein-bonn",
+  "version": "0.1.0",
+  "description": "A visualization of Bonn's Stolpersteins",
+  "author": "Josef Schugt",
+  "contributors": [
+    "Josef Schugt <penpendede@mail.ru>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penpendede/stolperstein-bonn.git"
+  },
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "leaflet": "^0.7.7",
+    "leaflet-loading": "^0.1.20",
+    "leaflet.fullscreen": "^1.4.2",
+    "leaflet.markercluster": "^0.5.0"
+  }
+}
