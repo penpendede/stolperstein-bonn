@@ -233,7 +233,7 @@ function addBaseLayers(map) {
     ).addTo(map);
 
     L.tileLayer(
-        'http://{s}.tile.openstreetmap.se/hydda/roads_and_labels/{z}/{x}/{y}.png',
+        'https://{s}.tile.openstreetmap.se/hydda/roads_and_labels/{z}/{x}/{y}.png',
         {
             attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> ' +
             '&mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -478,7 +478,7 @@ function addStolpersteins(map, status) {
     ).openOn(map);
     $.ajax({
         dataType: 'json',
-        url: 'http://overpass-api.de/api/interpreter?' +
+        url: 'https://overpass-api.de/api/interpreter?' +
         'data=[out:json][timeout:25];' +
         'area(3600062508)->.area;' +
         '(' +
