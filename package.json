@@ -16,5 +16,8 @@
     "leaflet-loading": "^0.1.20",
     "leaflet.fullscreen": "^1.4.2",
     "leaflet.markercluster": "^0.5.0"
+  },
+  "devDependencies": {
+    "reproject": "^1.1.1"
   }
 }
