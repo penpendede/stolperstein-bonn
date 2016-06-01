@@ -362,8 +362,7 @@ function addBaseLayers(map) {
 function addBonnCityLimits(map) {
     $.ajax({
         dataType: 'json',
-        url: 'files/Stadt_Bonn-OSM.geojson',
-        url: 'files/Stadt_Bonn-offiziell.geojson',
+        url: 'files/Stadt_Bonn.geojson',
         success: function (jsonData) {
             L.geoJson(jsonData, {
                 style: function (feature) {
