@@ -19,3 +19,9 @@ cp ./node_modules/leaflet.markercluster/dist/MarkerCluster*.css page/css
 
 cp ./node_modules/leaflet-loading/src/Control.Loading.css page/css
 cp ./node_modules/leaflet-loading/src/Control.Loading.js page/js
+
+wget -qO- 'http://stadtplan.bonn.de/geojson?Thema=21247&koordsys=25832' |\
+./node_modules/.bin/reproject --use-spatialreference --from=EPSG:25832 --to=EPSG:4326 |\
+node compactor.js >\
+page/files/Ortsteile_Bonn_offiziell_EPSG-4326.geojson
+

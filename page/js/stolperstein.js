@@ -408,7 +408,7 @@ function configureBonnDistrictPopups(feature, layer, status) {
     var description = [];
     var popup;
     if (feature.properties) {
-        if (feature.properties.ortsteil_bez) {
+        if (feature.properties.ortsteil) {
             description.push('<strong>' + ortsteilName(feature.properties.ortsteil) + '</strong>');
         }
         if (feature.properties.bezirk) {
