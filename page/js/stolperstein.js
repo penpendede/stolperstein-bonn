@@ -363,14 +363,14 @@ function addBonnCityLimits(map) {
     $.ajax({
         dataType: 'json',
         url: 'files/Stadt_Bonn-OSM.geojson',
-        //url: 'files/Stadt_Bonn-offiziell.geojson',
+        url: 'files/Stadt_Bonn-offiziell.geojson',
         success: function (jsonData) {
             L.geoJson(jsonData, {
                 style: function (feature) {
                     return {
-                        weight: 6,
+                        weight: 5,
                         color: '#000',
-                        opacity: 1,
+                        opacity: 0.4,
                         fillColor: '#00f',
                         fillOpacity: 0.08
                     };
@@ -390,9 +390,9 @@ function addBonnMunicipalityLimits(map) {
             L.geoJson(jsonData, {
                 style: function (feature) {
                     return {
-                        weight: 3,
+                        weight: 5,
                         color: '#00f',
-                        opacity: 1,
+                        opacity: 0.4,
                         fillOpacity: 0
                     };
                 }
@@ -458,31 +458,8 @@ function addBonnDistricts(map, status) {
                 style: function (feature) {
                     return {
                         weight: 1,
-                        color: '#f00',
-                        opacity: 0.5,
-                        fillOpacity: 0
-                    };
-                },
-                onEachFeature: function (feature, layer) {
-                    configureBonnDistrictPopups(feature, layer, status);
-                },
-                error: function(XMLHttpRequest, textStatus, errorThrown) {
-                }
-            }).addTo(map);
-        }
-    });
-    $.ajax({
-        dataType: 'json',
-        //url: 'files/Ortsteile_Bonn.geojson',
-        url: 'files/Ortsteile_Bonn_offiziell_EPSG-4326.geojson',
-        success: function (jsonData) {
-
-            L.geoJson(jsonData, {
-                style: function (feature) {
-                    return {
-                        weight: 1,
                         color: '#00f',
-                        opacity: 0.5,
+                        opacity: 1,
                         fillOpacity: 0
                     };
                 },
