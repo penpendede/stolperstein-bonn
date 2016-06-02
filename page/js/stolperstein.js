@@ -38,257 +38,20 @@ Project.
  * license.
  */
 
-var tokens = {
-    "Auschwitz": {
-        "url": "https://de.wikipedia.org/wiki/KZ_Auschwitz",
-        "short": "Der nationalsozalistische Lagerkomplex Auschwitz war sowohl Konzentrations- als auch Vernichtungslager. Er bestand aus dem Stammlager Auschwitz, dem Vernichtungslager Birkenau, dem Arbeitslager Monowitz und rund 50 weiteren Außenlagern. Die SS betrieb ihn von 1940 bis 1945 am Westrand der polnischen Stadt Oświęcim."
-    },
-    "Brandenburg-Görden": {
-        "url": "https://de.wikipedia.org/wiki/Altes_Zuchthaus_Brandenburg_an_der_Havel",
-        "short": "Das Alte Zuchthaus hat eine wechselhafte Geschichte als Armenhaus, Gefängnis, KZ und Tötungsanstalt hinter sich. Heute ist dort die Stadtverwaltung und eine Gedenkstätte untergebracht."
-    },
-    "Buchenwald": {
-        "url": "https://de.wikipedia.org/wiki/KZ_Buchenwald",
-        "short": "Das Konzentrationslager Buchenwald war eines der größten KZs auf deutschem Boden. Es wurde zwischen Juli 1937 und April 1945 auf dem Ettersberg bei Weimar als Arbeitslager betrieben. Insgesamt waren in diesem Zeitraum etwa 266.000 Menschen aus allen Ländern Europas im Konzentrationslager Buchenwald inhaftiert."
-    },
-    "Chelmno": {
-        "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Kulmhof",
-        "short": "Das Vernichtungslager Kulmhof befand sich in Chełmno nad Nerem nahe der Stadt Dąbie. Es lag etwa 130 km östlich von Poznań und nordwestlich von Łódź. Kulmhof wurde hauptsächlich zwischen Dezember 1941 und März 1943 als Vernichtungsstätte benutzt, danach geräumt und nochmals im Sommer 1944 zur Ermordung von Juden des Ghettos Litzmannstadt verwendet."
-    },
-    "Dachau": {
-        "url": "https://de.wikipedia.org/wiki/KZ_Dachau",
-        "short": "Das Konzentrationslager Dachau lag etwa 20 km nordwestlich von München und bestand vom 22.3.1933 bis zu seiner Befreiung am 29.4.1945. Das NS-Regime errichtete es bereits wenige Wochen nach der Machtübernahme. Dort wurden vor allem politische Gegner des NS-Regimes eingesperrt. Dachau war Ausbildungsort für SS-Wachmannschaften und -Führungspersonal, die später unter anderem in Vernichtungslagern eingesetzt wurden."
-    },
-    "Drancy": {
-        "url": "https://de.wikipedia.org/wiki/Sammellager_Drancy",
-        "short": "Vom Sammel- und Durchgangslager Drancy wurden ca. 65.000 hauptsächlich französische Juden mit der Eisenbahn in deutsche Vernichtungslager transportiert. Etwa 63.000 von ihnen wurden in diesen ermordet oder starben an den katastrophalen Umständen des Transports, der Unterbringung und Behandlung. Unter ihnen befanden sich ca. 6.000 Kinder."
-    },
-    "Endenich": {
-        "url": "https://de.wikipedia.org/wiki/Endenich#Geschichte",
-        "short": "Nach 1941 wurde das Endenicher Kloster 'Zur ewigen Anbetung' im Rahmen des Holocausts als Zwischenlager für die Massentransporte der Bonner Juden in die Vernichtungslager benutzt."
-    },
-    "Flossenbürg": {
-        "url": "https://de.wikipedia.org/wiki/KZ_Flossenbürg",
-        "short": "Das Konzentrationslager Flossenbürg bestand von 1938 bis 1945 und befand sich bei Weiden im Oberpfälzer Wald, nahe der Grenze zum heutigen Tschechien und war von Anfang an als ein Konzentrationslager zur Ausbeutung von Zwangsarbeitern, als ein Lager zur 'Vernichtung durch Arbeit' geplant."
-    },
-    "Franz-Sales-Haus": {
-        "url": "https://de.wikipedia.org/wiki/Franz_Sales_Haus",
-        "short": "Das Franz Sales Haus (sic) im Essener Stadtteil Huttrop ist eine katholische Einrichtung der Behindertenhilfe. Vor dem Beginn der Aktion-T4-Deportationen (Vernichtung lebensunwerten Lebens, NS-Krankenmorde) 1940 lebten in der Einrichtung 1.096 Männer, Frauen und Kinder. Bis 1943 wurden insgesamt 832 behinderte Menschen deportiert."
-    },
-    "Izbica": {
-        "url": "https://de.wikipedia.org/wiki/Ghetto_Izbica",
-        "short": "Das Ghetto Izbica war ab 1942 eine Durchgangsstation für deportierte Juden. Von dort führte der Weg in die Vernichtungslager des Holocausts, insbesondere nach Belzec und Sobibor."
-    },
-    "Kaufering": {
-        "url": "https://de.wikipedia.org/wiki/KZ-Außenlager_Kaufering_VI",
-        "short": "Das KZ-Außenlager Kaufering VI war ein nationalsozialistisches Konzentrationslager nahe Türkheim und gehörte zu den über 100 Nebenlagern des KZ Dachau."
-    },
-    "Kulmhof": {
-        "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Kulmhof",
-        "short": "Das Vernichtungslager Kulmhof befand sich in Chełmno nad Nerem nahe der Stadt Dąbie. Es lag etwa 130 km östlich von Poznań und nordwestlich von Łódź. Kulmhof wurde hauptsächlich zwischen Dezember 1941 und März 1943 als Vernichtungsstätte benutzt, danach geräumt und nochmals im Sommer 1944 zur Ermordung von Juden des Ghettos Litzmannstadt verwendet."
-    },
-    "Leipzig-Dösen ": {
-        "url": "https://de.wikipedia.org/wiki/Park-Klinikum_Leipzig#Landesheil-_und_Pflegeanstalt_Leipzig-D.C3.B6sen",
-        "short": "Im Oktober 1940 wurde in Leipzig-Dösen im Rahmen der nationalsozialistischen Kindereuthanasieverbrechen eine kinderpsychiatrische Abteilung neu gegründet. In ihr sind zwischen November 1940 und 7. Dezember 1943 (dem Tag der Verlegung der Kinderfachabteilung in die Landesanstalt Großschweidnitz bei Löbau) 551 Kinder und Jugendliche getötet worden."
-    },
-    "Litzmannstadt": {
-        "url": "https://de.wikipedia.org/wiki/Ghetto_Litzmannstadt",
-        "short": "Das Ghetto Litzmannstadt befand sich in Łódź und war von 1939 bis 1944 das am längsten existierende nationalsozialistische Ghetto und nach dem Warschauer Ghetto das zweitgrößte. Es diente, wie die anderen NS-Ghettos auch, vor allem als Zwischenstation vor der Deportation in die Vernichtungslager Kulmhof (Chełmno nad Nerem), Auschwitz II, Majdanek, Treblinka und Sobibor."
-    },
-    "Lodz": {
-        "url": "https://de.wikipedia.org/wiki/Ghetto_Litzmannstadt",
-        "short": "Das Ghetto Litzmannstadt befand sich in Łódź und war von 1939 bis 1944 das am längsten existierende nationalsozialistische Ghetto und nach dem Warschauer Ghetto das zweitgrößte. Es diente, wie die anderen NS-Ghettos auch, vor allem als Zwischenstation vor der Deportation in die Vernichtungslager Kulmhof (Chełmno nad Nerem), Auschwitz II, Majdanek, Treblinka und Sobibor."
-    },
-    "Łodz": {
-        "url": "https://de.wikipedia.org/wiki/Ghetto_Litzmannstadt",
-        "short": "Das Ghetto Litzmannstadt befand sich in Łódź und war von 1939 bis 1944 das am längsten existierende nationalsozialistische Ghetto und nach dem Warschauer Ghetto das zweitgrößte. Es diente, wie die anderen NS-Ghettos auch, vor allem als Zwischenstation vor der Deportation in die Vernichtungslager Kulmhof (Chełmno nad Nerem), Auschwitz II, Majdanek, Treblinka und Sobibor."
-    },
-    "Lublin": {
-        "url": "https://de.wikipedia.org/wiki/KZ_Majdanek",
-        "short": "Das KZ Majdanek befand sich im gleichnamigen Vorort von Lublin und wurde wie Auschwitz-Birkenau zeitweise auch als Vernichtungslager genutzt. Es bestand von Oktober 1941 bis zum 23.7.1944, als das großteils geräumte Lager von der Roten Armee befreit wurde."
-    },
-    "Majdanek": {
-        "url": "https://de.wikipedia.org/wiki/KZ_Majdanek",
-        "short": "Das KZ Majdanek befand sich im gleichnamigen Vorort von Lublin und wurde wie Auschwitz-Birkenau zeitweise auch als Vernichtungslager genutzt. Es bestand von Oktober 1941 bis zum 23.7.1944, als das großteils geräumte Lager von der Roten Armee befreit wurde."
-    },
-    "Maly Trostenez": {
-        "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Maly_Trostinez",
-        "short": "Das Vernichtungslager Maly Trostinez befand sich rund 12 km südöstlich von Minsk in einer ländlichen Gegend. Zwischen 1942 und 1944 wurden bei Maly Trostinez 40.000 bis 60.000 Menschen ermordet, weit überwiegend Juden. Die Deportierten wurden zumeist im nahegelegenen Wald von Blagovśćina erschossen, ohne zuvor im Lager selbst gewesen zu sein."
-    },
-    "Minsk": {
-        "url": "https://de.wikipedia.org/wiki/Ghetto_Minsk",
-        "short": "Im Ghetto Minsk wurden von Juli 1941 bis zum Oktober 1943 die jüdische Einwohner der weißrussischen Hauptstadt, ab November 1941 auch deportierte Juden aus deutschen Städten, gefangen gehalten. Als 'arbeitsfähig' betrachtete Juden wurden von dort teilweise zu Zwangsarbeiten abkommandiert. Die 'nicht arbeitsfähigen' Menschen wurden von Deutschen umgebracht. Am 21.10.1943 wurde das Ghetto durch Mord an den meisten Gefangenen ausgelöscht, nur wenige überlebten."
-    },
-    "Pflegeanstalt Brandenburg": {
-        "url": "https://de.wikipedia.org/wiki/Altes_Zuchthaus_Brandenburg_an_der_Havel",
-        "short": "Das Alte Zuchthaus hat eine wechselhafte Geschichte als Armenhaus, Gefängnis, KZ und Tötungsanstalt hinter sich. Heute ist dort die Stadtverwaltung und eine Gedenkstätte untergebracht."
-    },
-    "Ravensbrück": {
-        "url": "https://de.wikipedia.org/wiki/KZ_Ravensbrück",
-        "short": "Das Konzentrationslager Ravensbrück war das größte Konzentrationslager für Frauen im sogenannten deutschen 'Altreich'. Es wurde 1938/39 durch die SS in der heutigen Stadt Fürstenberg/Havel im Norden der Provinz Brandenburg errichtet. Insgesamt waren etwa 132.000 Frauen und Kinder, 20.000 Männer und 1.000 weibliche Jugendliche im KZ Ravensbrück und im benachbarten KZ Uckermark interniert. Man geht davon aus, dass in Ravensbrück rund 28.000 Menschen ums Leben gekommen sind."
-    },
-    "Riga": {
-        "url": "https://de.wikipedia.org/wiki/Ghetto_Riga",
-        "short": "Das Ghetto von Riga war ein kleiner, abgesperrter Randbezirk der lettischen Hauptstadt, in dem deutsche Besatzer Juden internierten. Fast alle wurden – innerhalb des Ghettos oder in den angrenzenden Wäldern oder benachbarten Konzentrationslagern – ermordet. Im Ghetto Riga lebten auf engstem Raum zunächst lettische Juden, später Juden aus dem Deutschen Reich."
-    },
-    "Sachsenhausen": {
-        "url": "https://de.wikipedia.org/wiki/KZ_Sachsenhausen",
-        "short": "Das Konzentrationslager Sachsenhausen war ein ab 1936 eingerichtetes nationalsozialistisches deutsches Konzentrationslager in der Stadt Oranienburg nördlich von Berlin. Insgesamt wurden etwa 200.000 Häftlinge nach Sachsenhausen deportiert, nur rund 140.000 davon wurden registriert. Im August 1941 wurde eine Massenerschießungsanlage errichtet, in der etwa 13.000 bis 18.000 sowjetische Kriegsgefangene ermordet wurden. Insgesamt sollen mehrere zehntausend Häftlinge ermordet worden sein."
-    },
-    "Sobibor": {
-        "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Sobibor",
-        "short": "Das Vernichtungslager Sobibor war ein deutsches Vernichtungslager im südöstlichen Polen. Das Lager wurde Anfang 1942 errichtet. Im Vernichtungslager Sobibor wurden nach Schätzungen bis zu 250.000 Juden in Gaskammern ermordet, darunter vermutlich 33.000 aus den Niederlanden."
-    },
-    "Stutthof": {
-        "url": "https://de.wikipedia.org/wiki/KZ_Stutthof",
-        "short": "Das Konzentrationslager Stutthof befand sich 37 Kilometer östlich von Danzig. Es wurde nach dem deutschen Angriff auf die Freie Stadt Danzig und dem Angriff auf Polen ab dem 1.9.1939 zunächst als Zivilgefangenenlager errichtet. Ab dem 1.10.1941 unterstand es als Sonderlager Stutthof der Danziger Gestapo. Vom 29.1.1942 bis zum Kriegsende war Stutthof dann ein Konzentrationslager."
-    },
-    "Theresienstadt": {
-        "url": "https://de.wikipedia.org/wiki/KZ_Theresienstadt",
-        "short": " Das Konzentrationslager Theresienstadt im heutigen Tschechien wurde von den deutschen Besatzern in Terezín eingerichtet und erfüllte vier Aufgaben: Gestapogefängnis, Transitlager auf dem Weg in die großen Vernichtungslager, Vernichtung von Menschen und (zeitweilig) Mittel der NS-Propaganda als angebliches 'Altersghetto'."
-    },
-    "Treblinka": {
-        "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Treblinka",
-        "short": "Das Vernichtungslager Treblinka befand sich nordöstlich von Warschau. Die Gesamtzahl der dort zwischen 22.7.1942 und dem 21.8.1943 ermordeten Menschen liegt deutlich über 700.000 und wird auf über 1 Million Menschen aus ganz Europa geschätzt."
-    },
-    "Westerbork": {
-        "url": "https://de.wikipedia.org/wiki/Durchgangslager_Westerbork",
-        "short": "Das Durchgangslager Westerbork war ein in den Niederlanden eingerichtetes zentrales KZ-Sammellager für das Deportieren niederländischer und sich in den Niederlanden aufhaltender deutscher Juden in andere Konzentrations- und Vernichtungslager. In den Niederlanden ist die Bezeichnung Kamp W. bzw. Concentratiekamp W. verbreitet."
-    },
-    "Zamosc": {
-        "url": "https://de.wikipedia.org/wiki/Zamość#Geschichte",
-        "short": "Zamość ist im südöstlichen Teil Polens, rund 240 km südöstlich der Hauptstadt Warszawa und 110 km nordwestlich der ukrainischen Stadt Lwiw gelegene Stadt. Fast die gesamte jüdische Bevölkerung kam in der Zeit des Nationalsozialismus in Ghettos (Ghetto Zamość), Vernichtungslagern oder durch Erschießungen um. Viele starben auch durch Hunger oder Krankheiten, denn die Zustände in den Ghettos waren unmenschlich."
-    },
 
-    // Personen
-
-    "Felix Hausdorff": {
-        "url": "https://de.wikipedia.org/wiki/Felix_Hausdorff",
-        "short": "Felix Hausdorff (geb. 8.11.1868 in Breslau; Freitod 26.1.1942 in Bonn) war ein deutscher Mathematiker. Er gilt als Mitbegründer der allgemeinen Topologie und lieferte wesentliche Beiträge zur allgemeinen und deskriptiven Mengenlehre, zur Maßtheorie, Funktionalanalysis und Algebra. Neben seinem Beruf wirkte er unter dem Pseudonym Paul Mongré auch als philosophischer Schriftsteller und Literat. Nachdem er, seine Frau und die bei ihnen lebende Schwester seiner Frau, Edith Pappenheim, im Januar 1942 den Befehl erhalten hatten, in das Endenicher Lager überzusiedeln, nahmen sie gemeinsam eine Überdosis des Schlafmittels Veronal."
-    },
-    "Joseph Roth": {
-        "url": "https://de.wikipedia.org/wiki/Joseph_Roth_(Politiker)",
-        "short": "Joseph Roth (geb. 30.1.1896 in Köln; gest. 22.1.1945 in Friesdorf) war deutscher Volksschullehrer und Politiker der Zentrumspartei. Er war 1. Vorsitzender des Zentrums in Bad Godesberg und Kreistagsmitglied des Kreises Bonn-Land."
-    }
-};
-
-function bezirkName(bezirkId) {
-    return ["Bonn", "Bad Godesberg", "Beuel", "Hardtberg"][bezirkId - 1];
+function bezirkName(bezirkId, bezirksName) {
+    return bezirksName[bezirkId - 1];
 }
 
-function ortsteilName(ortsteilId) {
-    return [
-        "Alt-Godesberg",
-        "Auerberg",
-        "Beuel-Mitte",
-        "Beuel-Ost",
-        "Bonn-Castell",
-        "Bonn-Zentrum",
-        "Brüser Berg",
-        "Buschdorf",
-        "Dottendorf",
-        "Dransdorf",
-        "Duisdorf",
-        "Endenich",
-        "Friesdorf",
-        "Geislar",
-        "Godesberg-Villenviertel",
-        "Godesberg-Nord",
-        "Graurheindorf",
-        "Gronau",
-        "Hardthöhe",
-        "Heiderhof",
-        "Hochkreuz",
-        "Hoholz",
-        "Holtorf",
-        "Holzlar",
-        "Ippendorf",
-        "Kessenich",
-        "Küdinghoven",
-        "Lannesdorf",
-        "Lengdorf",
-        "Lessenich / Meßdorf",
-        "Limperich",
-        "Mehlem",
-        "Muffendorf",
-        "Nordstadt",
-        "Oberkassel",
-        "Pennenfeld",
-        "Plittersdorf",
-        "Poppelsdorf",
-        "Pützchen / Bechlinghoven",
-        "Ramersdorf",
-        "Röttgen",
-        "Rüngsdorf",
-        "Schwarzrheindorf / Vilich-Rheindorf",
-        "Schweinheim",
-        "Südstadt",
-        "Tannenbusch",
-        "Ückesdorf",
-        "Venusberg",
-        "Vilich",
-        "Vilich-Müldorf",
-        "Weststadt"
-    ][ortsteilId - 1];
+function ortsteilName(ortsteilId, ortsteile) {
+    return ortsteile[ortsteilId - 1].name;
 }
 
-function stolpersteinAnzahl(ortsteilId) {
-    return [
-        29, // Alt-Godesberg
-        0,  // Auerberg
-        53, // Beuel-Mitte
-        8,  // Beuel-Ost
-        1,  // Bonn-Castell
-        27, // Bonn-Zentrum
-        0,  // Brüser Berg
-        0,  // Buschdorf
-        0,  // Dottendorf
-        0,  // Dransdorf
-        5,  // Duisdorf
-        16, // Endenich
-        2,  // Friesdorf
-        0,  // Geislar
-        11, // Godesberg-Villenviertel
-        0,  // Godesberg-Nord
-        0,  // Graurheindorf
-        4,  // Gronau
-        0,  // Hardthöhe
-        0,  // Heiderhof
-        0,  // Hochkreuz
-        0,  // Hoholz
-        0,  // Holtorf
-        1,  // Holzlar
-        0,  // Ippendorf
-        16, // Kessenich
-        0,  // Küdinghoven
-        0,  // Lannesdorf
-        0,  // Lengdorf
-        0,  // Lessenich/Meßdorf
-        1,  // Limperich
-        4,  // Mehlem
-        1,  // Muffendorf
-        29, // Nordstadt
-        1,  // Oberkassel
-        0,  // Pennenfeld
-        0,  // Plittersdorf
-        2,  // Poppelsdorf
-        0,  // Pützchen/Bechlinghoven
-        0,  // Ramersdorf
-        0,  // Röttgen
-        4,  // Rüngsdorf
-        0,  // Schwarzrheindorf/Vilich-Rheindorf
-        0,  // Schweinheim
-        27, // Südstadt
-        0,  // Tannenbusch
-        0,  // Ückesdorf
-        0,  // Venusberg
-        5,  // Vilich
-        0,  // Vilich-Müldorf
-        28  // Weststadt
-    ][ortsteilId - 1];
+function stolpersteinAnzahl(ortsteilId, ortsteile) {
+    return ortsteile[ortsteilId - 1].count || 0;
 }
 
-function link(text) {
+function link(text, tokens) {
     var tokenized = [text];
     var position;
     var index;
@@ -368,7 +131,7 @@ function addBonnCityLimits(map) {
                 style: function (feature) {
                     return {
                         weight: 5,
-                        color: '#000',
+                        color: '#f00',
                         opacity: 0.4,
                         fillColor: '#00f',
                         fillOpacity: 0.08
@@ -402,18 +165,17 @@ function addBonnMunicipalityLimits(map) {
     });
 }
 
-function configureBonnDistrictPopups(feature, layer, status) {
+function configureBonnDistrictPopups(feature, layer, status, ortsteile, bezirksnamen) {
 
     var description = [];
-    var popup;
     if (feature.properties) {
         if (feature.properties.ortsteil) {
-            description.push('<strong>' + ortsteilName(feature.properties.ortsteil) + '</strong>');
+            description.push('<strong>' + ortsteilName(feature.properties.ortsteil, ortsteile) + '</strong>');
         }
         if (feature.properties.bezirk) {
-            description.push('Stadtbezirk ' + bezirkName(feature.properties.bezirk));
+            description.push('Stadtbezirk ' + bezirkName(feature.properties.bezirk, bezirksnamen));
         }
-        feature.properties.stolpersteine = stolpersteinAnzahl(feature.properties.ortsteil);
+        feature.properties.stolpersteine = stolpersteinAnzahl(feature.properties.ortsteil, ortsteile);
         description.push(
             '<strong>' + inGerman(feature.properties.stolpersteine) + '</strong>' +
             ' Stolperstein' +
@@ -447,7 +209,7 @@ function configureBonnDistrictPopups(feature, layer, status) {
     }
 }
 
-function addBonnDistricts(map, status) {
+function addBonnDistricts(map, status, ortsteile, bezirksnamen) {
     $.ajax({
         dataType: 'json',
         url: 'files/Ortsteile_Bonn.geojson',
@@ -463,7 +225,7 @@ function addBonnDistricts(map, status) {
                     };
                 },
                 onEachFeature: function (feature, layer) {
-                    configureBonnDistrictPopups(feature, layer, status);
+                    configureBonnDistrictPopups(feature, layer, status, ortsteile, bezirksnamen);
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
                 }
@@ -472,7 +234,7 @@ function addBonnDistricts(map, status) {
     });
 }
 
-function makeGeoJsonLayerFromOsmJson(osmJsonData, status) {
+function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
     var grayIcon = L.icon({
         iconUrl: 'images/marker-gray-icon.png',
         shadowUrl: 'images/marker-shadow.png',
@@ -532,7 +294,7 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, status) {
                         description.push('<tr><td>' + ort + '</td></tr>');
                     }
                     if (tags['memorial:text']) {
-                        description.push('<tr><td>' + link(tags['memorial:text']) + '</td></tr>');
+                        description.push('<tr><td>' + link(tags['memorial:text'], tokens) + '</td></tr>');
                     }
                     description.push('</table>');
                     if (tags.image) {
@@ -580,15 +342,14 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, status) {
     );
 }
 
-function addStolpersteins(map, status) {
+function addStolpersteins(map, status, tokens) {
     var markers = L.markerClusterGroup({
         maxClusterRadius: 50
     });
 
-    var popup = L.popup(
-    ).setLatLng(
-        [50.7085234, 7.115605]
-    ).setContent(
+    var popup = L.popup()
+        .setLatLng([50.7085234, 7.115605])
+        .setContent(
         '<h3 style="text-align:center;">Einen Moment bitte</h3>' +
         '<p style="text-align:center;">Die aktuellen Stolperstein-Informationen werden bei OpenStreetMap abgefragt.</p>'
     ).openOn(map);
@@ -603,11 +364,10 @@ function addStolpersteins(map, status) {
         'relation["memorial:type"="stolperstein"](area.area);' +
         ');' +
         'out meta;>;out meta qt;',
-        //url: './files/stolpersteine.geojson',
         success: function (jsonData) {
             map.closePopup(popup);
 
-            var geoJsonLayer = makeGeoJsonLayerFromOsmJson(jsonData, status);
+            var geoJsonLayer = makeGeoJsonLayerFromOsmJson(jsonData, tokens, status);
             markers.addLayer(geoJsonLayer);
             map.addLayer(markers);
         },
@@ -619,6 +379,9 @@ function addStolpersteins(map, status) {
 
 $(document).ready(
     function () {
+        var tokens;
+        var bezirksnamen;
+        var ortsteile;
         var map = L.map(
             'map',
             {
@@ -633,9 +396,21 @@ $(document).ready(
         var status = L.control.Status();
         status.addTo(map);
         status.hide();
-        addBonnCityLimits(map);
-        addBonnMunicipalityLimits(map);
-        addBonnDistricts(map, status);
-        addStolpersteins(map, status);
+
+        $.ajax({
+            dataType: 'json',
+            url: 'files/Zusatzdaten.json',
+            success: function (jsonData) {
+                tokens = jsonData.tokens || {};
+                bezirksnamen = jsonData.bezirksnamen;
+                ortsteile = jsonData.ortsteile;
+                addBonnCityLimits(map);
+                addBonnMunicipalityLimits(map);
+                addBonnDistricts(map, status, ortsteile, bezirksnamen);
+                addStolpersteins(map, status, tokens);
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
     }
 );
