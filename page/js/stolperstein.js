@@ -32,12 +32,24 @@ official policies, either expressed or implied, of the FreeBSD
 Project.
 */
 
-/* The information encoded in 'orte' und 'personen'
+/* Note that Most of the information in Zusatzdaten.json
  * is adapted from Wikipedia and hence subject to the
  *     Creative Commons Attribution-ShareAlike 3.0 Unported
  * license.
  */
 
+function storageAvailable(type) {
+    try {
+        var storage = window[type];
+        var x = '__storage_test__';
+        storage.setItem(x, x);
+        storage.removeItem(x);
+        return true;
+    }
+    catch(e) {
+        return false;
+    }
+}
 
 function bezirkName(bezirkId, bezirksName) {
     return bezirksName[bezirkId - 1];
@@ -123,46 +135,86 @@ function addBaseLayers(map) {
 }
 
 function addBonnCityLimits(map) {
-    $.ajax({
-        dataType: 'json',
-        url: 'files/Stadt_Bonn.geojson',
-        success: function (jsonData) {
-            L.geoJson(jsonData, {
-                style: function (feature) {
-                    return {
-                        weight: 5,
-                        color: '#f00',
-                        opacity: 0.4,
-                        fillColor: '#00f',
-                        fillOpacity: 0.08
-                    };
-                }
-            }).addTo(map);
-        },
-        error: function(XMLHttpRequest, textStatus, errorThrown) {
+    var fetchingRequired = true;
+    var fetchingFrequency = 1440; // A day (1440 minutes)
+    var currentTimestamp;
+
+    function process(cityLimitJsonData) {
+        localStorage.setItem('cityLimitLastFetched', currentTimestamp);
+        localStorage.setItem('cityLimitData', JSON.stringify(cityLimitJsonData));
+        L.geoJson(cityLimitJsonData, {
+            style: function (feature) {
+                return {
+                    weight: 5,
+                    color: '#f00',
+                    opacity: 0.4,
+                    fillColor: '#00f',
+                    fillOpacity: 0.08
+                };
+            }
+        }).addTo(map);
+    }
+
+    if (storageAvailable('localStorage')) {
+        var oldTimestamp = localStorage.getItem('cityLimitLastFetched');
+        currentTimestamp = (Math.floor((new Date()).getTime() / 60000 / fetchingFrequency)).toString();
+
+        if (localStorage.getItem('cityLimitData') && oldTimestamp === currentTimestamp) {
+            fetchingRequired = false;
         }
-    });
+    }
+    if (fetchingRequired) {
+        $.ajax({
+            dataType: 'json',
+            url: 'files/Stadt_Bonn.geojson',
+            success: process,
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
+    } else {
+        process(JSON.parse(localStorage.getItem('cityLimitData'))) ;
+    }
 }
 
 function addBonnMunicipalityLimits(map) {
-    $.ajax({
-        dataType: 'json',
-        url: 'files/Stadtbezirke_Bonn.geojson',
-        success: function (jsonData) {
-            L.geoJson(jsonData, {
-                style: function (feature) {
-                    return {
-                        weight: 5,
-                        color: '#00f',
-                        opacity: 0.4,
-                        fillOpacity: 0
-                    };
-                }
-            }).addTo(map);
-        },
-        error: function(XMLHttpRequest, textStatus, errorThrown) {
+    var fetchingRequired = true;
+    var fetchingFrequency = 1440; // A day (1440 minutes)
+    var currentTimestamp;
+
+    function process(municipalityLimitsJsonData) {
+        localStorage.setItem('municipalityLimitsLastFetched', currentTimestamp);
+        localStorage.setItem('municipalityLimitsData', JSON.stringify(municipalityLimitsJsonData));
+        L.geoJson(municipalityLimitsJsonData, {
+            style: function (feature) {
+                return {
+                    weight: 5,
+                    color: '#00f',
+                    opacity: 0.4,
+                    fillOpacity: 0
+                };
+            }
+        }).addTo(map);
+    }
+
+    if (storageAvailable('localStorage')) {
+        var oldTimestamp = localStorage.getItem('municipalityLimitsLastFetched');
+        currentTimestamp = (Math.floor((new Date()).getTime() / 60000 / fetchingFrequency)).toString();
+
+        if (localStorage.getItem('municipalityLimitsData') && oldTimestamp === currentTimestamp) {
+            fetchingRequired = false;
         }
-    });
+    }
+    if (fetchingRequired) {
+        $.ajax({
+            dataType: 'json',
+            url: 'files/Stadtbezirke_Bonn.geojson',
+            success: process,
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+            }
+        });
+    } else {
+        process(JSON.parse(localStorage.getItem('municipalityLimitsData'))) ;
+    }
 }
 
 function configureBonnDistrictPopups(feature, layer, status, ortsteile, bezirksnamen) {
@@ -210,28 +262,47 @@ function configureBonnDistrictPopups(feature, layer, status, ortsteile, bezirksn
 }
 
 function addBonnDistricts(map, status, ortsteile, bezirksnamen) {
-    $.ajax({
-        dataType: 'json',
-        url: 'files/Ortsteile_Bonn.geojson',
-        success: function (jsonData) {
+    var fetchingRequired = true;
+    var fetchingFrequency = 1440; // A day (1440 minutes)
+    var currentTimestamp;
 
-            L.geoJson(jsonData, {
-                style: function (feature) {
-                    return {
-                        weight: 1,
-                        color: '#00f',
-                        opacity: 1,
-                        fillOpacity: 0
-                    };
-                },
-                onEachFeature: function (feature, layer) {
-                    configureBonnDistrictPopups(feature, layer, status, ortsteile, bezirksnamen);
-                },
-                error: function(XMLHttpRequest, textStatus, errorThrown) {
-                }
-            }).addTo(map);
+    function process(districtLimitsJsonData) {
+        localStorage.setItem('districtLimitsLastFetched', currentTimestamp);
+        localStorage.setItem('districtLimitsData', JSON.stringify(districtLimitsJsonData));
+        L.geoJson(districtLimitsJsonData, {
+            style: function (feature) {
+                return {
+                    weight: 1,
+                    color: '#00f',
+                    opacity: 1,
+                    fillOpacity: 0
+                };
+            },
+            onEachFeature: function (feature, layer) {
+                configureBonnDistrictPopups(feature, layer, status, ortsteile, bezirksnamen);
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+            }
+        }).addTo(map);
+    }
+
+    if (storageAvailable('localStorage')) {
+        var oldTimestamp = localStorage.getItem('districtLimitsLastFetched');
+        currentTimestamp = (Math.floor((new Date()).getTime() / 60000 / fetchingFrequency)).toString();
+
+        if (localStorage.getItem('districtLimitsData') && oldTimestamp === currentTimestamp) {
+            fetchingRequired = false;
         }
-    });
+    }
+    if (fetchingRequired) {
+        $.ajax({
+            dataType: 'json',
+            url: 'files/Ortsteile_Bonn.geojson',
+            success: process
+        });
+    } else {
+        process(JSON.parse(localStorage.getItem('districtLimitsData'))) ;
+    }
 }
 
 function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
@@ -306,7 +377,7 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
                                 'https://upload.wikimedia.org/wikipedia/commons',
                                 'https://upload.wikimedia.org/wikipedia/commons/thumb'
                             ) +
-                            '/240px-' +
+                            '/300px-' +
                             tags.image.split('/')[tags.image.split('/').length - 1] +
                             '" /></a>'
                         );
@@ -343,45 +414,76 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
 }
 
 function addStolpersteins(map, status, tokens) {
+    var fetchingRequired = true;
+    var fetchingFrequency = 30; // half an hour
+    var currentTimestamp;
+
     var markers = L.markerClusterGroup({
         maxClusterRadius: 50
     });
 
-    var popup = L.popup()
-        .setLatLng([50.7085234, 7.115605])
-        .setContent(
-        '<h3 style="text-align:center;">Einen Moment bitte</h3>' +
-        '<p style="text-align:center;">Die aktuellen Stolperstein-Informationen werden bei OpenStreetMap abgefragt.</p>'
-    ).openOn(map);
-    $.ajax({
-        dataType: 'json',
-        url: 'https://overpass-api.de/api/interpreter?' +
-        'data=[out:json][timeout:25];' +
-        'area(3600062508)->.area;' +
-        '(' +
-        'node["memorial:type"="stolperstein"](area.area);' +
-        'way["memorial:type"="stolperstein"](area.area);' +
-        'relation["memorial:type"="stolperstein"](area.area);' +
-        ');' +
-        'out meta;>;out meta qt;',
-        success: function (jsonData) {
-            map.closePopup(popup);
+    function process(stolpersteinJsonData) {
+        localStorage.setItem('stolpersteinLastFetched', currentTimestamp);
+        localStorage.setItem('stolpersteinData', JSON.stringify(stolpersteinJsonData));
+        map.closePopup(popup);
 
-            var geoJsonLayer = makeGeoJsonLayerFromOsmJson(jsonData, tokens, status);
-            markers.addLayer(geoJsonLayer);
-            map.addLayer(markers);
-        },
-        error: function(XMLHttpRequest, textStatus, errorThrown) {
-            popup.setContent('<h3 style="text-align:center;">Leider konnten die Daten der Stolpersteine nicht geladen werden.</h3>');
+        var geoJsonLayer = makeGeoJsonLayerFromOsmJson(stolpersteinJsonData, tokens, status);
+        markers.addLayer(geoJsonLayer);
+        map.addLayer(markers);
+    }
+
+    if (storageAvailable('localStorage')) {
+        var oldTimestamp = localStorage.getItem('stolpersteinLastFetched');
+        currentTimestamp = (Math.floor((new Date()).getTime() / 60000 / fetchingFrequency)).toString();
+
+        if (localStorage.getItem('stolpersteinData') && oldTimestamp === currentTimestamp) {
+            fetchingRequired = false;
         }
-    });
+    }
+    if (fetchingRequired) {
+        var popup = L.popup()
+            .setLatLng([50.7085234, 7.115605])
+            .setContent(
+                '<h3 style="text-align:center;">Einen Moment bitte</h3>' +
+                '<p style="text-align:center;">Die aktuellen Stolperstein-Informationen werden eingelesen.</p>'
+            ).openOn(map);
+        $.ajax({
+            dataType: 'json',
+            url: 'https://overpass-api.de/api/interpreter?' +
+            'data=[out:json][timeout:25];' +
+            'area(3600062508)->.area;' +
+            '(' +
+            'node["memorial:type"="stolperstein"](area.area);' +
+            'way["memorial:type"="stolperstein"](area.area);' +
+            'relation["memorial:type"="stolperstein"](area.area);' +
+            ');' +
+            'out meta;>;out meta qt;',
+            success: process,
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                popup.setContent('<h3 style="text-align:center;">Leider konnten die Daten der Stolpersteine nicht geladen werden.</h3>');
+            }
+        });
+    } else {
+        process(JSON.parse(localStorage.getItem('stolpersteinData'))) ;
+    }
 }
 
 $(document).ready(
     function () {
-        var tokens;
-        var bezirksnamen;
-        var ortsteile;
+        var fetchingRequired = true;
+        var fetchingFrequency = 30; // half an hour
+        var currentTimestamp;
+
+        function process(additionalDataJsonData) {
+            localStorage.setItem('additionalDataLastFetched', currentTimestamp);
+            localStorage.setItem('additionalData', JSON.stringify(additionalDataJsonData));
+
+            addBonnCityLimits(map);
+            addBonnMunicipalityLimits(map);
+            addBonnDistricts(map, status, additionalDataJsonData.ortsteile, additionalDataJsonData.bezirksnamen);
+            addStolpersteins(map, status, additionalDataJsonData.tokens || {});
+        }
+
         var map = L.map(
             'map',
             {
@@ -397,20 +499,25 @@ $(document).ready(
         status.addTo(map);
         status.hide();
 
-        $.ajax({
-            dataType: 'json',
-            url: 'files/Zusatzdaten.json',
-            success: function (jsonData) {
-                tokens = jsonData.tokens || {};
-                bezirksnamen = jsonData.bezirksnamen;
-                ortsteile = jsonData.ortsteile;
-                addBonnCityLimits(map);
-                addBonnMunicipalityLimits(map);
-                addBonnDistricts(map, status, ortsteile, bezirksnamen);
-                addStolpersteins(map, status, tokens);
-            },
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
+        if (storageAvailable('localStorage')) {
+            var oldTimestamp = localStorage.getItem('additionalDataLastFetched');
+            currentTimestamp = (Math.floor((new Date()).getTime() / 60000 / fetchingFrequency)).toString();
+
+            if (localStorage.getItem('additionalData') && oldTimestamp === currentTimestamp) {
+                fetchingRequired = false;
             }
-        });
+        }
+
+        if (fetchingRequired) {
+            $.ajax({
+                dataType: 'json',
+                url: 'files/Zusatzdaten.json',
+                success: process,
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                }
+            });
+        } else {
+            process(JSON.parse(localStorage.getItem('additionalData'))) ;
+        }
     }
 );
