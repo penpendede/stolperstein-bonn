@@ -518,6 +518,18 @@ $(document).ready(
         var status = L.control.Status();
         status.addTo(map);
         status.hide();
+        map.addControl( new L.Control.Gps(
+            {
+                style: {
+                    radius: 5,
+                    weight: 2,
+                    color: '#02c',
+                    opacity: 1,
+                    fillColor: '#32f',
+                    fillOpacity: 0.5
+                }
+            }
+        ) );
 
         if (storageAvailable('localStorage')) {
             var oldTimestamp = localStorage.getItem('additionalDataLastFetched');
