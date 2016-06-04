@@ -113,8 +113,8 @@ function inGerman(val) {
     }
 }
 
-function addBaseLayers(map) {
-    L.tileLayer(
+function addLayers(map) {
+    new L.tileLayer(
         'https://{s}.tile.openstreetmap.se/hydda/base/{z}/{x}/{y}.png',
         {
             attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> ' +
@@ -123,12 +123,32 @@ function addBaseLayers(map) {
         }
     ).addTo(map);
 
-    L.tileLayer(
+    new L.tileLayer(
         'https://{s}.tile.openstreetmap.se/hydda/roads_and_labels/{z}/{x}/{y}.png',
         {
             attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> ' +
             '&mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
             useCache: true
+        }
+    ).addTo(map);
+
+    new L.Control.MiniMap(new L.TileLayer(
+        'http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png',
+        {
+            maxZoom: 18,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            useCache: true
+        }
+    ),
+        {
+            zoomLevelFixed: 9,
+            width: 240,
+            height: 180,
+            aimingRectOptions: {
+                color: '#008',
+                weight: 3
+            },
+            toggleDisplay: true
         }
     ).addTo(map);
     return map;
@@ -494,7 +514,7 @@ $(document).ready(
                 fullscreenControl: true
             }
         );
-        addBaseLayers(map);
+        addLayers(map);
         var status = L.control.Status();
         status.addTo(map);
         status.hide();

@@ -20,6 +20,10 @@ cp ./node_modules/leaflet.markercluster/dist/MarkerCluster*.css page/css
 cp ./node_modules/leaflet-loading/src/Control.Loading.css page/css
 cp ./node_modules/leaflet-loading/src/Control.Loading.js page/js
 
+cp ./node_modules/leaflet-minimap/dist/Control.MiniMap.min.css page/css
+cp ./node_modules/leaflet-minimap/dist/Control.MiniMap.min.js page/js
+cp ./node_modules/leaflet-minimap/dist/images/toggle.* page/images
+
 #wget -qO- 'http://stadtplan.bonn.de/geojson?Thema=21247&koordsys=4326' |\
 #node compactor.js >\
 #page/files/Ortsteile_Bonn.geojson
@@ -35,3 +39,6 @@ page/files/Stadtbezirke_Bonn.geojson
 wget -qO- 'http://stadtplan.bonn.de/geojson?Thema=21248&koordsys=4326' |\
 sed -e 's/\([0-9]\{1,\}\.[0-9]\{1,6\}\)[0-9]\{1,\}/\1/g' >\
 page/files/Stadt_Bonn.geojson
+
+
+

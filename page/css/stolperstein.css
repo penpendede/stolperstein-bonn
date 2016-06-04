@@ -61,3 +61,6 @@ tr:first-child th {
 	background: #ff0;
 	color: #00f;
 }
+.leaflet-control-minimap-toggle-display {
+	background-image: url("../images/toggle.svg");
+}
