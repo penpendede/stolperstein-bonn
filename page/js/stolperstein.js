@@ -133,9 +133,9 @@ function addLayers(map) {
     ).addTo(map);
 
     new L.Control.MiniMap(new L.TileLayer(
-        'http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png',
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         {
-            maxZoom: 18,
+            maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
             useCache: true
         }
