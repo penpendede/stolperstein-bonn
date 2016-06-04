@@ -7,13 +7,11 @@ Format digital aufzubereiten. Auf diese Weise sollen die Schicksale, für
 die diese Stolpersteine stehen, auch in der der virtuellen Datenwelt
 präsent werden. 
 
-Die Darstellung hat aktuell zwei Arten von Markern, graue und blaue. Die
-blauen markieren Stolpersteine, deren Fotos bereits online sind, die
-grauen solche, bei denen nur Textinformationen zur Verfügung stehen
-(aktuell sollten keine grauen mehr vorkommen).
-
-Über die Hälfte der Stolpersteine ist bereits fotografiert, allein das
-Hochladen fehlt bei diesen noch.
+Die Darstellung hat zwei Arten von Markern, graue und blaue. Die blauen
+markieren Stolpersteine, deren Fotos online sind, die grauen solche, bei
+denen nur Textinformationen zur Verfügung stehen (aktuell sollten nur
+blaue vorkommen, da es von allen verlegten Stolpersteinen ein Foto
+gibt).
 
 ![Wie die Darstellung aussieht](files/screenshot.png)
 
