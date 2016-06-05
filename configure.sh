@@ -28,9 +28,7 @@ cp ./node_modules/leaflet-gps/dist/leaflet-gps.min.css page/css
 cp ./node_modules/leaflet-gps/dist/leaflet-gps.min.js page/js
 cp ./node_modules/leaflet-gps/images/gps-icon.png page/images
 
-#wget -qO- 'http://stadtplan.bonn.de/geojson?Thema=21247&koordsys=4326' |\
-#node compactor.js >\
-#page/files/Ortsteile_Bonn.geojson
+cp ./node_modules/osmtogeojson/osmtogeojson.js page/js
 
 wget -qO- 'http://stadtplan.bonn.de/geojson?Thema=21247&koordsys=4326' |\
 sed -e 's/\([0-9]\{1,\}\.[0-9]\{1,6\}\)[0-9]\{1,\}/\1/g' >\

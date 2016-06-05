@@ -18,6 +18,7 @@
     "leaflet-loading": "^0.1.20",
     "leaflet-minimap": "^3.3.1",
     "leaflet.fullscreen": "^1.4.2",
-    "leaflet.markercluster": "^0.5.0"
+    "leaflet.markercluster": "^0.5.0",
+    "osmtogeojson": "^2.2.11"
   }
 }

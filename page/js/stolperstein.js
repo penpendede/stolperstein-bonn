@@ -114,43 +114,32 @@ function inGerman(val) {
 }
 
 function addLayers(map) {
-    new L.tileLayer(
-        'https://{s}.tile.openstreetmap.se/hydda/base/{z}/{x}/{y}.png',
-        {
-            attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> ' +
-            '&mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-            useCache: true
-        }
-    ).addTo(map);
+    new L.tileLayer('https://{s}.tile.openstreetmap.se/hydda/base/{z}/{x}/{y}.png', {
+        attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> ' +
+        '&mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        useCache: true
+    }).addTo(map);
 
-    new L.tileLayer(
-        'https://{s}.tile.openstreetmap.se/hydda/roads_and_labels/{z}/{x}/{y}.png',
-        {
-            attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> ' +
-            '&mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-            useCache: true
-        }
-    ).addTo(map);
+    new L.tileLayer('https://{s}.tile.openstreetmap.se/hydda/roads_and_labels/{z}/{x}/{y}.png', {
+        attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> ' +
+        '&mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        useCache: true
+    }).addTo(map);
 
-    new L.Control.MiniMap(new L.TileLayer(
-        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        {
+    new L.Control.MiniMap(new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
             useCache: true
-        }
-    ),
-        {
-            zoomLevelFixed: 9,
-            width: 240,
-            height: 180,
-            aimingRectOptions: {
-                color: '#008',
-                weight: 3
-            },
-            toggleDisplay: true
-        }
-    ).addTo(map);
+        }), {
+        zoomLevelFixed: 9,
+        width: 240,
+        height: 180,
+        aimingRectOptions: {
+            color: '#008',
+            weight: 3
+        },
+        toggleDisplay: true
+    }).addTo(map);
     return map;
 }
 
@@ -336,9 +325,7 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
         shadowSize: [41, 41],
         shadowAnchor: [12, 41]
     });
-    return L.geoJson(
-        osmtogeojson(osmJsonData),
-        {
+    return L.geoJson(osmtogeojson(osmJsonData), {
             pointToLayer: function (feature, latlng) {
                 if (!feature.properties.tags.image) {
                     return L.marker(latlng, {icon: grayIcon});
@@ -379,7 +366,9 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
                             geborenGestorben = "gest. " + tags['person:date_of_death'];
                         }
                     }
-                    description.push('<tr><th>' + tags.name + ( geborenGestorben ? '<br>(' + geborenGestorben + ')' : '') + '</th></tr>');
+                    description.push('<tr><th>' + tags.name + ( geborenGestorben
+                            ? '<br>(' + geborenGestorben + ')'
+                            : '') + '</th></tr>');
 
                     if (ort) {
                         description.push('<tr><td>' + ort + '</td></tr>');
@@ -405,12 +394,9 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
                         console.log(tags.name);
                     }
 
-                    layer.bindPopup(
-                        description.join(''),
-                        {
-                            'autoPan': false
-                        }
-                    );
+                    layer.bindPopup(description.join(''), {
+                        'autoPan': false
+                    });
                     layer.on('mouseover', function (e) {
                         status.show();
                         status.display('<strong>Klicken Sie bitte den Marker an.</strong>');
@@ -518,18 +504,16 @@ $(document).ready(
         var status = L.control.Status();
         status.addTo(map);
         status.hide();
-        map.addControl( new L.Control.Gps(
-            {
-                style: {
-                    radius: 5,
-                    weight: 2,
-                    color: '#02c',
-                    opacity: 1,
-                    fillColor: '#32f',
-                    fillOpacity: 0.5
-                }
+        map.addControl(new L.Control.Gps({
+            style: {
+                radius: 5,
+                weight: 2,
+                color: '#02c',
+                opacity: 1,
+                fillColor: '#32f',
+                fillOpacity: 0.5
             }
-        ) );
+        }));
 
         if (storageAvailable('localStorage')) {
             var oldTimestamp = localStorage.getItem('additionalDataLastFetched');
