@@ -1,4 +1,5 @@
 /*jslint browser:true, unparam:true*/
+/*jslint browser:true, unparam:true*/
 /*global $, jQuery, L, osmtogeojson, console*/
 
 /*
@@ -87,7 +88,7 @@ function link(text, tokens) {
     $.each(tokens, function (key, value) {
         for (index = 0; index < tokenized.length; index++) {
             if (tokenized[index] === key) {
-                tokenized[index] = "<a href=\"" + value.url + "\" title=\"" + value.short + "\" target=\"_blank\">" + key + "</a>";
+                tokenized[index] = '<a href="' + value.url + '" title="' + value.short + '" target="_blank">' + key + '</a>';
             }
         }
     });
@@ -115,31 +116,36 @@ function inGerman(val) {
 
 function addLayers(map) {
     new L.tileLayer('https://{s}.tile.openstreetmap.se/hydda/base/{z}/{x}/{y}.png', {
-        attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> ' +
+        'attribution': 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> ' +
         '&mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-        useCache: true
+        'useCache': true
     }).addTo(map);
 
     new L.tileLayer('https://{s}.tile.openstreetmap.se/hydda/roads_and_labels/{z}/{x}/{y}.png', {
-        attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> ' +
+        'attribution': 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> ' +
         '&mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-        useCache: true
+        'useCache': true
     }).addTo(map);
 
-    new L.Control.MiniMap(new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-            useCache: true
+    var mapWidth = $('#map').width();
+    var mapHeight = $('#map').height();
+
+    if (mapWidth >= 250 && mapHeight >= 250) {
+        new L.Control.MiniMap(new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            'maxZoom': 19,
+            'attribution': '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            'useCache': true
         }), {
-        zoomLevelFixed: 9,
-        width: 240,
-        height: 180,
-        aimingRectOptions: {
-            color: '#008',
-            weight: 3
-        },
-        toggleDisplay: true
-    }).addTo(map);
+            'zoomLevelFixed': 9,
+            'width': mapWidth / 5,
+            'height': mapHeight / 5,
+            'aimingRectOptions': {
+                'color': '#008',
+                'weight': 3
+            },
+            'toggleDisplay': true
+        }).addTo(map);
+    }
     return map;
 }
 
@@ -154,11 +160,11 @@ function addBonnCityLimits(map) {
         L.geoJson(cityLimitJsonData, {
             style: function (feature) {
                 return {
-                    weight: 5,
-                    color: '#f00',
-                    opacity: 0.4,
-                    fillColor: '#00f',
-                    fillOpacity: 0.08
+                    'weight': 5,
+                    'color': '#f00',
+                    'opacity': 0.4,
+                    'fillColor': '#00f',
+                    'fillOpacity': 0.08
                 };
             }
         }).addTo(map);
@@ -174,10 +180,10 @@ function addBonnCityLimits(map) {
     }
     if (fetchingRequired) {
         $.ajax({
-            dataType: 'json',
-            url: 'files/Stadt_Bonn.geojson',
-            success: process,
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
+            'dataType': 'json',
+            'url': 'files/Stadt_Bonn.geojson',
+            'success': process,
+            'error': function (XMLHttpRequest, textStatus, errorThrown) {
             }
         });
     } else {
@@ -196,10 +202,10 @@ function addBonnMunicipalityLimits(map) {
         L.geoJson(municipalityLimitsJsonData, {
             style: function (feature) {
                 return {
-                    weight: 5,
-                    color: '#00f',
-                    opacity: 0.4,
-                    fillOpacity: 0
+                    'weight': 5,
+                    'color': '#00f',
+                    'opacity': 0.4,
+                    'fillOpacity': 0
                 };
             }
         }).addTo(map);
@@ -215,10 +221,10 @@ function addBonnMunicipalityLimits(map) {
     }
     if (fetchingRequired) {
         $.ajax({
-            dataType: 'json',
-            url: 'files/Stadtbezirke_Bonn.geojson',
-            success: process,
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
+            'dataType': 'json',
+            'url': 'files/Stadtbezirke_Bonn.geojson',
+            'success': process,
+            'error': function(XMLHttpRequest, textStatus, errorThrown) {
             }
         });
     } else {
@@ -247,11 +253,11 @@ function configureBonnDistrictPopups(feature, layer, status, ortsteile, bezirksn
             var layer = e.target;
 
             layer.setStyle({
-                weight: 1,
-                color: '#00f',
-                opacity: 1,
-                fillColor: '#fff',
-                fillOpacity: 0.2
+                'weight': 1,
+                'color': '#00f',
+                'opacity': 1,
+                'fillColor': '#fff',
+                'fillOpacity': 0.2
             });
             status.show();
             status.display(layer.feature.properties.description);
@@ -260,10 +266,10 @@ function configureBonnDistrictPopups(feature, layer, status, ortsteile, bezirksn
             var layer = e.target;
 
             layer.setStyle({
-                weight: 1,
-                color: '#00f',
-                opacity: 1,
-                fillOpacity: 0
+                'weight': 1,
+                'color': '#00f',
+                'opacity': 1,
+                'fillOpacity': 0
             });
             status.hide();
         });
@@ -281,10 +287,10 @@ function addBonnDistricts(map, status, ortsteile, bezirksnamen) {
         L.geoJson(districtLimitsJsonData, {
             style: function (feature) {
                 return {
-                    weight: 1,
-                    color: '#00f',
-                    opacity: 1,
-                    fillOpacity: 0
+                    'weight': 1,
+                    'color': '#00f',
+                    'opacity': 1,
+                    'fillOpacity': 0
                 };
             },
             onEachFeature: function (feature, layer) {
@@ -305,9 +311,9 @@ function addBonnDistricts(map, status, ortsteile, bezirksnamen) {
     }
     if (fetchingRequired) {
         $.ajax({
-            dataType: 'json',
-            url: 'files/Ortsteile_Bonn.geojson',
-            success: process
+            'dataType': 'json',
+            'url': 'files/Ortsteile_Bonn.geojson',
+            'success': process
         });
     } else {
         process(JSON.parse(localStorage.getItem('districtLimitsData'))) ;
@@ -316,14 +322,14 @@ function addBonnDistricts(map, status, ortsteile, bezirksnamen) {
 
 function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
     var grayIcon = L.icon({
-        iconUrl: 'images/marker-gray-icon.png',
-        shadowUrl: 'images/marker-shadow.png',
+        'iconUrl': 'images/marker-gray-icon.png',
+        'shadowUrl': 'images/marker-shadow.png',
 
-        iconSize: [25, 41],
-        iconAnchor: [12, 41],
-        popupAnchor: [1, -34],
-        shadowSize: [41, 41],
-        shadowAnchor: [12, 41]
+        'iconSize': [25, 41],
+        'iconAnchor': [12, 41],
+        'popupAnchor': [1, -34],
+        'shadowSize': [41, 41],
+        'shadowAnchor': [12, 41]
     });
     return L.geoJson(osmtogeojson(osmJsonData), {
             pointToLayer: function (feature, latlng) {
@@ -357,13 +363,13 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
                         ort = ort + tags['addr:city'];
                     }
                     if (tags['person:date_of_birth']) {
-                        geborenGestorben = "geb. " + tags['person:date_of_birth'];
+                        geborenGestorben = 'geb. ' + tags['person:date_of_birth'];
                     }
                     if (tags['person:date_of_death']) {
                         if (geborenGestorben) {
-                            geborenGestorben += ", gest. " + tags['person:date_of_death'];
+                            geborenGestorben += ', gest. ' + tags['person:date_of_death'];
                         } else {
-                            geborenGestorben = "gest. " + tags['person:date_of_death'];
+                            geborenGestorben = 'gest. ' + tags['person:date_of_death'];
                         }
                     }
                     description.push('<tr><th>' + tags.name + ( geborenGestorben
@@ -421,7 +427,7 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
 
 function addStolpersteins(map, status, tokens) {
     var fetchingRequired = true;
-    var fetchingFrequency = 30; // half an hour
+    var fetchingFrequency = 360; // a quarter of a day
     var currentTimestamp;
 
     var markers = L.markerClusterGroup({
@@ -454,8 +460,8 @@ function addStolpersteins(map, status, tokens) {
                 '<p style="text-align:center;">Die aktuellen Stolperstein-Informationen werden eingelesen.</p>'
             ).openOn(map);
         $.ajax({
-            dataType: 'json',
-            url: 'https://overpass-api.de/api/interpreter?' +
+            'dataType': 'json',
+            'url': 'https://overpass-api.de/api/interpreter?' +
             'data=[out:json][timeout:25];' +
             'area(3600062508)->.area;' +
             '(' +
@@ -464,8 +470,8 @@ function addStolpersteins(map, status, tokens) {
             'relation["memorial:type"="stolperstein"](area.area);' +
             ');' +
             'out meta;>;out meta qt;',
-            success: process,
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
+            'success': process,
+            'error': function (XMLHttpRequest, textStatus, errorThrown) {
                 popup.setContent('<h3 style="text-align:center;">Leider konnten die Daten der Stolpersteine nicht geladen werden.</h3>');
             }
         });
@@ -477,7 +483,7 @@ function addStolpersteins(map, status, tokens) {
 $(document).ready(
     function () {
         var fetchingRequired = true;
-        var fetchingFrequency = 30; // half an hour
+        var fetchingFrequency = 360; // a quarter of a day
         var currentTimestamp;
 
         function process(additionalDataJsonData) {
@@ -493,27 +499,46 @@ $(document).ready(
         var map = L.map(
             'map',
             {
-                center: [50.7085234, 7.115605],
-                zoom: 12,
-                maxZoom: 18,
-                loadingControl: true,
-                fullscreenControl: true
+                'center': [50.7085234, 7.115605],
+                'zoom': 12,
+                'maxZoom': 18,
+                'zoomControl': false
             }
         );
         addLayers(map);
+        map.fitBounds([[50.63,7.01],[50.78,7.22]]);
         var status = L.control.Status();
         status.addTo(map);
         status.hide();
         map.addControl(new L.Control.Gps({
-            style: {
-                radius: 5,
-                weight: 2,
-                color: '#02c',
-                opacity: 1,
-                fillColor: '#32f',
-                fillOpacity: 0.5
-            }
+            'style': {
+                'radius': 5,
+                'weight': 2,
+                'color': '#02c',
+                'opacity': 1,
+                'fillColor': '#32f',
+                'fillOpacity': 0.5,
+            },
+            'position': 'bottomleft'
         }));
+        map.addControl(new L.Control.Loading({
+            'position': 'bottomleft'
+        }));
+        map.addControl(new L.Control.Measure({
+            'primaryLengthUnit': 'kilometers',
+            'secondaryLengthUnit': 'meters',
+            'primaryAreaUnit': 'hectares',
+            'activeColor': '#00f',
+            'completedColor': '#609',
+            'localization': 'de',
+            'position': 'topright'
+        }));
+        map.addControl(new L.Control.FullScreen({
+            'position': 'topleft'
+        }))
+        map.addControl(new L.control.zoom({
+            'position': 'topleft'
+        }))
 
         if (storageAvailable('localStorage')) {
             var oldTimestamp = localStorage.getItem('additionalDataLastFetched');
@@ -526,10 +551,10 @@ $(document).ready(
 
         if (fetchingRequired) {
             $.ajax({
-                dataType: 'json',
-                url: 'files/Zusatzdaten.json',
-                success: process,
-                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                'dataType': 'json',
+                'url': 'files/Zusatzdaten.json',
+                'success': process,
+                'error': function (XMLHttpRequest, textStatus, errorThrown) {
                 }
             });
         } else {

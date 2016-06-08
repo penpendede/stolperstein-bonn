@@ -33,7 +33,7 @@ tr:first-child th {
 	background-color: #fff;
 	background-color: rgba(255,255,255,0.95);
 }
-.leaflet-control-container leaflet-control-attribution {
+.leaflet-control-container .leaflet-control-attribution {
 	background-color: #fff;
 	background-color: rgba(255, 255, 255, 0.95);
 	border: 2px solid #00f;
@@ -63,4 +63,53 @@ tr:first-child th {
 }
 .leaflet-control-minimap-toggle-display {
 	background-image: url("../images/toggle.svg");
+}
+
+.leaflet-control-measure .leaflet-control-measure-toggle,
+.leaflet-control-measure .leaflet-control-measure-toggle:hover {
+	background-image: url(../images/rulers.png);
+}
+
+.leaflet-retina .leaflet-control-measure .leaflet-control-measure-toggle,
+.leaflet-retina .leaflet-control-measure .leaflet-control-measure-toggle:hover {
+	background-image: url(../images/rulers_@2X.png);
+}
+
+.leaflet-control-measure .leaflet-control-measure-toggle,
+.leaflet-control-measure .leaflet-control-measure-toggle:hover {
+	background-image: url(../images/rulers.png);
+}
+
+.leaflet-control-measure a.start {
+	background-image: url(../images/start.png);
+}
+.leaflet-control-measure a.cancel {
+	background-image: url(../images/cancel.png);
+}
+.leaflet-control-measure a.finish {
+	background-image: url(../images/check.png);
+}
+
+.leaflet-retina .leaflet-control-measure a.start {
+	background-image: url(../images/start_@2X.png);
+}
+.leaflet-retina .leaflet-control-measure a.cancel {
+	background-image: url(../images/cancel_@2X.png);
+}
+.leaflet-retina .leaflet-control-measure a.finish {
+	background-image: url(../images/check_@2X.png);
+}
+
+.leaflet-measure-resultpopup a.zoomto {
+	background-image: url(../images/focus.png);
+}
+.leaflet-measure-resultpopup a.deletemarkup {
+	background-image: url(../images/trash.png);
+}
+
+.leaflet-retina .leaflet-measure-resultpopup a.zoomto {
+	background-image: url(../images/focus_@2X.png);
+}
+.leaflet-retina .leaflet-measure-resultpopup a.deletemarkup {
+	background-image: url(../images/trash_@2X.png);
 }
