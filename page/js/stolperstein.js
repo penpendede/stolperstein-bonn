@@ -510,6 +510,9 @@ $(document).ready(
         var status = L.control.Status();
         status.addTo(map);
         status.hide();
+        map.addControl(new L.Control.FullScreen({
+            'position': 'bottomleft'
+        }))
         map.addControl(new L.Control.Gps({
             'style': {
                 'radius': 5,
@@ -533,11 +536,11 @@ $(document).ready(
             'localization': 'de',
             'position': 'topright'
         }));
-        map.addControl(new L.Control.FullScreen({
+        map.addControl(new L.Control.Zoom({
             'position': 'topleft'
         }))
-        map.addControl(new L.control.zoom({
-            'position': 'topleft'
+        map.addControl(new L.control.pan({
+            'panOffset': Math.min($('#map').width(), $('#map').height()) / 4
         }))
 
         if (storageAvailable('localStorage')) {

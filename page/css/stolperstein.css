@@ -113,3 +113,16 @@ tr:first-child th {
 .leaflet-retina .leaflet-measure-resultpopup a.deletemarkup {
 	background-image: url(../images/trash_@2X.png);
 }
+
+.leaflet-control-pan-up {
+	background-image: url(../images/pan-up.png);
+}
+.leaflet-control-pan-left {
+	background-image: url(../images/pan-left.png);
+}
+.leaflet-control-pan-right {
+	background-image: url(../images/pan-right.png);
+}
+.leaflet-control-pan-down {
+	background-image: url(../images/pan-down.png);
+}

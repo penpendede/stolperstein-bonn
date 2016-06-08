@@ -20,6 +20,7 @@
     "leaflet.fullscreen": "^1.4.2",
     "leaflet.markercluster": "^0.5.0",
     "leaflet-measure": "^1.5.6",
+    "leaflet.pancontrol": "^0.6.0",
     "osmtogeojson": "^2.2.11"
   }
 }
