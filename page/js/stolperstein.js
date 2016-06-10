@@ -39,6 +39,8 @@ Project.
  * license.
  */
 
+var geoJsonLayer;
+
 function storageAvailable(type) {
     try {
         var storage = window[type];
@@ -439,7 +441,7 @@ function addStolpersteins(map, status, tokens) {
         localStorage.setItem('stolpersteinData', JSON.stringify(stolpersteinJsonData));
         map.closePopup(popup);
 
-        var geoJsonLayer = makeGeoJsonLayerFromOsmJson(stolpersteinJsonData, tokens, status);
+        geoJsonLayer = makeGeoJsonLayerFromOsmJson(stolpersteinJsonData, tokens, status);
         markers.addLayer(geoJsonLayer);
         map.addLayer(markers);
     }
@@ -502,7 +504,9 @@ $(document).ready(
                 'center': [50.7085234, 7.115605],
                 'zoom': 12,
                 'maxZoom': 18,
-                'zoomControl': false
+                'zoomControl': true,
+                'fullscreenControl': true,
+                'gpsControl': true
             }
         );
         addLayers(map);
@@ -510,23 +514,7 @@ $(document).ready(
         var status = L.control.Status();
         status.addTo(map);
         status.hide();
-        map.addControl(new L.Control.FullScreen({
-            'position': 'bottomleft'
-        }))
-        map.addControl(new L.Control.Gps({
-            'style': {
-                'radius': 5,
-                'weight': 2,
-                'color': '#02c',
-                'opacity': 1,
-                'fillColor': '#32f',
-                'fillOpacity': 0.5,
-            },
-            'position': 'bottomleft'
-        }));
-        map.addControl(new L.Control.Loading({
-            'position': 'bottomleft'
-        }));
+        map.addControl(new L.Control.Loading());
         map.addControl(new L.Control.Measure({
             'primaryLengthUnit': 'kilometers',
             'secondaryLengthUnit': 'meters',
@@ -536,12 +524,6 @@ $(document).ready(
             'localization': 'de',
             'position': 'topright'
         }));
-        map.addControl(new L.Control.Zoom({
-            'position': 'topleft'
-        }))
-        map.addControl(new L.control.pan({
-            'panOffset': Math.min($('#map').width(), $('#map').height()) / 4
-        }))
 
         if (storageAvailable('localStorage')) {
             var oldTimestamp = localStorage.getItem('additionalDataLastFetched');

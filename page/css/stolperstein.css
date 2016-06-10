@@ -126,3 +126,17 @@ tr:first-child th {
 .leaflet-control-pan-down {
 	background-image: url(../images/pan-down.png);
 }
+
+.leaflet-control-search.search-load .search-input {
+	background: url('../images/loader.gif') no-repeat center right #fff;
+}
+.leaflet-control-search .search-cancel {
+        background: url('../images/search-icon.png') no-repeat 0 -46px;
+        opacity: 0.8;
+}
+.leaflet-control-search .search-button {
+	background: url('../images/search-icon.png') no-repeat 2px 2px;
+}
+.leaflet-control-search .search-button:hover {
+	background: url('../images/search-icon.png') no-repeat 2px -22px;
+}
