@@ -18,7 +18,7 @@ gibt).
 ## Demo
 
 Eine Demo findet sich unter
-http://penpendede.github.io/stolperstein-bonn/
+http://stolpersteine.codeforbonn.de/
 
 ## Datenquellen
 
