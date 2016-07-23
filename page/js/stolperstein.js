@@ -385,21 +385,34 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
                         description.push('<tr><td>' + link(tags['memorial:text'], tokens) + '</td></tr>');
                     }
                     description.push('</table>');
-                    if (tags.image) {
-                        description.push(
-                            '<a href="' +
-                            tags.image +
-                            '" target="_blank"><img src="' +
-                            tags.image.replace(
-                                'https://upload.wikimedia.org/wikipedia/commons',
-                                'https://upload.wikimedia.org/wikipedia/commons/thumb'
-                            ) +
-                            '/300px-' +
-                            tags.image.split('/')[tags.image.split('/').length - 1] +
-                            '" /></a>'
-                        );
-                    }else {
-                        console.log(tags.name);
+                    var refUrl = tags.image
+                    if (refUrl) {
+                        if (/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons/.test(refUrl)) {
+                            description.push(
+                                '<a href="' +
+                                refUrl +
+                                '" target="_blank"><img src="' +
+                                refUrl.replace(
+                                    'https://upload.wikimedia.org/wikipedia/commons',
+                                    'https://upload.wikimedia.org/wikipedia/commons/thumb'
+                                ) +
+                                '/300px-' +
+                                refUrl.split('/')[refUrl.split('/').length - 1] +
+                                '" /></a>'
+                            );
+                        } else if (/https:\/\/commons\.wikimedia\.org\/wiki\/File/.test(refUrl)) {
+                            description.push(
+                                '<a href="' +
+                                refUrl +
+                                '" target="_blank"><img src="' +
+                                'File' + refUrl.substr(39).replace(/^%3A/, ':') +
+                                '" /></a>'
+                            );
+                        } else {
+                            console.log(tags.name);
+                        }
+                    } else {
+                        //console.log(tags.name);
                     }
 
                     layer.bindPopup(description.join(''), {
@@ -419,6 +432,22 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
                         } else {
                             layer.openPopup(this);
                             this.isVisible = true;
+
+                            var popupHTML = this.getPopup().getContent()
+                            this.getPopup().setContent(
+                                popupHTML.replace(/img src="File:[^"]+"/, 'img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Stolpersteinicon2.png"')
+                            );
+                            /*if (/img src="File:/.test(popupHTML)) {
+                                $.ajax({
+                                    'dataType': 'json',
+                                    'url': 'http://en.wikipedia.org/w/api.php?action=query&titles=File:Albert_Einstein_(Nobel).png&prop=imageinfo&iiprop=url&format=json',
+                                    'success': function (jsonData) {
+                                        console.log(jsonData)
+                                    },
+                                    'error': function (XMLHttpRequest, textStatus, errorThrown) {
+                                    }
+                                });
+                            }*/
                         }
                     });
                 }
@@ -464,12 +493,8 @@ function addStolpersteins(map, status, tokens) {
         $.ajax({
             'dataType': 'json',
             'url': 'https://overpass-api.de/api/interpreter?' +
-            'data=[out:json][timeout:25];' +
-            '(' +
-            'node["memorial:type"="stolperstein"](around:20000,50.7358511, 7.1006599);' +
-            'way["memorial:type"="stolperstein"](around:20000,50.7358511, 7.1006599);' +
-            'relation["memorial:type"="stolperstein"](around:20000,50.7358511, 7.1006599);' +
-            ');' +
+            'data=[out:json][timeout:25][bbox:50.540,6.949,50.889,7.319];' +
+            '(node["memorial:type"="stolperstein"];way["memorial:type"="stolperstein"];relation["memorial:type"="stolperstein"];);' +
             'out meta;>;out meta qt;',
             'success': process,
             'error': function (XMLHttpRequest, textStatus, errorThrown) {
