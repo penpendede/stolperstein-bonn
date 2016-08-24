@@ -4,9 +4,17 @@
       "url": "https://de.wikipedia.org/wiki/KZ_Auschwitz",
       "short": "Der nationalsozalistische Lagerkomplex Auschwitz war sowohl Konzentrations- als auch Vernichtungslager. Er bestand aus dem Stammlager Auschwitz, dem Vernichtungslager Birkenau, dem Arbeitslager Monowitz und rund 50 weiteren Außenlagern. Die SS betrieb ihn von 1940 bis 1945 am Westrand der polnischen Stadt Oświęcim."
     },
+    "Bergen-Belsen": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Bergen-Belsen",
+      "short": "Das Konzentrationslager Bergen-Belsen war ein nationalsozialistisches Konzentrationslager im Ortsteil Belsen der Gemeinde Bergen im Kreis Celle (Provinz Hannover, heute Niedersachsen)."
+    },
     "Brandenburg-Görden": {
       "url": "https://de.wikipedia.org/wiki/Altes_Zuchthaus_Brandenburg_an_der_Havel",
       "short": "Das Alte Zuchthaus hat eine wechselhafte Geschichte als Armenhaus, Gefängnis, KZ und Tötungsanstalt hinter sich. Heute ist dort die Stadtverwaltung und eine Gedenkstätte untergebracht."
+    },
+    "Brohl": {
+      "url": "https://de.wikipedia.org/wiki/Schloss_Brohleck",
+      "short": "Im April 1942 wurden im Schloss Brohleck etwa 100 jüdische Bürger des Kreises Ahrweiler bis zu ihrem Abtransport in die KZs untergebracht."
     },
     "Buchenwald": {
       "url": "https://de.wikipedia.org/wiki/KZ_Buchenwald",
@@ -36,6 +44,10 @@
       "url": "https://de.wikipedia.org/wiki/Franz_Sales_Haus",
       "short": "Das Franz Sales Haus (sic) im Essener Stadtteil Huttrop ist eine katholische Einrichtung der Behindertenhilfe. Vor dem Beginn der Aktion-T4-Deportationen (Vernichtung lebensunwerten Lebens, NS-Krankenmorde) 1940 lebten in der Einrichtung 1.096 Männer, Frauen und Kinder. Bis 1943 wurden insgesamt 832 behinderte Menschen deportiert."
     },
+    "Hadamar": {
+      "url": "https://de.wikipedia.org/wiki/Tötungsanstalt_Hadamar",
+      "short": "In der Tötungsanstalt Hadamar im mittelhessischen Hadamar wurden zwischen Januar 1941 und März 1945, im Rahmen der sogenannten Aktion T4, etwa 14.500 Menschen mit Behinderungen und psychischen Erkrankungen in einer Gaskammer, durch tödliche Injektionen und Medikationen sowie durch vorsätzliches Verhungernlassen ermordet."
+    },
     "Izbica": {
       "url": "https://de.wikipedia.org/wiki/Ghetto_Izbica",
       "short": "Das Ghetto Izbica war ab 1942 eine Durchgangsstation für deportierte Juden. Von dort führte der Weg in die Vernichtungslager des Holocausts, insbesondere nach Belzec und Sobibor."
@@ -44,9 +56,25 @@
       "url": "https://de.wikipedia.org/wiki/KZ-Außenlager_Kaufering_VI",
       "short": "Das KZ-Außenlager Kaufering VI war ein nationalsozialistisches Konzentrationslager nahe Türkheim und gehörte zu den über 100 Nebenlagern des KZ Dachau."
     },
+    "Kowno": {
+      "url": "Ghett://de.wikipedia.org/wiki/KZ_Kauen",
+      "short": "Das Konzentrationslager (KZ) Kauen entstand aus dem Ghetto Kauen. Dieses wurde im Sommer 1941 von den Nationalsozialisten in der litauischen Stadt Kaunas errichtet, nachdem deutsche Truppen das damals sowjetisch kontrollierte Litauen besetzt hatten. Das Konzentrationslager existierte vom 15. September 1943 bis zum 14. Juli 1944 und hatte acht Außenlager. Kauen ist eine veraltete deutsche Bezeichnung für Kaunas, Kowno der russische Name Kaunas."
+    },
+    "Krasnicyn": {
+      "url": "https://de.wikipedia.org/wiki/Kraśniczyn#Ghetto",
+      "short": "Während des Zweiten Weltkrieges errichteten die Nationalsozialisten in Kraśniczyn ein Ghetto, in dem tausend Deportierte durchgeschleust wurden um in die Vernichtungslager Sobibor, Belzec, Treblinka und Auschwitz-Birkenau transportiert zu werden."
+    },
+    "Krasniczyn": {
+      "url": "https://de.wikipedia.org/wiki/Kraśniczyn#Ghetto",
+      "short": "Während des Zweiten Weltkrieges errichteten die Nationalsozialisten in Kraśniczyn ein Ghetto, in dem tausend Deportierte durchgeschleust wurden um in die Vernichtungslager Sobibor, Belzec, Treblinka und Auschwitz-Birkenau transportiert zu werden."
+    },
     "Kulmhof": {
       "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Kulmhof",
       "short": "Das Vernichtungslager Kulmhof befand sich in Chełmno nad Nerem nahe der Stadt Dąbie. Es lag etwa 130 km östlich von Poznań und nordwestlich von Łódź. Kulmhof wurde hauptsächlich zwischen Dezember 1941 und März 1943 als Vernichtungsstätte benutzt, danach geräumt und nochmals im Sommer 1944 zur Ermordung von Juden des Ghettos Litzmannstadt verwendet."
+    },
+    "Le Vernet": {
+      "url": "https://de.wikipedia.org/wiki/Le_Vernet_(Internierungslager)",
+      "short": "Nach der deutschen Eroberung Frankreichs im Juni 1940 gehörte das Internierungslager Le Vernet zum von den Deutschen unbesetzten Vichy-Frankreich. Zwischen 1942 und 1944 wurde eine Vielzahl von Juden jeglichen Alters inhaftiert und vom Vichy-Regime über dessen Lagerzuständigen Pierre Pucheu kontinuierlich an das Dritte Reich ausgeliefert."
     },
     "Leipzig-Dösen ": {
       "url": "https://de.wikipedia.org/wiki/Park-Klinikum_Leipzig#Landesheil-_und_Pflegeanstalt_Leipzig-D.C3.B6sen",
@@ -76,13 +104,37 @@
       "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Maly_Trostinez",
       "short": "Das Vernichtungslager Maly Trostinez befand sich rund 12 km südöstlich von Minsk in einer ländlichen Gegend. Zwischen 1942 und 1944 wurden bei Maly Trostinez 40.000 bis 60.000 Menschen ermordet, weit überwiegend Juden. Die Deportierten wurden zumeist im nahegelegenen Wald von Blagovśćina erschossen, ohne zuvor im Lager selbst gewesen zu sein."
     },
+    "Maly Trostinec": {
+      "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Maly_Trostinez",
+      "short": "Das Vernichtungslager Maly Trostinez befand sich rund 12 km südöstlich von Minsk in einer ländlichen Gegend. Zwischen 1942 und 1944 wurden bei Maly Trostinez 40.000 bis 60.000 Menschen ermordet, weit überwiegend Juden. Die Deportierten wurden zumeist im nahegelegenen Wald von Blagovśćina erschossen, ohne zuvor im Lager selbst gewesen zu sein."
+    },
+    "Maly Trostinez": {
+      "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Maly_Trostinez",
+      "short": "Das Vernichtungslager Maly Trostinez befand sich rund 12 km südöstlich von Minsk in einer ländlichen Gegend. Zwischen 1942 und 1944 wurden bei Maly Trostinez 40.000 bis 60.000 Menschen ermordet, weit überwiegend Juden. Die Deportierten wurden zumeist im nahegelegenen Wald von Blagovśćina erschossen, ohne zuvor im Lager selbst gewesen zu sein."
+    },
     "Minsk": {
       "url": "https://de.wikipedia.org/wiki/Ghetto_Minsk",
       "short": "Im Ghetto Minsk wurden von Juli 1941 bis zum Oktober 1943 die jüdische Einwohner der weißrussischen Hauptstadt, ab November 1941 auch deportierte Juden aus deutschen Städten, gefangen gehalten. Als 'arbeitsfähig' betrachtete Juden wurden von dort teilweise zu Zwangsarbeiten abkommandiert. Die 'nicht arbeitsfähigen' Menschen wurden von Deutschen umgebracht. Am 21.10.1943 wurde das Ghetto durch Mord an den meisten Gefangenen ausgelöscht, nur wenige überlebten."
     },
+    "Mauthausen": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Mauthausen",
+      "short": "Das Konzentrationslager Mauthausen war das größte deutsche Konzentrationslager der Nationalsozialisten auf dem Gebiet Österreichs Es befand sich 20 Kilometer östlich von Linz in Mauthausen und bestand vom 8. August 1938 bis zu seiner Auflösung nach der Befreiung seiner Insassen durch US-amerikanische Truppen am 5. Mai 1945. Im KZ Mauthausen und seinen Nebenlagern sind rund 100.000 Menschen ums Leben gekommen."
+    },
+    "Much": {
+      "url": "https://de.wikipedia.org/wiki/Much#Geschichte",
+      "short": "Aus dem Internierungs-Sammellager Much wurden 1942 Juden des Rhein-Sieg-Kreises in verschiedene Konzentrationslager deportiert, viele in das KZ Theresienstadt."
+    },
+    "Oranienburg": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Sachsenhausen",
+      "short": "Das Konzentrationslager Sachsenhausen war ein ab 1936 eingerichtetes nationalsozialistisches deutsches Konzentrationslager in der Stadt Oranienburg nördlich von Berlin. Insgesamt wurden etwa 200.000 Häftlinge nach Sachsenhausen deportiert, nur rund 140.000 davon wurden registriert. Im August 1941 wurde eine Massenerschießungsanlage errichtet, in der etwa 13.000 bis 18.000 sowjetische Kriegsgefangene ermordet wurden. Insgesamt sollen mehrere zehntausend Häftlinge ermordet worden sein."
+    },
     "Pflegeanstalt Brandenburg": {
       "url": "https://de.wikipedia.org/wiki/Altes_Zuchthaus_Brandenburg_an_der_Havel",
       "short": "Das Alte Zuchthaus hat eine wechselhafte Geschichte als Armenhaus, Gefängnis, KZ und Tötungsanstalt hinter sich. Heute ist dort die Stadtverwaltung und eine Gedenkstätte untergebracht."
+    },
+    "Polnischer Zwangsarbeiter": {
+      "url": "https://de.wikipedia.org/wiki/NS-Zwangsarbeit#Polen",
+      "short": "Opfer sogenannter Sonderbehandlungen, z. B. nach intimen Kontakten mit Deutschen konnten im Rahmen der Polenerlasse oder Polenstrafrechtsverordnung ohne weitere Gerichtsverhandlung zum Tode 'verurteilt' werden."
     },
     "Ravensbrück": {
       "url": "https://de.wikipedia.org/wiki/KZ_Ravensbrück",
@@ -100,6 +152,10 @@
       "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Sobibor",
       "short": "Das Vernichtungslager Sobibor war ein deutsches Vernichtungslager im südöstlichen Polen. Das Lager wurde Anfang 1942 errichtet. Im Vernichtungslager Sobibor wurden nach Schätzungen bis zu 250.000 Juden in Gaskammern ermordet, darunter vermutlich 33.000 aus den Niederlanden."
     },
+    "St. Cyprien": {
+      "url": "https://de.wikipedia.org/wiki/Saint-Cyprien_(Pyrénées-Orientales)#Zweiter_Weltkrieg",
+      "short": "In Saint-Cyprien im Departement Pyrénées-Orientals befand sich ein Lager, in dem 1940 vorwiegend jüdische Flüchtlinge interniert wurden, die aus Belgien geflohen waren, als dort die deutsche Wehrmacht einfiel. "
+    },
     "Stutthof": {
       "url": "https://de.wikipedia.org/wiki/KZ_Stutthof",
       "short": "Das Konzentrationslager Stutthof befand sich 37 Kilometer östlich von Danzig. Es wurde nach dem deutschen Angriff auf die Freie Stadt Danzig und dem Angriff auf Polen ab dem 1.9.1939 zunächst als Zivilgefangenenlager errichtet. Ab dem 1.10.1941 unterstand es als Sonderlager Stutthof der Danziger Gestapo. Vom 29.1.1942 bis zum Kriegsende war Stutthof dann ein Konzentrationslager."
@@ -111,6 +167,18 @@
     "Treblinka": {
       "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Treblinka",
       "short": "Das Vernichtungslager Treblinka befand sich nordöstlich von Warschau. Die Gesamtzahl der dort zwischen 22.7.1942 und dem 21.8.1943 ermordeten Menschen liegt deutlich über 700.000 und wird auf über 1 Million Menschen aus ganz Europa geschätzt."
+    },
+    "Tröbitz": {
+      "url": "https://de.wikipedia.org/wiki/Tröbitz#Verlorener_Zug",
+      "short": "Tröbitz erlangte traurige Berühmtheit durch einen als der 'Verlorene Zug' bekannt gewordenen Todestransport aus dem KZ Bergen-Belsen."
+    },
+    "Trostinec": {
+      "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Maly_Trostinez",
+      "short": "Das Vernichtungslager Maly Trostinez befand sich rund 12 km südöstlich von Minsk in einer ländlichen Gegend. Zwischen 1942 und 1944 wurden bei Maly Trostinez 40.000 bis 60.000 Menschen ermordet, weit überwiegend Juden. Die Deportierten wurden zumeist im nahegelegenen Wald von Blagovśćina erschossen, ohne zuvor im Lager selbst gewesen zu sein."
+    },
+    "Verlorener Zug": {
+      "url": "https://de.wikipedia.org/wiki/Verlorener_Zug",
+      "short": "Als der Verlorene Zug, Verlorene Transport oder Zug der Verlorenen wird der letzte von drei Zügen bezeichnet, mit denen während der Zeit des Nationalsozialismus in der Endphase des Zweiten Weltkrieges Häftlinge vom Konzentrationslager Bergen-Belsen abtransportiert wurden, als sich die britischen Truppen dem Lager näherten. Er hielt nach einer Irrfahrt durch noch unbesetzte Teile Deutschlands in der Nähe des brandenburgischen Tröbitz auf offener Strecke an. Als die Roten Armee den Zug fand und die Häftlinge befreite, waren etwa 200 bereits tot, rund 300 starben in den folgenden Wochen an den Nachwirkungen des Todestransports durch Typhus."
     },
     "Westerbork": {
       "url": "https://de.wikipedia.org/wiki/Durchgangslager_Westerbork",

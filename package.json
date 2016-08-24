@@ -24,6 +24,7 @@
     "osmtogeojson": "^2.2.11"
   },
   "devDependencies": {
+    "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0"
   }
 }
