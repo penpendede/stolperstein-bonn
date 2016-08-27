@@ -21,7 +21,8 @@
     "leaflet-search": "^1.9.8",
     "leaflet.fullscreen": "^1.4.2",
     "leaflet.markercluster": "^0.5.0",
-    "osmtogeojson": "^2.2.11"
+    "osmtogeojson": "^2.2.11",
+    "stolperstein-bonn-proxy": "github:penpendede/stolperstein-bonn-proxy"
   },
   "devDependencies": {
     "grunt": "^1.0.1",

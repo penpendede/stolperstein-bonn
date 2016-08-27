@@ -34,6 +34,8 @@ cp ./node_modules/leaflet-measure/dist/leaflet-measure.css page/css
 cp ./node_modules/leaflet-measure/dist/leaflet-measure.min.js page/js
 cp ./node_modules/leaflet-measure/dist/images/* page/images
 
+cp ./node_modules/stolperstein-bonn-proxy/proxy.php page
+
 wget -qO- 'http://stadtplan.bonn.de/geojson?Thema=21247&koordsys=4326' |\
 sed -e 's/\([0-9]\{1,\}\.[0-9]\{1,6\}\)[0-9]\{1,\}/\1/g' >\
 page/files/Ortsteile_Bonn.geojson
