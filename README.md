@@ -13,9 +13,8 @@ denen nur Textinformationen zur Verfügung stehen (aktuell sollten nur
 blaue vorkommen, da es von allen verlegten Stolpersteinen ein Foto
 gibt).
 
-![Wie die Darstellung aussieht](files/screenshot_small.jpg)
+![Wie die Darstellung aussieht](files/screenshot.jpg)
 
-[Large version of the screenshot](files/screenshot_large.jpg)
 
 ## Demo
 
