@@ -138,7 +138,7 @@ function addLayers(map) {
       'attribution': '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       'useCache': true
     }), {
-      'zoomLevelFixed': 9,
+      'zoomLevelFixed': 8,
       'width': mapWidth / 5,
       'height': mapHeight / 5,
       'aimingRectOptions': {

@@ -5,7 +5,7 @@ die an Opfer der NS-Gräuel erinnern sollen. Die Absicht dieses Projekts
 besteht darin, die Bonner Stolpersteine in einem möglichst offenen
 Format digital aufzubereiten. Auf diese Weise sollen die Schicksale, für
 die diese Stolpersteine stehen, auch in der der virtuellen Datenwelt
-präsent werden. 
+präsent werden.
 
 Die Darstellung hat zwei Arten von Markern, graue und blaue. Die blauen
 markieren Stolpersteine, deren Fotos online sind, die grauen solche, bei
@@ -13,7 +13,9 @@ denen nur Textinformationen zur Verfügung stehen (aktuell sollten nur
 blaue vorkommen, da es von allen verlegten Stolpersteinen ein Foto
 gibt).
 
-![Wie die Darstellung aussieht](files/screenshot.jpg)
+![Wie die Darstellung aussieht](files/screenshot_small.jpg)
+
+[Large version of the screenshot](files/screenshot_large.jpg)
 
 ## Demo
 
