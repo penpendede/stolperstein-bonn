@@ -9,9 +9,9 @@ präsent werden.
 
 Die Darstellung hat zwei Arten von Markern, graue und blaue. Die blauen
 markieren Stolpersteine, deren Fotos online sind, die grauen solche, bei
-denen nur Textinformationen zur Verfügung stehen (aktuell sollten nur
-blaue vorkommen, da es von allen verlegten Stolpersteinen ein Foto
-gibt).
+denen nur Textinformationen zur Verfügung stehen (aktuell sollten graue
+nur außerhalb von Bonn, Königswinter und Bad Honnef erscheinen, da es
+dort von allen aktuell verlegten Stolpersteinen ein Foto gibt).
 
 ![Wie die Darstellung aussieht](files/screenshot.jpg)
 
