@@ -334,6 +334,9 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
     'shadowAnchor': [12, 41]
   });
   return L.geoJson(osmtogeojson(osmJsonData), {
+    /*filter: function(feature, layer) {
+      return !feature.properties.tags.image;
+    }, /* Uncomment filter to only display stolpersteins that lack an image */
     pointToLayer: function (feature, latlng) {
       if (!feature.properties.tags.image) {
         return L.marker(latlng, {icon: grayIcon});
@@ -513,8 +516,8 @@ function addStolpersteins(map, status, tokens) {
     $.ajax({
       'dataType': 'json',
       'url': 'https://overpass-api.de/api/interpreter?' +
-      'data=[out:json][timeout:25][bbox:50.540,6.949,50.889,7.319];' +
-      '(node["memorial:type"="stolperstein"];way["memorial:type"="stolperstein"];relation["memorial:type"="stolperstein"];);' +
+      'data=[out:json][timeout:25][bbox:50.5,6.9,50.88,7.4];' +
+      'node["memorial:type"="stolperstein"];' + // reduced to node only request - considerably faster
       'out meta;>;out meta qt;',
       'success': process,
       'error': function (XMLHttpRequest, textStatus, errorThrown) {
