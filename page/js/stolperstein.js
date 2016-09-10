@@ -411,7 +411,7 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
               'File' + refUrl.substr(39).replace(/^%3A/, ':') +
               '" /></a>'
             );
-          } else if (/File:/.test(refUrl)) {
+          } else if (/(File|Datei):/.test(refUrl)) {
             description.push(
               '<a href="' + refUrl + '" target="_blank">' +
               '<img src="./images/Clear.gif" /></a>');
@@ -521,7 +521,7 @@ function addStolpersteins(map, status, tokens) {
          'node["memorial:type"="stolperstein"];' +
          'way["memorial:type"="stolperstein"];' + // unlikely to occur but possible
          'rel["memorial:type"="stolperstein"];' + // unlikely to occur but possible
-      ')' +
+      ');' +
       'out meta;>;out meta qt;',
       'success': process,
       'error': function (XMLHttpRequest, textStatus, errorThrown) {
