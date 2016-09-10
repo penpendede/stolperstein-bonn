@@ -517,7 +517,11 @@ function addStolpersteins(map, status, tokens) {
       'dataType': 'json',
       'url': 'https://overpass-api.de/api/interpreter?' +
       'data=[out:json][timeout:25][bbox:50.5,6.9,50.88,7.4];' +
-      'node["memorial:type"="stolperstein"];' + // reduced to node only request - considerably faster
+      '(' +
+         'node["memorial:type"="stolperstein"];' +
+         'way["memorial:type"="stolperstein"];' + // unlikely to occur but possible
+         'rel["memorial:type"="stolperstein"];' + // unlikely to occur but possible
+      ')' +
       'out meta;>;out meta qt;',
       'success': process,
       'error': function (XMLHttpRequest, textStatus, errorThrown) {
