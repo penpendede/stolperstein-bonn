@@ -183,7 +183,7 @@ function addBonnCityLimits(map) {
   if (fetchingRequired) {
     $.ajax({
       'dataType': 'json',
-      'url': 'files/Stadt_Bonn.geojson',
+      'url': './proxy.php?csurl=' + encodeURIComponent('http://stadtplan.bonn.de/geojson?Thema=21248&koordsys=4326'),
       'success': process,
       'error': function (XMLHttpRequest, textStatus, errorThrown) {
       }
@@ -224,7 +224,7 @@ function addBonnMunicipalityLimits(map) {
   if (fetchingRequired) {
     $.ajax({
       'dataType': 'json',
-      'url': 'files/Stadtbezirke_Bonn.geojson',
+      'url': './proxy.php?csurl=' + encodeURIComponent('http://stadtplan.bonn.de/geojson?Thema=14574&koordsys=4326'),
       'success': process,
       'error': function(XMLHttpRequest, textStatus, errorThrown) {
       }
@@ -314,7 +314,7 @@ function addBonnDistricts(map, status, ortsteile, bezirksnamen) {
   if (fetchingRequired) {
     $.ajax({
       'dataType': 'json',
-      'url': 'files/Ortsteile_Bonn.geojson',
+      'url': './proxy.php?csurl=' + encodeURIComponent('http://stadtplan.bonn.de/geojson?Thema=21247&koordsys=4326'),
       'success': process
     });
   } else {
