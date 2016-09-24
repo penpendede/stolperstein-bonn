@@ -62,8 +62,8 @@ body {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  background: #eee;
-  opacity: 0.3;
+  background: #ccc;
+  opacity: 0.6;
   width: 20%;
   border: 1px solid black;
   border-bottom: none;
@@ -71,8 +71,15 @@ body {
   border-top-right-radius: 15px;
 }
 
+.tab-title > a {
+  color: #000;
+  text-decoration: none;
+  outline: 0;
+}
+
 .tab-title.active {
-  /*background: #fff;*/
+  background: #eee;
+  font-weight: bold;
   opacity: 1;
 }
 .tab-content {

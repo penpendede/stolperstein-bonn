@@ -30,26 +30,41 @@
   <script src='js/osmtogeojson.js'></script>
   <script src="js/stolperstein.js"></script>
   <title>Stolpersteine f&uuml;r NS-Opfer in Bonn und Umgebung</title>
+  <script>
+    function activateTab(evt, name) {
+      var tabcontent, tablinks, i;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tab-title");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+    document.getElementById(name).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
 </head>
 
 <body>
   <div class="title">Stolpersteine f&uuml;r NS-Opfer in Bonn und Umgebung</div>
   <div class="tab-container">
     <div class="tabs">
-      <div class="tab-title">Stolpersteine</div>
-      <div class="tab-title active">Lageplan</div>
-      <div class="tab-title">Über diese Seite</div>
-      <div class="tab-title">Urheberrechtliches</div>
-      <div class="tab-title">Links</div>
+      <div class="tab-title"><a href="#" onclick="activateTab(event, 'stolperstein')">Stolpersteine</a></div>
+      <div class="tab-title active" onclick="activateTab(event, 'map')"><a href="#">Lageplan</a></div>
+      <div class="tab-title" onclick="activateTab(event, 'about')"><a href="#">Über diese Seite</a></div>
+      <div class="tab-title" onclick="activateTab(event, 'copyright')"><a href="#">Urheberrechtliches</a></div>
+      <div class="tab-title" onclick="activateTab(event, 'links')"><a href="#">Links</a></div>
     </div>
   </div>
-  <div id="stolperstein" class="tab-content hidden">
+  <div id="stolperstein" class="tab-content" style="display:none;">
     <p><strong>Stolpersteine. Ein Kunstprojekt für Europa.</strong> ist der Name eines Projekt des Künstlers Gunter Demnig. Mit im Boden verlegten kleinen Gedenktafeln soll an das Schicksal der Menschen erinnert werden, die in der Zeit des Nationalsozialismus verfolgt, ermordet, deportiert, vertrieben oder in den Suizid getrieben wurden. </p>
     <p> Diese quadratischen Messingtafeln mit abgerundeten Ecken und Kanten sind mit von Hand eingeschlagenen Lettern beschriftet und werden von einem angegossenen Betonwürfel mit einer Kantenlänge von 96 mm und einer Höhe von 100 Millimetern getragen. Sie werden meist vor den letzten frei gewählten Wohnhäusern der NS-Opfer niveaugleich in das Pflaster bzw. den Belag des jeweiligen Gehwegs eingelassen. Die Stolpersteine sind das größte dezentrale Mahnmal der Welt.</p>
     <p>Für weitere Informationen zu den Stolpersteinen empfehle ich den <a href="https://de.wikipedia.org/wiki/Stolpersteine">sehr guten Wikipediaartikel.</a> </p>
   </div>
-  <div id="map" class="map tab-content hidden" style="overflow:hidden;"></div>
-  <div id="about" class="tab-content hidden">
+  <div id="map" class="map tab-content" style="overflow:hidden;"></div>
+  <div id="about" class="tab-content" style="display:none;">
     <h1>Wer?</h1>
     <p> Mein Name ist Josef Schugt. Ich arbeite bei einer Bonner Firma, die Software im Bereich <a href="https://de.wikipedia.org/wiki/Geoinformationssystem">Geoinformationssysteme</a> entwickelt. Diese Seite ist in meiner Freizeit entstanden. Da ich schon wiederholt darauf angesprochen wurde: Nein, ich habe so weit mir bekannt <em>keinerlei</em> jüdischen Wurzeln. </p>
     <h1>Was?</h1>
@@ -60,7 +75,7 @@
     <p> Mir reichte es nicht, nur zu markieren, wo sich Stolpersteine befinden. Mir war es wichtig, dass online mindestens die Informationen zugänglich sind, die auch vor Ort vorhanden sind. Dazu gehört selbstverständlich die Inschrift. Aber nicht nur. Die Information, ob es sich um einen isolierten Stolperstein handelt oder ob in seiner Nähe an weitere Opfer erinnert wird, ist in meinen Augen fast genauso wichtig. Sie trägt ganz wesentlich zur Wahrnehmung bei, wie unterschiedlich die Lebenssituationen der Opfer waren. </p>
     <p> Ein weiterer Aspekt war, dass ich das Virtuelle mit dem Physischen verbinden wollte. Ein wesentlicher Aspekt dieses Projekts war und ist es daher, die Stolpersteine so wie sie sich in der Realität präsentieren mit Fotos zu dokumentieren. Dabei ist es mir wichtig, dass die Fotos nicht nur den Stolperstein zeigen, sondern auch, wie er sich in seine Umgebung einfügt. Der Kompromiss zwischen der Darstellung der Umgebung und der Erkennbarkeit des Textes des einzelnen Stolpersteins fiel mir dabei nicht immer leicht. Nicht alle Fotos genügen diesem Anspruch, denn ich habe nicht alle der gezeigten Stolpersteine persönlich fotografiert. </p>
   </div>
-  <div id="copyright" class="tab-content hidden">
+  <div id="copyright" class="tab-content" style="display:none;">
     <h1>Software</h1>
     <p> Die hier verwendete Software ist Open Source und <a href="https://github.com/penpendede/stolperstein-bonn">kann auf GitHub eingesehen werden</a>. Dort finden Sie die Lizenz der eigentlichen Software wie auch die Lizenzen der verwendeten Bibliotheken und Hilfsprogramme. </p>
     <h1>Stolpersteine</h1>
@@ -77,7 +92,7 @@
       <li>Stadt: <a href="http://opendata.bonn.de/dataset/fläche-des-stadtgebiets">http://opendata.bonn.de/dataset/fläche-des-stadtgebiets</a></li>
     </ul>
   </div>
-  <div id="links" class="tab-content">
+  <div id="links" class="tab-content" style="display:none;">
     <p>Es gibt sehr viele Informationsquellen, ich möchte nur einige wenige nennen</p>
     <ul>
       <li><a href="https://www.bundesarchiv.de/gedenkbuch/">Gedenkbuch - Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft in Deutschland 1933-1945</a></li>
