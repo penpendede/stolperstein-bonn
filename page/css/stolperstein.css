@@ -26,7 +26,6 @@ body {
 
 html,
 body,
-.tab-container,
 .map,
 .tabs {
   width: 100%;
@@ -40,6 +39,8 @@ body {
 .tab-container {
   display: table;
   border-bottom: 1px solid black;
+  width: calc(100% - 2px);
+  margin-left: 1px;
 }
 
 .title {
@@ -64,18 +65,21 @@ body {
   background: #eee;
   opacity: 0.3;
   width: 20%;
-}
-
-.tab-title.active {
-  /*background: #fff;*/
-  opacity: 1;
   border: 1px solid black;
   border-bottom: none;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-#map {
+
+.tab-title.active {
+  /*background: #fff;*/
+  opacity: 1;
+}
+.tab-content {
   height: calc(100% - 87px);
+}
+.tab-content.hidden {
+  display: none;
 }
 
 .leaflet-control a:link,
