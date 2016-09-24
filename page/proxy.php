@@ -42,8 +42,8 @@ define('CSAJAX_DEBUG', false);
  */
 $valid_requests = array(
 	"http://stadtplan.bonn.de/geojson",
-	"https://www.mediawiki.org/w/api.php
-");
+	"https://www.mediawiki.org/w/api.php"
+);
 
 /**
  * Set extra multiple options for cURL
