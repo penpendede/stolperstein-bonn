@@ -413,7 +413,7 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
             );
           } else if (/(File|Datei):/.test(refUrl)) {
             description.push(
-              '<a href="' + refUrl + '" target="_blank">' +
+              '<a href="' + refUrl.replace(/ /gi,"_") + '" target="_blank">' +
               '<img src="./images/Clear.gif" /></a>');
           }
         } else {
