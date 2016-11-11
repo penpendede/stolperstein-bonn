@@ -41,9 +41,9 @@ define('CSAJAX_DEBUG', false);
  * A set of valid cross domain requests - for convenience localhost is always allowed.
  */
 $valid_requests = array(
-	"http://stadtplan.bonn.de/geojson",
-	"https://www.mediawiki.org/w/api.php"
-);
+    "https://www.mediawiki.org/w/api.php",
+    "http://stadtplan.bonn.de/geojson"
+ );
 
 /**
  * Set extra multiple options for cURL

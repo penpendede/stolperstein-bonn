@@ -1,5 +1,6 @@
 /*jslint browser:true, unparam:true*/
 /*jslint browser:true, unparam:true*/
+/*jslint browser:true, unparam:true*/
 /*global $, jQuery, L, osmtogeojson, console*/
 
 /*
@@ -117,13 +118,7 @@ function inGerman(val) {
 }
 
 function addLayers(map) {
-  new L.tileLayer('https://{s}.tile.openstreetmap.se/hydda/base/{z}/{x}/{y}.png', {
-    'attribution': 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> ' +
-    '&mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    'useCache': true
-  }).addTo(map);
-
-  new L.tileLayer('https://{s}.tile.openstreetmap.se/hydda/roads_and_labels/{z}/{x}/{y}.png', {
+  new L.tileLayer('https://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
     'attribution': 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> ' +
     '&mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     'useCache': true
@@ -349,8 +344,9 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
       var description = [ '<table>' ];
       var ort = '';
       var geborenGestorben;
+      var name = tags.name || tags['memorial:name'];
 
-      if (tags.name) {
+      if (name) {
         if (tags['addr:street']) {
           ort = tags['addr:street'];
 
@@ -377,7 +373,7 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
             geborenGestorben = 'gest. ' + tags['person:date_of_death'];
           }
         }
-        description.push('<tr><th>' + tags.name + (
+        description.push('<tr><th>' + name + (
           geborenGestorben ? '<br>(' + geborenGestorben + ')' : ''
         ) + '</th></tr>');
 
@@ -388,7 +384,7 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
           description.push('<tr><td>' + link(tags['memorial:text'], tokens) + '</td></tr>');
         }
         description.push('</table>');
-        var refUrl = tags.image;
+        var refUrl = decodeURIComponent(tags.image);
         if (refUrl) {
           if (/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons/.test(refUrl)) {
             description.push(
@@ -403,7 +399,7 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
               refUrl.split('/')[refUrl.split('/').length - 1] +
               '" /></a>'
             );
-          } else if (/https:\/\/commons\.wikimedia\.org\/wiki\/File/.test(refUrl)) {
+          } else if (/https:\/\/commons\.wikimedia\.org\/wiki\/(Datei|File)/i.test(refUrl)) {
             description.push(
               '<a href="' +
               refUrl +
@@ -411,15 +407,12 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
               'File' + refUrl.substr(39).replace(/^%3A/, ':') +
               '" /></a>'
             );
-          } else if (/(File|Datei):/.test(refUrl)) {
+          } else if (/(File|Datei):/i.test(refUrl)) {
             description.push(
               '<a href="' + refUrl.replace(/ /gi,"_") + '" target="_blank">' +
               '<img src="./images/Clear.gif" /></a>');
           }
-        } else {
-          //console.log(tags.name);
         }
-
         layer.bindPopup(description.join(''), {
           'autoPan': false
         });
@@ -441,19 +434,18 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
             var popup = this.getPopup();
 
             layer.openPopup(this);
-            var popupHTML = popup.getContent();
-            if (/a href="File:/i.test(popupHTML)) {
-              var file = popupHTML.match(
-                /a href="(File:[^"]+)" target="_blank"><img src="\.\/images\/Clear\.gif" \/>/i)[1];
+            var popupHTML = popup.getContent()
+            var data = extractFileApiUrl(popupHTML);
 
-              var request = "https://www.mediawiki.org/w/api.php?" + [
+            if (data.file && data.apiUrl) {
+              var request = data.apiUrl + '?' + [
                 "action=query",
                 "prop=imageinfo",
                 "iiprop=url",
                 "iiurlwidth=300",
                 "iilimit=1",
                 "format=json",
-                "titles=" + file
+                "titles=" + data.file
               ].join('&');
               $.ajax({
                 'dataType': 'json',
@@ -462,11 +454,9 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
                   var urls = jsonData.query.pages['-1'].imageinfo[0];
                   var thumbUrl = urls.thumburl;
                   var referUrl = urls.descriptionshorturl;
-                  //console.log(thumbUrl);
-                  //console.log(referUrl);
                   popup.setContent(popupHTML.replace(
-                    /a href="(File:[^"]+)" target="_blank"><img src="\.\/images\/Clear\.gif" \/>/i,
-                    'a href="' + referUrl + '" target="_blank"><img src="' + thumbUrl + '" />'
+                    /<a href="[^"]+" target="_blank"><img src="[^"]+" \/>/i,
+                    '<a href="' + referUrl + '" target="_blank"><img src="' + thumbUrl + '" />'
                   ));
                 },
                 'error': function (XMLHttpRequest, textStatus, errorThrown) {}
@@ -477,6 +467,26 @@ function makeGeoJsonLayerFromOsmJson(osmJsonData, tokens, status) {
       }
     }
   });
+}
+
+function extractFileApiUrl(popupHTML) {
+  var file;
+  var apiUrl;
+
+  if (/<a href="[^"]+" target="_blank"><img src="[^"]+">/) {
+    var url= popupHTML.match(/<a href="([^"]+)" target="_blank"><img src="[^"]+" \/>/)[1]
+    if (url.match(/^(File|Datei):/i)) {
+      apiUrl = 'https://www.mediawiki.org/w/api.php';
+      file = url.replace(/^File:/i, "File:").replace(/^Datei:/i, "Datei");
+    } else if (url.match(/^https?:\/\/commons.wikimedia.org\/wiki\/(File|Datei):/i)) {
+      apiUrl = 'https://www.mediawiki.org/w/api.php';
+      file = url.match(/(File|Datei):.*$/i)[0].replace(/^File:/i, "File:").replace(/^Datei:/i, "Datei")
+    }
+  }
+  return {
+    "file": file,
+    "apiUrl": apiUrl
+  }
 }
 
 function addStolpersteins(map, status, tokens) {
@@ -516,7 +526,9 @@ function addStolpersteins(map, status, tokens) {
     $.ajax({
       'dataType': 'json',
       'url': 'https://overpass-api.de/api/interpreter?' +
-      'data=[out:json][timeout:25][bbox:50.5,6.9,50.88,7.4];' +
+      'data=[out:json][timeout:25][bbox:50.5,6.9,50.88,7.4];' + // Bonn
+      //'data=[out:json][timeout:25][bbox:51.91,8.3,52.12,8.67];' + // Bielefeld
+      //'data=[out:json][timeout:25][bbox:49.90,6.045,51.8,8.1];' + // Köln
       '(' +
          'node["memorial:type"="stolperstein"];' +
          'way["memorial:type"="stolperstein"];' + // unlikely to occur but possible
