@@ -13,7 +13,7 @@ denen nur Textinformationen zur Verfügung stehen (aktuell sollten graue
 nur außerhalb von Bonn, Königswinter und Bad Honnef erscheinen, da es
 dort von allen aktuell verlegten Stolpersteinen ein Foto gibt).
 
-![Wie die Darstellung aussieht](screenshot.jpg)
+![Wie die Darstellung aussieht](images/screenshot.jpg)
 
 ## Demo
 
