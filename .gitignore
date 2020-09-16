@@ -1,2 +1,5 @@
 node_modules
 yarn-error.log
+files/bezirke.js
+files/ortsteile.js
+files/stadtgebiet.js
