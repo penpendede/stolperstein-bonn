@@ -12,20 +12,19 @@
   },
   "license": "BSD-2-Clause",
   "dependencies": {
-    "jquery": "^2.2.4",
-    "leaflet": "^0.7.7",
-    "leaflet-gps": "^1.0.2",
-    "leaflet-loading": "^0.1.20",
-    "leaflet-measure": "^1.5.6",
-    "leaflet-minimap": "^3.3.1",
-    "leaflet-search": "^1.9.8",
-    "leaflet.fullscreen": "^1.4.2",
-    "leaflet.markercluster": "^0.5.0",
-    "osmtogeojson": "^2.2.11",
+    "jquery": "^3.5.1",
+    "leaflet": "^1.7.1",
+    "leaflet-gps": "^1.7.6",
+    "leaflet-loading": "^0.1.24",
+    "leaflet-measure": "^3.1.0",
+    "leaflet-minimap": "^3.6.1",
+    "leaflet-search": "^2.9.8",
+    "leaflet.fullscreen": "^1.6.0",
+    "leaflet.markercluster": "^1.4.1",
+    "osmtogeojson": "^3.0.0-beta.4",
     "stolperstein-bonn-proxy": "github:penpendede/stolperstein-bonn-proxy"
   },
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0"
+  "scripts": {
+    "fetch": "node scripts/fetch.js"
   }
 }
