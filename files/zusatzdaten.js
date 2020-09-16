@@ -1,0 +1,387 @@
+window.stolpersteine.zusatzinformationen = {
+  "tokens": {
+    "Auschwitz": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Auschwitz",
+      "short": "Der nationalsozalistische Lagerkomplex Auschwitz war sowohl Konzentrations- als auch Vernichtungslager. Er bestand aus dem Stammlager Auschwitz, dem Vernichtungslager Birkenau, dem Arbeitslager Monowitz und rund 50 weiteren Außenlagern. Die SS betrieb ihn von 1940 bis 1945 am Westrand der polnischen Stadt Oświęcim."
+    },
+    "Bergen-Belsen": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Bergen-Belsen",
+      "short": "Das Konzentrationslager Bergen-Belsen war ein nationalsozialistisches Konzentrationslager im Ortsteil Belsen der Gemeinde Bergen im Kreis Celle (Provinz Hannover, heute Niedersachsen)."
+    },
+    "Brandenburg-Görden": {
+      "url": "https://de.wikipedia.org/wiki/Altes_Zuchthaus_Brandenburg_an_der_Havel",
+      "short": "Das Alte Zuchthaus hat eine wechselhafte Geschichte als Armenhaus, Gefängnis, KZ und Tötungsanstalt hinter sich. Heute ist dort die Stadtverwaltung und eine Gedenkstätte untergebracht."
+    },
+    "Brohl": {
+      "url": "https://de.wikipedia.org/wiki/Schloss_Brohleck",
+      "short": "Im April 1942 wurden im Schloss Brohleck etwa 100 jüdische Bürger des Kreises Ahrweiler bis zu ihrem Abtransport in die KZs untergebracht."
+    },
+    "Buchenwald": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Buchenwald",
+      "short": "Das Konzentrationslager Buchenwald war eines der größten KZs auf deutschem Boden. Es wurde zwischen Juli 1937 und April 1945 auf dem Ettersberg bei Weimar als Arbeitslager betrieben. Insgesamt waren in diesem Zeitraum etwa 266.000 Menschen aus allen Ländern Europas im Konzentrationslager Buchenwald inhaftiert."
+    },
+    "Chelmno": {
+      "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Kulmhof",
+      "short": "Das Vernichtungslager Kulmhof befand sich in Chełmno nad Nerem nahe der Stadt Dąbie. Es lag etwa 130 km östlich von Poznań und nordwestlich von Łódź. Kulmhof wurde hauptsächlich zwischen Dezember 1941 und März 1943 als Vernichtungsstätte benutzt, danach geräumt und nochmals im Sommer 1944 zur Ermordung von Juden des Ghettos Litzmannstadt verwendet."
+    },
+    "Dachau": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Dachau",
+      "short": "Das Konzentrationslager Dachau lag etwa 20 km nordwestlich von München und bestand vom 22.3.1933 bis zu seiner Befreiung am 29.4.1945. Das NS-Regime errichtete es bereits wenige Wochen nach der Machtübernahme. Dort wurden vor allem politische Gegner des NS-Regimes eingesperrt. Dachau war Ausbildungsort für SS-Wachmannschaften und -Führungspersonal, die später unter anderem in Vernichtungslagern eingesetzt wurden."
+    },
+    "Drancy": {
+      "url": "https://de.wikipedia.org/wiki/Sammellager_Drancy",
+      "short": "Vom Sammel- und Durchgangslager Drancy wurden ca. 65.000 hauptsächlich französische Juden mit der Eisenbahn in deutsche Vernichtungslager transportiert. Etwa 63.000 von ihnen wurden in diesen ermordet oder starben an den katastrophalen Umständen des Transports, der Unterbringung und Behandlung. Unter ihnen befanden sich ca. 6.000 Kinder."
+    },
+    "Endenich": {
+      "url": "https://de.wikipedia.org/wiki/Endenich#Geschichte",
+      "short": "Nach 1941 wurde das Endenicher Kloster 'Zur ewigen Anbetung' im Rahmen des Holocausts als Zwischenlager für die Massentransporte der Bonner Juden in die Vernichtungslager benutzt."
+    },
+    "Flossenbürg": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Flossenbürg",
+      "short": "Das Konzentrationslager Flossenbürg bestand von 1938 bis 1945 und befand sich bei Weiden im Oberpfälzer Wald, nahe der Grenze zum heutigen Tschechien und war von Anfang an als ein Konzentrationslager zur Ausbeutung von Zwangsarbeitern, als ein Lager zur 'Vernichtung durch Arbeit' geplant."
+    },
+    "Franz-Sales-Haus": {
+      "url": "https://de.wikipedia.org/wiki/Franz_Sales_Haus",
+      "short": "Das Franz Sales Haus (sic) im Essener Stadtteil Huttrop ist eine katholische Einrichtung der Behindertenhilfe. Vor dem Beginn der Aktion-T4-Deportationen (Vernichtung lebensunwerten Lebens, NS-Krankenmorde) 1940 lebten in der Einrichtung 1.096 Männer, Frauen und Kinder. Bis 1943 wurden insgesamt 832 behinderte Menschen deportiert."
+    },
+    "Hadamar": {
+      "url": "https://de.wikipedia.org/wiki/Tötungsanstalt_Hadamar",
+      "short": "In der Tötungsanstalt Hadamar im mittelhessischen Hadamar wurden zwischen Januar 1941 und März 1945, im Rahmen der sogenannten Aktion T4, etwa 14.500 Menschen mit Behinderungen und psychischen Erkrankungen in einer Gaskammer, durch tödliche Injektionen und Medikationen sowie durch vorsätzliches Verhungernlassen ermordet."
+    },
+    "Izbica": {
+      "url": "https://de.wikipedia.org/wiki/Ghetto_Izbica",
+      "short": "Das Ghetto Izbica war ab 1942 eine Durchgangsstation für deportierte Juden. Von dort führte der Weg in die Vernichtungslager des Holocausts, insbesondere nach Belzec und Sobibor."
+    },
+    "Kaufering": {
+      "url": "https://de.wikipedia.org/wiki/KZ-Außenlager_Kaufering_VI",
+      "short": "Das KZ-Außenlager Kaufering VI war ein nationalsozialistisches Konzentrationslager nahe Türkheim und gehörte zu den über 100 Nebenlagern des KZ Dachau."
+    },
+    "Kowno": {
+      "url": "Ghett://de.wikipedia.org/wiki/KZ_Kauen",
+      "short": "Das Konzentrationslager (KZ) Kauen entstand aus dem Ghetto Kauen. Dieses wurde im Sommer 1941 von den Nationalsozialisten in der litauischen Stadt Kaunas errichtet, nachdem deutsche Truppen das damals sowjetisch kontrollierte Litauen besetzt hatten. Das Konzentrationslager existierte vom 15. September 1943 bis zum 14. Juli 1944 und hatte acht Außenlager. Kauen ist eine veraltete deutsche Bezeichnung für Kaunas, Kowno der russische Name Kaunas."
+    },
+    "Krasnicyn": {
+      "url": "https://de.wikipedia.org/wiki/Kraśniczyn#Ghetto",
+      "short": "Während des Zweiten Weltkrieges errichteten die Nationalsozialisten in Kraśniczyn ein Ghetto, in dem tausend Deportierte durchgeschleust wurden um in die Vernichtungslager Sobibor, Belzec, Treblinka und Auschwitz-Birkenau transportiert zu werden."
+    },
+    "Krasniczyn": {
+      "url": "https://de.wikipedia.org/wiki/Kraśniczyn#Ghetto",
+      "short": "Während des Zweiten Weltkrieges errichteten die Nationalsozialisten in Kraśniczyn ein Ghetto, in dem tausend Deportierte durchgeschleust wurden um in die Vernichtungslager Sobibor, Belzec, Treblinka und Auschwitz-Birkenau transportiert zu werden."
+    },
+    "Kulmhof": {
+      "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Kulmhof",
+      "short": "Das Vernichtungslager Kulmhof befand sich in Chełmno nad Nerem nahe der Stadt Dąbie. Es lag etwa 130 km östlich von Poznań und nordwestlich von Łódź. Kulmhof wurde hauptsächlich zwischen Dezember 1941 und März 1943 als Vernichtungsstätte benutzt, danach geräumt und nochmals im Sommer 1944 zur Ermordung von Juden des Ghettos Litzmannstadt verwendet."
+    },
+    "Le Vernet": {
+      "url": "https://de.wikipedia.org/wiki/Le_Vernet_(Internierungslager)",
+      "short": "Nach der deutschen Eroberung Frankreichs im Juni 1940 gehörte das Internierungslager Le Vernet zum von den Deutschen unbesetzten Vichy-Frankreich. Zwischen 1942 und 1944 wurde eine Vielzahl von Juden jeglichen Alters inhaftiert und vom Vichy-Regime über dessen Lagerzuständigen Pierre Pucheu kontinuierlich an das Dritte Reich ausgeliefert."
+    },
+    "Leipzig-Dösen ": {
+      "url": "https://de.wikipedia.org/wiki/Park-Klinikum_Leipzig#Landesheil-_und_Pflegeanstalt_Leipzig-D.C3.B6sen",
+      "short": "Im Oktober 1940 wurde in Leipzig-Dösen im Rahmen der nationalsozialistischen Kindereuthanasieverbrechen eine kinderpsychiatrische Abteilung neu gegründet. In ihr sind zwischen November 1940 und 7. Dezember 1943 (dem Tag der Verlegung der Kinderfachabteilung in die Landesanstalt Großschweidnitz bei Löbau) 551 Kinder und Jugendliche getötet worden."
+    },
+    "Litzmannstadt": {
+      "url": "https://de.wikipedia.org/wiki/Ghetto_Litzmannstadt",
+      "short": "Das Ghetto Litzmannstadt befand sich in Łódź und war von 1939 bis 1944 das am längsten existierende nationalsozialistische Ghetto und nach dem Warschauer Ghetto das zweitgrößte. Es diente, wie die anderen NS-Ghettos auch, vor allem als Zwischenstation vor der Deportation in die Vernichtungslager Kulmhof (Chełmno nad Nerem), Auschwitz II, Majdanek, Treblinka und Sobibor."
+    },
+    "Lodz": {
+      "url": "https://de.wikipedia.org/wiki/Ghetto_Litzmannstadt",
+      "short": "Das Ghetto Litzmannstadt befand sich in Łódź und war von 1939 bis 1944 das am längsten existierende nationalsozialistische Ghetto und nach dem Warschauer Ghetto das zweitgrößte. Es diente, wie die anderen NS-Ghettos auch, vor allem als Zwischenstation vor der Deportation in die Vernichtungslager Kulmhof (Chełmno nad Nerem), Auschwitz II, Majdanek, Treblinka und Sobibor."
+    },
+    "Łodz": {
+      "url": "https://de.wikipedia.org/wiki/Ghetto_Litzmannstadt",
+      "short": "Das Ghetto Litzmannstadt befand sich in Łódź und war von 1939 bis 1944 das am längsten existierende nationalsozialistische Ghetto und nach dem Warschauer Ghetto das zweitgrößte. Es diente, wie die anderen NS-Ghettos auch, vor allem als Zwischenstation vor der Deportation in die Vernichtungslager Kulmhof (Chełmno nad Nerem), Auschwitz II, Majdanek, Treblinka und Sobibor."
+    },
+    "Lublin": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Majdanek",
+      "short": "Das KZ Majdanek befand sich im gleichnamigen Vorort von Lublin und wurde wie Auschwitz-Birkenau zeitweise auch als Vernichtungslager genutzt. Es bestand von Oktober 1941 bis zum 23.7.1944, als das großteils geräumte Lager von der Roten Armee befreit wurde."
+    },
+    "Majdanek": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Majdanek",
+      "short": "Das KZ Majdanek befand sich im gleichnamigen Vorort von Lublin und wurde wie Auschwitz-Birkenau zeitweise auch als Vernichtungslager genutzt. Es bestand von Oktober 1941 bis zum 23.7.1944, als das großteils geräumte Lager von der Roten Armee befreit wurde."
+    },
+    "Maly Trostenez": {
+      "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Maly_Trostinez",
+      "short": "Das Vernichtungslager Maly Trostinez befand sich rund 12 km südöstlich von Minsk in einer ländlichen Gegend. Zwischen 1942 und 1944 wurden bei Maly Trostinez 40.000 bis 60.000 Menschen ermordet, weit überwiegend Juden. Die Deportierten wurden zumeist im nahegelegenen Wald von Blagovśćina erschossen, ohne zuvor im Lager selbst gewesen zu sein."
+    },
+    "Maly Trostinec": {
+      "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Maly_Trostinez",
+      "short": "Das Vernichtungslager Maly Trostinez befand sich rund 12 km südöstlich von Minsk in einer ländlichen Gegend. Zwischen 1942 und 1944 wurden bei Maly Trostinez 40.000 bis 60.000 Menschen ermordet, weit überwiegend Juden. Die Deportierten wurden zumeist im nahegelegenen Wald von Blagovśćina erschossen, ohne zuvor im Lager selbst gewesen zu sein."
+    },
+    "Maly Trostinez": {
+      "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Maly_Trostinez",
+      "short": "Das Vernichtungslager Maly Trostinez befand sich rund 12 km südöstlich von Minsk in einer ländlichen Gegend. Zwischen 1942 und 1944 wurden bei Maly Trostinez 40.000 bis 60.000 Menschen ermordet, weit überwiegend Juden. Die Deportierten wurden zumeist im nahegelegenen Wald von Blagovśćina erschossen, ohne zuvor im Lager selbst gewesen zu sein."
+    },
+    "Minsk": {
+      "url": "https://de.wikipedia.org/wiki/Ghetto_Minsk",
+      "short": "Im Ghetto Minsk wurden von Juli 1941 bis zum Oktober 1943 die jüdische Einwohner der weißrussischen Hauptstadt, ab November 1941 auch deportierte Juden aus deutschen Städten, gefangen gehalten. Als 'arbeitsfähig' betrachtete Juden wurden von dort teilweise zu Zwangsarbeiten abkommandiert. Die 'nicht arbeitsfähigen' Menschen wurden von Deutschen umgebracht. Am 21.10.1943 wurde das Ghetto durch Mord an den meisten Gefangenen ausgelöscht, nur wenige überlebten."
+    },
+    "Mauthausen": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Mauthausen",
+      "short": "Das Konzentrationslager Mauthausen war das größte deutsche Konzentrationslager der Nationalsozialisten auf dem Gebiet Österreichs Es befand sich 20 Kilometer östlich von Linz in Mauthausen und bestand vom 8. August 1938 bis zu seiner Auflösung nach der Befreiung seiner Insassen durch US-amerikanische Truppen am 5. Mai 1945. Im KZ Mauthausen und seinen Nebenlagern sind rund 100.000 Menschen ums Leben gekommen."
+    },
+    "Much": {
+      "url": "https://de.wikipedia.org/wiki/Much#Geschichte",
+      "short": "Aus dem Internierungs-Sammellager Much wurden 1942 Juden des Rhein-Sieg-Kreises in verschiedene Konzentrationslager deportiert, viele in das KZ Theresienstadt."
+    },
+    "Oranienburg": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Sachsenhausen",
+      "short": "Das Konzentrationslager Sachsenhausen war ein ab 1936 eingerichtetes nationalsozialistisches deutsches Konzentrationslager in der Stadt Oranienburg nördlich von Berlin. Insgesamt wurden etwa 200.000 Häftlinge nach Sachsenhausen deportiert, nur rund 140.000 davon wurden registriert. Im August 1941 wurde eine Massenerschießungsanlage errichtet, in der etwa 13.000 bis 18.000 sowjetische Kriegsgefangene ermordet wurden. Insgesamt sollen mehrere zehntausend Häftlinge ermordet worden sein."
+    },
+    "Pflegeanstalt Brandenburg": {
+      "url": "https://de.wikipedia.org/wiki/Altes_Zuchthaus_Brandenburg_an_der_Havel",
+      "short": "Das Alte Zuchthaus hat eine wechselhafte Geschichte als Armenhaus, Gefängnis, KZ und Tötungsanstalt hinter sich. Heute ist dort die Stadtverwaltung und eine Gedenkstätte untergebracht."
+    },
+    "Polnischer Zwangsarbeiter": {
+      "url": "https://de.wikipedia.org/wiki/NS-Zwangsarbeit#Polen",
+      "short": "Opfer sogenannter Sonderbehandlungen, z. B. nach intimen Kontakten mit Deutschen konnten im Rahmen der Polenerlasse oder Polenstrafrechtsverordnung ohne weitere Gerichtsverhandlung zum Tode 'verurteilt' werden."
+    },
+    "Ravensbrück": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Ravensbrück",
+      "short": "Das Konzentrationslager Ravensbrück war das größte Konzentrationslager für Frauen im sogenannten deutschen 'Altreich'. Es wurde 1938/39 durch die SS in der heutigen Stadt Fürstenberg/Havel im Norden der Provinz Brandenburg errichtet. Insgesamt waren etwa 132.000 Frauen und Kinder, 20.000 Männer und 1.000 weibliche Jugendliche im KZ Ravensbrück und im benachbarten KZ Uckermark interniert. Man geht davon aus, dass in Ravensbrück rund 28.000 Menschen ums Leben gekommen sind."
+    },
+    "Riga": {
+      "url": "https://de.wikipedia.org/wiki/Ghetto_Riga",
+      "short": "Das Ghetto von Riga war ein kleiner, abgesperrter Randbezirk der lettischen Hauptstadt, in dem deutsche Besatzer Juden internierten. Fast alle wurden – innerhalb des Ghettos oder in den angrenzenden Wäldern oder benachbarten Konzentrationslagern – ermordet. Im Ghetto Riga lebten auf engstem Raum zunächst lettische Juden, später Juden aus dem Deutschen Reich."
+    },
+    "Sachsenhausen": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Sachsenhausen",
+      "short": "Das Konzentrationslager Sachsenhausen war ein ab 1936 eingerichtetes nationalsozialistisches deutsches Konzentrationslager in der Stadt Oranienburg nördlich von Berlin. Insgesamt wurden etwa 200.000 Häftlinge nach Sachsenhausen deportiert, nur rund 140.000 davon wurden registriert. Im August 1941 wurde eine Massenerschießungsanlage errichtet, in der etwa 13.000 bis 18.000 sowjetische Kriegsgefangene ermordet wurden. Insgesamt sollen mehrere zehntausend Häftlinge ermordet worden sein."
+    },
+    "Sobibor": {
+      "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Sobibor",
+      "short": "Das Vernichtungslager Sobibor war ein deutsches Vernichtungslager im südöstlichen Polen. Das Lager wurde Anfang 1942 errichtet. Im Vernichtungslager Sobibor wurden nach Schätzungen bis zu 250.000 Juden in Gaskammern ermordet, darunter vermutlich 33.000 aus den Niederlanden."
+    },
+    "St. Cyprien": {
+      "url": "https://de.wikipedia.org/wiki/Saint-Cyprien_(Pyrénées-Orientales)#Zweiter_Weltkrieg",
+      "short": "In Saint-Cyprien im Departement Pyrénées-Orientals befand sich ein Lager, in dem 1940 vorwiegend jüdische Flüchtlinge interniert wurden, die aus Belgien geflohen waren, als dort die deutsche Wehrmacht einfiel. "
+    },
+    "Stutthof": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Stutthof",
+      "short": "Das Konzentrationslager Stutthof befand sich 37 Kilometer östlich von Danzig. Es wurde nach dem deutschen Angriff auf die Freie Stadt Danzig und dem Angriff auf Polen ab dem 1.9.1939 zunächst als Zivilgefangenenlager errichtet. Ab dem 1.10.1941 unterstand es als Sonderlager Stutthof der Danziger Gestapo. Vom 29.1.1942 bis zum Kriegsende war Stutthof dann ein Konzentrationslager."
+    },
+    "Theresienstadt": {
+      "url": "https://de.wikipedia.org/wiki/KZ_Theresienstadt",
+      "short": " Das Konzentrationslager Theresienstadt im heutigen Tschechien wurde von den deutschen Besatzern in Terezín eingerichtet und erfüllte vier Aufgaben: Gestapogefängnis, Transitlager auf dem Weg in die großen Vernichtungslager, Vernichtung von Menschen und (zeitweilig) Mittel der NS-Propaganda als angebliches 'Altersghetto'."
+    },
+    "Treblinka": {
+      "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Treblinka",
+      "short": "Das Vernichtungslager Treblinka befand sich nordöstlich von Warschau. Die Gesamtzahl der dort zwischen 22.7.1942 und dem 21.8.1943 ermordeten Menschen liegt deutlich über 700.000 und wird auf über 1 Million Menschen aus ganz Europa geschätzt."
+    },
+    "Tröbitz": {
+      "url": "https://de.wikipedia.org/wiki/Tröbitz#Verlorener_Zug",
+      "short": "Tröbitz erlangte traurige Berühmtheit durch einen als der 'Verlorene Zug' bekannt gewordenen Todestransport aus dem KZ Bergen-Belsen."
+    },
+    "Trostinec": {
+      "url": "https://de.wikipedia.org/wiki/Vernichtungslager_Maly_Trostinez",
+      "short": "Das Vernichtungslager Maly Trostinez befand sich rund 12 km südöstlich von Minsk in einer ländlichen Gegend. Zwischen 1942 und 1944 wurden bei Maly Trostinez 40.000 bis 60.000 Menschen ermordet, weit überwiegend Juden. Die Deportierten wurden zumeist im nahegelegenen Wald von Blagovśćina erschossen, ohne zuvor im Lager selbst gewesen zu sein."
+    },
+    "Verlorener Zug": {
+      "url": "https://de.wikipedia.org/wiki/Verlorener_Zug",
+      "short": "Als der Verlorene Zug, Verlorene Transport oder Zug der Verlorenen wird der letzte von drei Zügen bezeichnet, mit denen während der Zeit des Nationalsozialismus in der Endphase des Zweiten Weltkrieges Häftlinge vom Konzentrationslager Bergen-Belsen abtransportiert wurden, als sich die britischen Truppen dem Lager näherten. Er hielt nach einer Irrfahrt durch noch unbesetzte Teile Deutschlands in der Nähe des brandenburgischen Tröbitz auf offener Strecke an. Als die Roten Armee den Zug fand und die Häftlinge befreite, waren etwa 200 bereits tot, rund 300 starben in den folgenden Wochen an den Nachwirkungen des Todestransports durch Typhus."
+    },
+    "Westerbork": {
+      "url": "https://de.wikipedia.org/wiki/Durchgangslager_Westerbork",
+      "short": "Das Durchgangslager Westerbork war ein in den Niederlanden eingerichtetes zentrales KZ-Sammellager für das Deportieren niederländischer und sich in den Niederlanden aufhaltender deutscher Juden in andere Konzentrations- und Vernichtungslager. In den Niederlanden ist die Bezeichnung Kamp W. bzw. Concentratiekamp W. verbreitet."
+    },
+    "Zamosc": {
+      "url": "https://de.wikipedia.org/wiki/Zamość#Geschichte",
+      "short": "Zamość ist im südöstlichen Teil Polens, rund 240 km südöstlich der Hauptstadt Warszawa und 110 km nordwestlich der ukrainischen Stadt Lwiw gelegene Stadt. Fast die gesamte jüdische Bevölkerung kam in der Zeit des Nationalsozialismus in Ghettos (Ghetto Zamość), Vernichtungslagern oder durch Erschießungen um. Viele starben auch durch Hunger oder Krankheiten, denn die Zustände in den Ghettos waren unmenschlich."
+    },
+
+
+    
+
+    "Felix Hausdorff": {
+      "url": "https://de.wikipedia.org/wiki/Felix_Hausdorff",
+      "short": "Felix Hausdorff (geb. 8.11.1868 in Breslau; Freitod 26.1.1942 in Bonn) war ein deutscher Mathematiker. Er gilt als Mitbegründer der allgemeinen Topologie und lieferte wesentliche Beiträge zur allgemeinen und deskriptiven Mengenlehre, zur Maßtheorie, Funktionalanalysis und Algebra. Neben seinem Beruf wirkte er unter dem Pseudonym Paul Mongré auch als philosophischer Schriftsteller und Literat. Nachdem er, seine Frau und die bei ihnen lebende Schwester seiner Frau, Edith Pappenheim, im Januar 1942 den Befehl erhalten hatten, in das Endenicher Lager überzusiedeln, nahmen sie gemeinsam eine Überdosis des Schlafmittels Veronal."
+    },
+    "Joseph Roth": {
+      "url": "https://de.wikipedia.org/wiki/Joseph_Roth_(Politiker)",
+      "short": "Joseph Roth (geb. 30.1.1896 in Köln; gest. 22.1.1945 in Friesdorf) war deutscher Volksschullehrer und Politiker der Zentrumspartei. Er war 1. Vorsitzender des Zentrums in Bad Godesberg und Kreistagsmitglied des Kreises Bonn-Land."
+    }
+  },
+  "bezirksnamen": [
+    "Bonn",
+    "Bad Godesberg",
+    "Beuel",
+    "Hardtberg"
+  ],
+  "ortsteile": [
+    {
+      "name": "Alt-Godesberg",
+      "count": 29
+    },
+    {
+      "name": "Auerberg"
+    },
+    {
+      "name": "Beuel-Mitte",
+      "count": 58
+    },
+    {
+      "name": "Beuel-Ost",
+      "count": 8
+    },
+    {
+      "name": "Bonn-Castell",
+      "count": 1
+    },
+    {
+      "name": "Bonn-Zentrum",
+      "count": 32
+    },
+    {
+      "name": "Brüser Berg"
+    },
+    {
+      "name": "Buschdorf"
+    },
+    {
+      "name": "Dottendorf"
+    },
+    {
+      "name": "Dransdorf"
+    },
+    {
+      "name": "Duisdorf",
+      "count": 5
+    },
+    {
+      "name": "Endenich",
+      "count": 16
+    },
+    {
+      "name": "Friesdorf",
+      "count": 2
+    },
+    {
+      "name": "Geislar"
+    },
+    {
+      "name": "Godesberg-Villenviertel",
+      "count": 11
+    },
+    {
+      "name": "Godesberg-Nord"
+    },
+    {
+      "name": "Graurheindorf"
+    },
+    {
+      "name": "Gronau",
+      "count": 4
+    },
+    {
+      "name": "Hardthöhe"
+    },
+    {
+      "name": "Heiderhof"
+    },
+    {
+      "name": "Hochkreuz"
+    },
+    {
+      "name": "Hoholz"
+    },
+    {
+      "name": "Holtorf"
+    },
+    {
+      "name": "Holzlar",
+      "count": 1
+    },
+    {
+      "name": "Ippendorf"
+    },
+    {
+      "name": "Kessenich",
+      "count": 16
+    },
+    {
+      "name": "Küdinghoven"
+    },
+    {
+      "name": "Lannesdorf"
+    },
+    {
+      "name": "Lengdorf"
+    },
+    {
+      "name": "Lessenich / Meßdorf"
+    },
+    {
+      "name": "Limperich",
+      "count": 1
+    },
+    {
+      "name": "Mehlem",
+      "count": 4
+    },
+    {
+      "name": "Muffendorf",
+      "count": 1
+    },
+    {
+      "name": "Nordstadt",
+      "count": 29
+    },
+    {
+      "name": "Oberkassel",
+      "count": 1
+    },
+    {
+      "name": "Pennenfeld"
+    },
+    {
+      "name": "Plittersdorf"
+    },
+    {
+      "name": "Poppelsdorf",
+      "count": 2
+    },
+    {
+      "name": "Pützchen / Bechlinghoven"
+    },
+    {
+      "name": "Ramersdorf"
+    },
+    {
+      "name": "Röttgen"
+    },
+    {
+      "name": "Rüngsdorf",
+      "count": 4
+    },
+    {
+      "name": "Schwarzrheindorf / Vilich-Rheindorf"
+    },
+    {
+      "name": "Schweinheim"
+    },
+    {
+      "name": "Südstadt",
+      "count": 27
+    },
+    {
+      "name": "Tannenbusch"
+    },
+    {
+      "name": "Ückesdorf"
+    },
+    {
+      "name": "Venusberg"
+    },
+    {
+      "name": "Vilich",
+      "count": 5
+    },
+    {
+      "name": "Vilich-Müldorf"
+    },
+    {
+      "name": "Weststadt",
+      "count": 28
+    }
+  ]
+}
