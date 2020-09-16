@@ -13,13 +13,12 @@ denen nur Textinformationen zur Verfügung stehen (aktuell sollten graue
 nur außerhalb von Bonn, Königswinter und Bad Honnef erscheinen, da es
 dort von allen aktuell verlegten Stolpersteinen ein Foto gibt).
 
-![Wie die Darstellung aussieht](files/screenshot.jpg)
-
+![Wie die Darstellung aussieht](screenshot.jpg)
 
 ## Demo
 
-Eine Demo findet sich unter
-http://stolpersteine.codeforbonn.de/
+Die Demo findet sich unter
+http://stolpersteine-in-bonn.de/
 
 ## Datenquellen
 
