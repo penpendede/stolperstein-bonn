@@ -15,6 +15,7 @@ html {
 
 .map {
   background: rgba(240, 240, 240, 1);
+  height: calc( 100% - 65px );
   width: 100%;
 }
 

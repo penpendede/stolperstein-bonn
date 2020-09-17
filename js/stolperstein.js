@@ -93,37 +93,6 @@ function inGerman (val) {
   }
 }
 
-function addLayers (map) {
-  new L.tileLayer('https://mapintosh.de/tiles/osm/{z}/{x}/{y}.png', {
-    maxZoom: 18,
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-      '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-    useCache: true
-  }).addTo(map)
-
-  var mapWidth = $('#map').width()
-  var mapHeight = $('#map').height()
-
-  if (mapWidth >= 250 && mapHeight >= 250) {
-    new L.Control.MiniMap(new L.TileLayer('https://mapintosh.de/tiles/osm/{z}/{x}/{y}.png', {
-      maxZoom: 18,
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-      useCache: true
-    }), {
-      zoomLevelFixed: 8,
-      width: mapWidth / 5,
-      height: mapHeight / 5,
-      aimingRectOptions: {
-        color: '#008',
-        weight: 3
-      },
-      toggleDisplay: true
-    }).addTo(map)
-  }
-  return map
-}
-
 function addBonnCityLimits (map) {
   var fetchingRequired = true
   var fetchingFrequency = 1440 // A day (1440 minutes)

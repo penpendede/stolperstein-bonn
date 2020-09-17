@@ -1,5 +1,6 @@
 document.ready(
   function () {
+    window.stolpersteine.fn.initializeMap('map')
     /*
     var fetchingRequired = true
     var fetchingFrequency = 360 // a quarter of a day
@@ -15,19 +16,7 @@ document.ready(
       addStolpersteins(map, status, additionalDataJsonData.tokens || {})
     }
 
-    var map = L.map('map', {
-      center: [50.7085234, 7.115605],
-      zoom: 12,
-      maxZoom: 18,
-      zoomControl: true,
-      fullscreenControl: true,
-      gpsControl: true
-    })
     addLayers(map)
-    map.fitBounds([
-      [50.63, 7.01],
-      [50.78, 7.22]
-    ])
     var status = L.control.Status()
     status.addTo(map)
     status.hide()

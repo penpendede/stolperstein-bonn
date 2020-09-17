@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="icon" href="images/stolperstein.png" type="image/png" />
     <!--
-      <link rel="stylesheet" type="text/css" href="node_modules/leaflet/dist/leaflet.css" />
-      <link rel="stylesheet" type="text/css" href="node_modules/leaflet.fullscreen/Control.FullScreen.css" />
       <link rel="stylesheet" type="text/css" href="node_modules/leaflet-loading/src/Control.Loading.css" />
-      <link rel="stylesheet" type="text/css" href="node_modules/leaflet-minimap/dist/Control.MiniMap.min.css" />
       <link rel="stylesheet" type="text/css" href="node_modules/leaflet-gps/dist/leaflet-gps.min.css" />
       <link rel="stylesheet" type="text/css" href="node_modules/leaflet-measure/dist/leaflet-measure.css" />
       <link rel="stylesheet" type="text/css" href="node_modules/leaflet.markercluster/dist/MarkerCluster.css" />
@@ -17,11 +14,15 @@
       <link rel="stylesheet" type="text/css" href="css/Control.Status.css" />
       <link rel="stylesheet" type="text/css" href="css/leaflet-customization.css" />
     -->
+    <link rel="stylesheet" type="text/css" href="node_modules/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/leaflet.fullscreen/Control.FullScreen.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/leaflet-minimap/dist/Control.MiniMap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/stolperstein.css" />
 
     <script>
       // Two initializations that better are in the HTML file
       window.stolpersteine = {}
+      window.stolpersteine.fn = {}
 
       document.ready = function (fn) {
         if (document.readyState != 'loading'){
@@ -32,10 +33,7 @@
       }
     </script>
     <!--
-      <script src="node_modules/leaflet/dist/leaflet.js"></script>
-      <script src="node_modules/leaflet.fullscreen/Control.FullScreen.js"></script>
       <script src="node_modules/leaflet-loading/src/Control.Loading.js"></script>
-      <script src="node_modules/leaflet-minimap/dist/Control.MiniMap.min.js"></script>
       <script src="node_modules/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
       <script src="node_modules/leaflet-gps/dist/leaflet-gps.min.js"></script>
       <script src="node_modules/leaflet-measure/dist/leaflet-measure.de.js"></script>
@@ -43,6 +41,11 @@
       <script src="js/stolperstein.js"></script>
       <script src="js/Control.Status.js"></script>
     -->
+    <script src="node_modules/leaflet/dist/leaflet.js"></script>
+    <script src="node_modules/leaflet.fullscreen/Control.FullScreen.js"></script>
+    <script src="node_modules/leaflet-minimap/dist/Control.MiniMap.min.js"></script>
+    <script src="js/initializeMap.js"></script>
+    <script src="js/addLayers.js"></script>
     <script src="js/onReady.js"></script>
 
     <title>Stolpersteine f&uuml;r NS-Opfer in Bonn und Umgebung</title>
