@@ -62,28 +62,41 @@ function link (text, tokens) {
 
 function inGerman (val) {
   switch (val) {
-    case 0: return 'kein'
-    case 1: return 'ein'
-    case 2: return 'zwei'
-    case 3: return 'drei'
-    case 4: return 'vier'
-    case 5: return 'f&uuml;nf'
-    case 6: return 'sechs'
-    case 7: return 'sieben'
-    case 8: return 'acht'
-    case 9: return 'neun'
-    case 10: return 'zehn'
-    case 11: return 'elf'
-    case 12: return 'zw&ouml;lf'
-    default: return val.toString()
+    case 0:
+      return 'kein'
+    case 1:
+      return 'ein'
+    case 2:
+      return 'zwei'
+    case 3:
+      return 'drei'
+    case 4:
+      return 'vier'
+    case 5:
+      return 'f&uuml;nf'
+    case 6:
+      return 'sechs'
+    case 7:
+      return 'sieben'
+    case 8:
+      return 'acht'
+    case 9:
+      return 'neun'
+    case 10:
+      return 'zehn'
+    case 11:
+      return 'elf'
+    case 12:
+      return 'zw&ouml;lf'
+    default:
+      return val.toString()
   }
 }
 
 function addLayers (map) {
   new L.tileLayer('https://mapintosh.de/tiles/osm/{z}/{x}/{y}.png', {
     maxZoom: 18,
-    attribution:
-      'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
     useCache: true
   }).addTo(map)
@@ -94,8 +107,7 @@ function addLayers (map) {
   if (mapWidth >= 250 && mapHeight >= 250) {
     new L.Control.MiniMap(new L.TileLayer('https://mapintosh.de/tiles/osm/{z}/{x}/{y}.png', {
       maxZoom: 18,
-      attribution:
-        'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
         '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
       useCache: true
     }), {
@@ -146,7 +158,7 @@ function addBonnCityLimits (map) {
       dataType: 'json',
       url: './proxy.php?csurl=' + encodeURIComponent('https://stadtplan.bonn.de/geojson?Thema=21248&koordsys=4326'),
       success: process,
-      error: function (XMLHttpRequest, textStatus, errorThrown) {}
+      error: function (XMLHttpRequest, textStatus, errorThrown) { }
     })
   } else {
     process(JSON.parse(window.localStorage.getItem('cityLimitData')))
@@ -186,7 +198,7 @@ function addBonnMunicipalityLimits (map) {
       dataType: 'json',
       url: './proxy.php?csurl=' + encodeURIComponent('https://stadtplan.bonn.de/geojson?Thema=14574&koordsys=4326'),
       success: process,
-      error: function (XMLHttpRequest, textStatus, errorThrown) {}
+      error: function (XMLHttpRequest, textStatus, errorThrown) { }
     })
   } else {
     process(JSON.parse(window.localStorage.getItem('municipalityLimitsData')))
@@ -256,7 +268,7 @@ function addBonnDistricts (map, status, ortsteile, bezirksnamen) {
       onEachFeature: function (feature, layer) {
         configureBonnDistrictPopups(feature, layer, status, ortsteile, bezirksnamen)
       },
-      error: function (XMLHttpRequest, textStatus, errorThrown) {}
+      error: function (XMLHttpRequest, textStatus, errorThrown) { }
     }).addTo(map)
   }
 
@@ -419,7 +431,7 @@ function makeGeoJsonLayerFromOsmJson (osmJsonData, tokens, status) {
                     '<a href="' + referUrl + '" target="_blank"><img src="' + thumbUrl + '" />'
                   ))
                 },
-                error: function (XMLHttpRequest, textStatus, errorThrown) {}
+                error: function (XMLHttpRequest, textStatus, errorThrown) { }
               })
             }
           }
@@ -482,15 +494,14 @@ function addStolpersteins (map, status, tokens) {
       ).openOn(map)
     $.ajax({
       dataType: 'json',
-      url:
-        'https://overpass-api.de/api/interpreter?' +
+      url: 'https://overpass-api.de/api/interpreter?' +
         'data=[out:json][timeout:25][bbox:50.5,6.9,50.88,7.4];' + // Bonn
         // 'data=[out:json][timeout:25][bbox:51.91,8.3,52.12,8.67];' + // Bielefeld
         // 'data=[out:json][timeout:25][bbox:49.90,6.045,51.8,8.1];' + // Köln
         '(' +
-          'node["memorial:type"="stolperstein"];' +
-          'way["memorial:type"="stolperstein"];' + // unlikely to occur but possible
-          'rel["memorial:type"="stolperstein"];' + // unlikely to occur but possible
+        'node["memorial:type"="stolperstein"];' +
+        'way["memorial:type"="stolperstein"];' + // unlikely to occur but possible
+        'rel["memorial:type"="stolperstein"];' + // unlikely to occur but possible
         ');' +
         'out meta;>;out meta qt;',
       success: process,
@@ -519,19 +530,19 @@ $(document).ready(
       addStolpersteins(map, status, additionalDataJsonData.tokens || {})
     }
 
-    var map = L.map(
-      'map',
-      {
-        center: [50.7085234, 7.115605],
-        zoom: 12,
-        maxZoom: 18,
-        zoomControl: true,
-        fullscreenControl: true,
-        gpsControl: true
-      }
-    )
+    var map = L.map('map', {
+      center: [50.7085234, 7.115605],
+      zoom: 12,
+      maxZoom: 18,
+      zoomControl: true,
+      fullscreenControl: true,
+      gpsControl: true
+    })
     addLayers(map)
-    map.fitBounds([[50.63, 7.01], [50.78, 7.22]])
+    map.fitBounds([
+      [50.63, 7.01],
+      [50.78, 7.22]
+    ])
     var status = L.control.Status()
     status.addTo(map)
     status.hide()
@@ -560,7 +571,7 @@ $(document).ready(
         dataType: 'json',
         url: 'files/Zusatzdaten.json',
         success: process,
-        error: function (XMLHttpRequest, textStatus, errorThrown) {}
+        error: function (XMLHttpRequest, textStatus, errorThrown) { }
       })
     } else {
       process(JSON.parse(window.localStorage.getItem('additionalData')))
