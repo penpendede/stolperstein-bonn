@@ -19,6 +19,18 @@
     -->
     <link rel="stylesheet" type="text/css" href="css/stolperstein.css" />
 
+    <script>
+      // Two initializations that better are in the HTML file
+      window.stolpersteine = {}
+
+      document.ready = function (fn) {
+        if (document.readyState != 'loading'){
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+    </script>
     <!--
       <script src="node_modules/leaflet/dist/leaflet.js"></script>
       <script src="node_modules/leaflet.fullscreen/Control.FullScreen.js"></script>
@@ -31,10 +43,6 @@
       <script src="js/stolperstein.js"></script>
       <script src="js/Control.Status.js"></script>
     -->
-
-    <script>
-      window.stolpersteine = {}
-    </script>
 
     <title>Stolpersteine f&uuml;r NS-Opfer in Bonn und Umgebung</title>
 
