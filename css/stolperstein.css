@@ -1,0 +1,179 @@
+.fullscreen-icon {
+  background-image: url(../images/icon-fullscreen.png);
+}
+
+.leaflet-retina .fullscreen-icon {
+  background-image: url(../images/icon-fullscreen-2x.png);
+  background-size: 26px 26px;
+}
+
+.leaflet-control-layers-toggle {
+  background-image: url(../images/layers.png);
+  height: 36px;
+  width: 36px;
+}
+
+.leaflet-retina .leaflet-control-layers-toggle {
+  background-image: url(../images/layers-2x.png);
+  background-size: 26px 26px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+.map {
+  width: 100%;
+  background: rgba(240, 240, 240, 1)
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.title {
+  height: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.leaflet-control a:link,
+.leaflet-control a:visited {
+  color: rgba(0, 0, 0, 1);
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.leaflet-control-container .leaflet-control-attribution {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid rgba(0, 0, 255, 0.95);
+  border-radius: 0.5em;
+  color: rgba(0, 0, 0,  1);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  margin: 0.2em;
+  padding: 0.2em 0.5em;
+}
+
+.leaflet-control a {
+  font-weight: bold;
+}
+
+.leaflet-control a:link {
+  color: rgba(0, 0, 0, 255, 1);
+}
+
+.leaflet-control a:visited {
+  color: rgba(0, 0, 0, 255, 1);
+}
+
+.leaflet-control a:hover {
+  color: rgba(0, 102, 102, 1);
+}
+
+.leaflet-control a:active {
+  background: rgba(255, 255, 0, 1);
+  color: rgba(0, 0, 255, 1);
+}
+
+.leaflet-control-minimap-toggle-display {
+  background-image: url("../images/toggle.svg");
+}
+
+.leaflet-control-measure .leaflet-control-measure-toggle,
+.leaflet-control-measure .leaflet-control-measure-toggle:hover {
+  background-image: url(../images/rulers.png);
+}
+
+.leaflet-retina .leaflet-control-measure .leaflet-control-measure-toggle,
+.leaflet-retina .leaflet-control-measure .leaflet-control-measure-toggle:hover {
+  background-image: url(../images/rulers_@2X.png);
+}
+
+.leaflet-control-measure .leaflet-control-measure-toggle,
+.leaflet-control-measure .leaflet-control-measure-toggle:hover {
+  background-image: url(../images/rulers.png);
+}
+
+.leaflet-control-measure a.start {
+  background-image: url(../images/start.png);
+}
+
+.leaflet-control-measure a.cancel {
+  background-image: url(../images/cancel.png);
+}
+
+.leaflet-control-measure a.finish {
+  background-image: url(../images/check.png);
+}
+
+.leaflet-retina .leaflet-control-measure a.start {
+  background-image: url(../images/start_@2X.png);
+}
+
+.leaflet-retina .leaflet-control-measure a.cancel {
+  background-image: url(../images/cancel_@2X.png);
+}
+
+.leaflet-retina .leaflet-control-measure a.finish {
+  background-image: url(../images/check_@2X.png);
+}
+
+.leaflet-measure-resultpopup a.zoomto {
+  background-image: url(../images/focus.png);
+}
+
+.leaflet-measure-resultpopup a.deletemarkup {
+  background-image: url(../images/trash.png);
+}
+
+.leaflet-retina .leaflet-measure-resultpopup a.zoomto {
+  background-image: url(../images/focus_@2X.png);
+}
+
+.leaflet-retina .leaflet-measure-resultpopup a.deletemarkup {
+  background-image: url(../images/trash_@2X.png);
+}
+
+.leaflet-control-pan-up {
+  background-image: url(../images/pan-up.png);
+}
+
+.leaflet-control-pan-left {
+  background-image: url(../images/pan-left.png);
+}
+
+.leaflet-control-pan-right {
+  background-image: url(../images/pan-right.png);
+}
+
+.leaflet-control-pan-down {
+  background-image: url(../images/pan-down.png);
+}
+
+.leaflet-control-search.search-load .search-input {
+  background: url('../images/loader.gif') no-repeat center right rgba(255, 255, 255, 1);
+}
+
+.leaflet-control-search .search-cancel {
+  background: url('../images/search-icon.png') no-repeat 0 -46px;
+  opacity: 0.8;
+}
+
+.leaflet-control-search .search-button {
+  background: url('../images/search-icon.png') no-repeat 2px 2px;
+}
+
+.leaflet-control-search .search-button:hover {
+  background: url('../images/search-icon.png') no-repeat 2px -22px;
+}
