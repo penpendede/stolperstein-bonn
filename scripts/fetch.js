@@ -26,12 +26,12 @@ tasks.forEach(task => {
 
 function performTask (task) {
   https.get(task.src, resp => {
-    let data = 'window.stolpersteins.' + task.name + ' = '
+    let data = 'window.stolpersteine.' + task.name + ' = '
     resp.on('data', chunk => {
       data += chunk
     })
     resp.on('end', () => {
-      fs.writeFile(path.join('files', task.name + '.js'), data, err => {
+      fs.writeFile(path.join('js', task.name + '.js'), data, err => {
         if (err) {
           return console.log(err)
         }
