@@ -8,4 +8,5 @@ window.stolpersteine.fn.initializeMap = function (mapId) {
     fullscreenControl: true,
     gpsControl: true
   })
+  window.stolpersteine.map.addControl(new window.L.Control.Loading())
 }
