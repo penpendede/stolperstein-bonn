@@ -1,5 +1,5 @@
 window.stolpersteine.fn.addOrtsteile = function () {
-  window.stolpersteine.layers.featureLayers.ortsteile = window.L.geoJson(window.stolpersteine.ortsteile, {
+  window.stolpersteine.layers.featureLayers.ortsteile = window.L.geoJson(window.stolpersteine.data.ortsteile, {
     style: function (feature) {
       return {
         weight: 1,
