@@ -1,4 +1,4 @@
-window.stolpersteine.fn.addLayers = function () {
+window.stolpersteine.fn.addBaseLayers = function () {
   new window.L.tileLayer('https://mapintosh.de/tiles/osm/{z}/{x}/{y}.png', {
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +

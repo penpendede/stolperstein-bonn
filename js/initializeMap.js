@@ -8,5 +8,4 @@ window.stolpersteine.fn.initializeMap = function (mapId) {
     fullscreenControl: true,
     gpsControl: true
   })
-  window.stolpersteine.fn.addLayers()
 }
