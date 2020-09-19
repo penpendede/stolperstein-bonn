@@ -207,11 +207,6 @@ leaflet-measure@^3.1.0:
     "@turf/length" "^5.1.5"
     lodash "^4.17.5"
 
-leaflet-minimap@^3.6.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/leaflet-minimap/-/leaflet-minimap-3.6.1.tgz#2a43ff3b3d947a45a0acf4bdefc96505b673a6c6"
-  integrity sha1-KkP/Oz2UekWgrPS978llBbZzpsY=
-
 leaflet-search@^2.9.8:
   version "2.9.8"
   resolved "https://registry.yarnpkg.com/leaflet-search/-/leaflet-search-2.9.8.tgz#67adbd06016e67459e84a0493e946dd4384169b4"
