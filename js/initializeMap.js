@@ -5,8 +5,7 @@ window.stolpersteine.fn.initializeMap = function (mapId) {
     zoom: 12,
     maxZoom: 18,
     zoomControl: true,
-    fullscreenControl: true,
-    gpsControl: true
+    fullscreenControl: true
   })
   window.stolpersteine.map.addControl(new window.L.Control.Loading())
 }
