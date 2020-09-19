@@ -27,3 +27,7 @@ html {
   padding-top: 10px;
   text-align: center;
 }
+
+.easy-button-button .button-state {
+  display: initial !important;
+}

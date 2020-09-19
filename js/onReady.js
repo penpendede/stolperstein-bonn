@@ -4,5 +4,6 @@ document.ready(
     window.stolpersteine.fn.addBaseLayers()
     window.stolpersteine.fn.addBezirke()
     window.stolpersteine.fn.addOrtsteile()
+    window.stolpersteine.fn.addMenu()
   }
 )

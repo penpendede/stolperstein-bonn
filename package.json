@@ -12,9 +12,12 @@
   },
   "license": "BSD-2-Clause",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "leaflet": "^1.7.1",
     "leaflet-boundary-canvas": "^1.0.0",
+    "leaflet-easybutton": "^2.4.0",
     "leaflet-loading": "^0.1.24",
+    "leaflet-menu": "https://github.com/daiyanze/leaflet-menu.git",
     "leaflet-search": "^2.9.8",
     "leaflet.fullscreen": "^1.6.0",
     "leaflet.markercluster": "^1.4.1",

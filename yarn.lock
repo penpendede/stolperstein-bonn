@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@fortawesome/fontawesome-free@^5.14.0":
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.14.0.tgz#a371e91029ebf265015e64f81bfbf7d228c9681f"
+  integrity sha512-OfdMsF+ZQgdKHP9jUbmDcRrP0eX90XXrsXIdyjLbkmSBzmMXPABB8eobUJtivaupucYaByz6WNe1PI1JuYm3qA==
+
 "@mapbox/geojson-area@0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@mapbox/geojson-area/-/geojson-area-0.2.2.tgz#18d7814aa36bf23fbbcc379f8e26a22927debf10"
@@ -147,10 +152,21 @@ leaflet-boundary-canvas@^1.0.0:
   resolved "https://registry.yarnpkg.com/leaflet-boundary-canvas/-/leaflet-boundary-canvas-1.0.0.tgz#2b4c2d9f4aac4328e58588f89039d483f7c3fa84"
   integrity sha1-K0wtn0qsQyjlhYj4kDnUg/fD+oQ=
 
+leaflet-easybutton@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/leaflet-easybutton/-/leaflet-easybutton-2.4.0.tgz#3ad8ad31c9cf6d5ca7a6a1988f82eed13ff2c1af"
+  integrity sha512-O+qsQq4zTF6ds8VClnytobTH/MKalctlPpiA8L+bNKHP14J3lgJpvEd/jSpq9mHTI6qOzRAvbQX6wS6qNwThvg==
+  dependencies:
+    leaflet "^1.0.1"
+
 leaflet-loading@^0.1.24:
   version "0.1.24"
   resolved "https://registry.yarnpkg.com/leaflet-loading/-/leaflet-loading-0.1.24.tgz#eafdfc188718eb13d3cf7b9226c4c06b16e92919"
   integrity sha1-6v38GIcY6xPTz3uSJsTAaxbpKRk=
+
+"leaflet-menu@https://github.com/daiyanze/leaflet-menu.git":
+  version "0.0.0"
+  resolved "https://github.com/daiyanze/leaflet-menu.git#589374bd70748e6ef16a4ae2081274935555ab41"
 
 leaflet-search@^2.9.8:
   version "2.9.8"
@@ -174,7 +190,7 @@ leaflet.tilelayer.colorfilter@^1.2.5:
   resolved "https://registry.yarnpkg.com/leaflet.tilelayer.colorfilter/-/leaflet.tilelayer.colorfilter-1.2.5.tgz#f1ecbc1500352362643c4c04e5d8b6a2b49784c3"
   integrity sha512-wUvqVlpEofDEDi0ocXApXAcz1l06RsNBEw3L/2ColaygDPERswgas2Jgv/DVrWrVd0HQAxDerwFqOtBI+zbw3w==
 
-leaflet@*, leaflet@^1.7.1:
+leaflet@*, leaflet@^1.0.1, leaflet@^1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.7.1.tgz#10d684916edfe1bf41d688a3b97127c0322a2a19"
   integrity sha512-/xwPEBidtg69Q3HlqPdU3DnrXQOvQU/CCHA1tcDQVzOwm91YMYaILjNp7L4Eaw5Z4sOYdbBz6koWyibppd8Zqw==
