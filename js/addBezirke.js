@@ -1,6 +1,6 @@
 
 window.stolpersteine.fn.addBezirke = function () {
-  window.L.geoJson(window.stolpersteine.bezirke, {
+  window.stolpersteine.layers.featureLayers = window.L.geoJson(window.stolpersteine.bezirke, {
     style: function (feature) {
       return {
         weight: 3,

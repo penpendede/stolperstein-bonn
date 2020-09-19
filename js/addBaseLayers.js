@@ -1,5 +1,5 @@
 window.stolpersteine.fn.addBaseLayers = function () {
-  new window.L.tileLayer('https://mapintosh.de/tiles/osm/{z}/{x}/{y}.png', {
+  window.stolpersteine.layers.baseLayers.color = new window.L.tileLayer('https://mapintosh.de/tiles/osm/{z}/{x}/{y}.png', {
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
         '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',

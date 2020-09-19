@@ -1,5 +1,5 @@
 window.stolpersteine.fn.addStadtgebiet = function () {
-  window.L.geoJson(window.stolpersteine.stadtgebiet, {
+  window.stolpersteine.layers.featureLayers.stadtgebiet = window.L.geoJson(window.stolpersteine.data.stadtgebiet, {
     style: function (feature) {
       return {
         weight: 5,

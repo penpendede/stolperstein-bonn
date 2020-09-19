@@ -19,8 +19,14 @@
 
     <script>
       // Two initializations that better are in the HTML file
-      window.stolpersteine = {}
-      window.stolpersteine.fn = {}
+      window.stolpersteine = {
+        data: {},
+        fn: {},
+        layers: {
+          baseLayers: {},
+          featureLayers: {}
+        }
+      }
 
       document.ready = function (fn) {
         if (document.readyState != 'loading'){
@@ -42,7 +48,7 @@
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
     <script src="node_modules/leaflet.fullscreen/Control.FullScreen.js"></script>
     <script src="node_modules/leaflet-loading/src/Control.Loading.js"></script>
-    <script src="js/initializeMap.js"></script>
+    <script src="js/initialize.js"></script>
     <script src="js/addBaseLayers.js"></script>
     <script src="js/addStadtgebiet.js"></script>
     <script src="js/addBezirke.js"></script>

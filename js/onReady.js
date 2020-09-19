@@ -1,6 +1,6 @@
 document.ready(
   function () {
-    window.stolpersteine.fn.initializeMap('map')
+    window.stolpersteine.fn.initialize('map')
     window.stolpersteine.fn.addBaseLayers()
     window.stolpersteine.fn.addStadtgebiet()
     window.stolpersteine.fn.addBezirke()
