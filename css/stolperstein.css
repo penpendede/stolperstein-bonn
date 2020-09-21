@@ -15,7 +15,7 @@ html {
 
 .map {
   background: rgba(240, 240, 240, 1);
-  height: calc( 100% - 65px );
+  height: 100%;
   width: 100%;
 }
 
@@ -23,9 +23,19 @@ html {
   font-size: 24px;
   font-weight: bold;
   height: 45px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  position: absolute;
   text-align: center;
+  width: 100%;
+  z-index: 1000;
+}
+
+.title > div {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
 }
 
 .easy-button-button .button-state {

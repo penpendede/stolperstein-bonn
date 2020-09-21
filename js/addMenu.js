@@ -4,22 +4,46 @@ window.stolpersteine.fn.addMenu = function () {
       items: {
         Stolpersteine: {
           onClick: function () {
-            window.alert('Copyright')
+            for (var key in window.stolpersteine.popupWindows) {
+              if (key === 'stolpersteine') {
+                window.stolpersteine.popupWindows.stolpersteine.show()
+              } else {
+                window.stolpersteine.popupWindows[key].hide()
+              }
+            }
           }
         },
         Links: {
           onClick: function () {
-            window.alert('Copyright')
+            for (var key in window.stolpersteine.popupWindows) {
+              if (key === 'links') {
+                window.stolpersteine.popupWindows.links.show()
+              } else {
+                window.stolpersteine.popupWindows[key].hide()
+              }
+            }
           }
         },
         'Über diese Seite': {
           onClick: function () {
-            window.alert('Über diese Seite')
+            for (var key in window.stolpersteine.popupWindows) {
+              if (key === 'about') {
+                window.stolpersteine.popupWindows.about.show()
+              } else {
+                window.stolpersteine.popupWindows[key].hide()
+              }
+            }
           }
         },
         Copyright: {
           onClick: function () {
-            window.alert('Copyright')
+            for (var key in window.stolpersteine.popupWindows) {
+              if (key === 'copyright') {
+                window.stolpersteine.popupWindows.copyright.show()
+              } else {
+                window.stolpersteine.popupWindows[key].hide()
+              }
+            }
           }
         }
       }
