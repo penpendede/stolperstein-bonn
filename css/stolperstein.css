@@ -19,25 +19,30 @@ html {
   width: 100%;
 }
 
-.title {
+.pagetitle {
+  bottom: 10px;
   font-size: 24px;
   font-weight: bold;
-  height: 45px;
   position: absolute;
   text-align: center;
   width: 100%;
   z-index: 1000;
 }
 
-.title > div {
+.pagetitle > div {
+  max-width: calc( 100% - 40px );
   background: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   display: inline-block;
-  margin-top: 10px;
   padding: 10px 20px;
+  margin: 0 10px;
 }
 
 .easy-button-button .button-state {
   display: initial !important;
+}
+
+.leaflet-control-attribution.leaflet-control {
+  display: none;
 }
