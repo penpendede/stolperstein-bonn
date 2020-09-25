@@ -26,7 +26,8 @@ tasks.forEach(task => {
 
 function performTask (task) {
   https.get(task.src, resp => {
-    let data = 'window.stolpersteine.' + task.name + ' = '
+    resp.setEncoding('utf-8')
+    let data = 'window.stolpersteine.data.' + task.name + ' = '
     resp.on('data', chunk => {
       data += chunk
     })

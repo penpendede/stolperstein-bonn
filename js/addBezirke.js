@@ -8,7 +8,6 @@ window.stolpersteine.fn.addBezirke = function () {
         opacity: 0.4,
         fillOpacity: 0
       }
-    },
-    error: function (XMLHttpRequest, textStatus, errorThrown) { }
+    }
   }).addTo(window.stolpersteine.map)
 }

@@ -7,6 +7,15 @@ window.stolpersteine.fn.addOrtsteile = function () {
         opacity: 1,
         fillOpacity: 0
       }
+    },
+    onEachFeature: function (feature, layer) {
+      layer.bindPopup(feature.properties.ortsteil_bez)
+      layer.on('mouseover', function (e) {
+        this.openPopup()
+      })
+      layer.on('mouseout', function (e) {
+        this.closePopup()
+      })
     }
   }).addTo(window.stolpersteine.map)
 }

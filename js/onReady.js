@@ -6,5 +6,6 @@ document.ready(
     window.stolpersteine.fn.addOrtsteile()
     window.stolpersteine.fn.addMenu()
     window.stolpersteine.fn.addPopupWindows()
+    window.stolpersteine.fn.extractGebiete()
   }
 )
