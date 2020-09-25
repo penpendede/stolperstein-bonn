@@ -45,3 +45,13 @@ Allgemeinheit zur Verfügung gestellt worden.
 Ehe Kritik kommt, die verwendeten Werkzeuge seien Linux-spezifisch: Es
 gibt sie sämtlich auch für Windows 10. Ganz sicher, ich selbst verwende
 sie nämlich unter diesem Betriebssystem.
+
+## Probleme
+
+Der Datensatz *Flächen der Ortsteile* ist zur Zeit fehlerhaft; die Namen der Ortsteile sind in Latin-1 kodiert,
+obwohl die JSON-Spezifikation UTF-8 vorschreibt. Ich habe diesen Kodierungsfehler (leider keine Seltenheit) bereits
+gemeldet. Behebung des Problems mittels iconv:
+
+    mv ortsteile.js ortsteile.bak.js
+    iconv -f ISO8859-1 -t UTF8 ortsteile.bak.js > ortsteile.js
+    
