@@ -1,9 +1,10 @@
 const chalk = require('chalk')
 const fs = require('fs')
 const https = require('https')
+const JSON5 = require('json5')
 const path = require('path')
 
-const tasks = JSON.parse(fs.readFileSync('fetch_tasks.json'))
+const tasks = JSON5.parse(fs.readFileSync('fetch_tasks.json5'))
 let taskNames = []
 const possibleTaskNames = []
 

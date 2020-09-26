@@ -1,0 +1,48 @@
+[
+  {
+    name: 'bezirke',
+    info: 'Flächen der Stadtbezirke',
+    type: 'download',
+    args: {
+      source: 'https://stadtplan.bonn.de/geojson?Thema=14574',
+      target: 'bezirke'
+    }
+  },
+  {
+    name: 'ortsteile',
+    info: 'Flächen der Ortsteile',
+    type: 'download',
+    args: {
+      source: 'https://stadtplan.bonn.de/geojson?Thema=21247',
+      target: 'ortsteile'
+    }
+  },
+  {
+    name: 'stadtgebiet',
+    info: 'Fläche Stadtgebiet Bonn',
+    type: 'download',
+    args: {
+      source: 'https://stadtplan.bonn.de/geojson?Thema=21248',
+      target: 'stadtgebiet'
+    }
+  },
+  {
+    name: 'stolperstein',
+    info: 'Stolpersteine in Bonn und Umgebung',
+    type: 'overpass',
+    args:  {
+      'apiUrl': 'https://overpass-api.de/api/interpreter?',
+      'data': [
+        '[out:json][timeout:25][bbox:50.5,6.9,50.88,7.4];',
+        '(',
+          'node["memorial:type"="stolperstein"];',
+          'way["memorial:type"="stolperstein"];',
+          'rel["memorial:type"="stolperstein"];',
+        ');',
+        'out meta;',
+        '>;',
+        'out meta qt;'
+      ]
+    }
+  }
+]
