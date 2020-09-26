@@ -4,12 +4,27 @@ const https = require('https')
 const path = require('path')
 
 const tasks = JSON.parse(fs.readFileSync('fetch_tasks.json'))
+let taskNames = []
+const possibleTaskNames = []
+
+tasks.forEach(element => {
+  const name = element.name
+  possibleTaskNames.push(name)
+  if (process.argv.includes(name)) {
+    taskNames.push(name)
+  }
+})
+if (!taskNames.length) {
+  taskNames = possibleTaskNames
+}
 
 tasks.forEach(task => {
-  switch (task.type) {
-    case 'download':
-      download(task)
-      break
+  if (taskNames.includes(task.name)) {
+    switch (task.type) {
+      case 'download':
+        download(task)
+        break
+    }
   }
 })
 
