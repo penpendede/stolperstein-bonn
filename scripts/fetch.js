@@ -25,6 +25,13 @@ tasks.forEach(task => {
       case 'download':
         download(task)
         break
+      case 'overpass':
+        task.args = {
+          source: task.args.apiUrl + 'data=' + task.args.data.join(''),
+          target: 'stolpersteine'
+        }
+        download(task)
+        break
     }
   }
 })
