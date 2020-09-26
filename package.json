@@ -23,8 +23,7 @@
     "leaflet.fullscreen": "^1.6.0",
     "leaflet.markercluster": "^1.4.1",
     "leaflet.tilelayer.colorfilter": "^1.2.5",
-    "osmtogeojson": "^3.0.0-beta.4",
-    "whatwg-fetch": "^3.4.1"
+    "osmtogeojson": "^3.0.0-beta.4"
   },
   "scripts": {
     "fetch": "node scripts/fetch.js"
