@@ -369,10 +369,6 @@ split@~0.2.10:
   dependencies:
     through "2"
 
-"stolperstein-bonn-proxy@github:penpendede/stolperstein-bonn-proxy":
-  version "1.0.0"
-  resolved "https://codeload.github.com/penpendede/stolperstein-bonn-proxy/tar.gz/5b8b0382e697a8c9d1e183e0519151cc204e328c"
-
 string_decoder@^1.1.1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.3.0.tgz#42f114594a46cf1a8e30b0a84f56c78c3edac21e"
