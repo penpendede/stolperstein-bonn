@@ -46,3 +46,27 @@ html {
 .leaflet-control-attribution.leaflet-control {
   display: none;
 }
+
+table {
+  border: 1px solid #cccccc;
+  border-collapse: collapse;
+}
+
+tr {
+  border: 1px solid #cccccc;
+}
+
+th {
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  padding: 3px 7px;
+}
+
+td {
+  border: 1px solid #cccccc;
+  padding: 3px 7px;
+}
+
+table.no-line-break tr td {
+  white-space: nowrap;
+}

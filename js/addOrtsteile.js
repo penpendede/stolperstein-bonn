@@ -9,7 +9,23 @@ window.stolpersteine.fn.addOrtsteile = function () {
       }
     },
     onEachFeature: function (feature, layer) {
-      layer.bindPopup(feature.properties.ortsteil_bez)
+      var props = feature.properties
+      layer.bindPopup([
+        '<table class="no-line-break">',
+        '<tr>',
+        '<th>Bezirk</th>',
+        '<td>' + props.bezirk_bez + '</td>',
+        '</tr>',
+        '<tr>',
+        '<th>Ortsteil</th>',
+        '<td>' + props.ortsteil_bez + '</td>',
+        '</tr>',
+        '<tr>',
+        '<th>Stolpersteine</th>',
+        '<td>' + (props.stolpersteine === undefined ? 'unbekannt' : props.stolpersteine) + '</td>',
+        '</tr>',
+        '</table>'
+      ].join(''))
       layer.on('mouseover', function (e) {
         this.openPopup()
       })
