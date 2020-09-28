@@ -47,7 +47,8 @@ function download (task) {
       resp.on('end', () => {
         fs.writeFile(path.join('js', task.args.target + '.js'), data, err => {
           if (err) {
-            return console.error(err)
+            console.log(chalk.redBright.bold('[FAIL]') + ' ' + err)
+            return
           }
           console.log(chalk.greenBright.bold('[OKAY]') + ' ' + task.info)
         })

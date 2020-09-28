@@ -1,5 +1,7 @@
+const chalk = require('chalk')
 const fs = require('fs')
 const JSON5 = require('json5')
+const path = require('path')
 const insidePolygon = require('point-in-polygon')
 
 const ortsteile = JSON5.parse( // parse as JSON5
@@ -41,6 +43,21 @@ stolpersteinPositions.forEach(stolpersteinPosition => {
     }
   })
 })
-console.log(ortsteilCount)
-console.log(bezirkCount)
-// const chalk = require('chalk')
+
+let data = 'window.stolperstein.data.ortsteilCount = ' + JSON5.stringify(ortsteilCount)
+fs.writeFile(path.join('js', 'ortsteilCount.js'), data, err => {
+  if (err) {
+    console.log(chalk.redBright.bold('[FAIL]') + ' ' + err)
+    return
+  }
+  console.log(chalk.greenBright.bold('[OKAY]') + ' ortsteil count')
+})
+
+data = 'window.stolperstein.data.bezirkCount = ' + JSON5.stringify(bezirkCount)
+fs.writeFile(path.join('js', 'bezirkCount.js'), data, err => {
+  if (err) {
+    console.log(chalk.redBright.bold('[FAIL]') + ' ' + err)
+    return
+  }
+  console.log(chalk.greenBright.bold('[OKAY]') + ' bezirk count')
+})

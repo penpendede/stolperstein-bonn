@@ -26,7 +26,8 @@
     "osmtogeojson": "^3.0.0-beta.4"
   },
   "scripts": {
-    "fetch": "node scripts/fetch.js"
+    "fetch": "node scripts/fetch.js",
+    "count": "node scripts/stolpersteincount.js"
   },
   "devDependencies": {
     "chalk": "^4.1.0",
