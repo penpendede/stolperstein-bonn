@@ -31,11 +31,8 @@ window.stolpersteine.fn.addOrtsteile = function () {
         '</tr>',
         '</table>'
       ].join(''))
-      layer.on('mouseover', function (e) {
+      layer.on('click', function (e) {
         this.openPopup()
-      })
-      layer.on('mouseout', function (e) {
-        this.closePopup()
       })
     }
   }).addTo(window.stolpersteine.map)
