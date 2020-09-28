@@ -68,5 +68,5 @@ td {
 }
 
 table.no-line-break tr td {
-  white-space: nowrap;
+  hyphens: auto;
 }
