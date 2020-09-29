@@ -7,5 +7,6 @@ document.ready(
     window.stolpersteine.fn.addMenu()
     window.stolpersteine.fn.addPopupWindows()
     window.stolpersteine.fn.extractGebiete()
+    window.stolpersteine.fn.addStolpersteine()
   }
 )
