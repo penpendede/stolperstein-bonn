@@ -70,3 +70,33 @@ td {
 table.no-line-break tr td {
   hyphens: auto;
 }
+
+.stolperstein-quote {
+  display:inline-block;
+  font-family:sans-serif;
+  margin:1em;
+  max-width:20em;
+  text-transform: uppercase;
+}
+
+.stolperstein-quote blockquote {
+  border: solid 1em #cccccc;
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+
+.stolperstein-quote blockquote:before {
+  background-color: #ffffff;
+  bottom: -1em;
+  content: "";
+  left: 2em;
+  position: absolute;
+  right: 2em;
+  top: -1em;
+}
+.stolperstein-quote blockquote > * {
+  position: relative;
+  z-index: 1;
+}
