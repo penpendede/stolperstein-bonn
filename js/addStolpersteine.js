@@ -40,13 +40,12 @@ window.stolpersteine.fn.addStolpersteine = function () {
     onEachFeature: function (feature, layer) {
       var properties = feature.properties
       var description = []
-      console.log(JSON.stringify(properties))
       var property1 = properties.name || properties['memorial::name']
+      var name = property1
       var property2
       var ort = ''
       var geborenGestorben = ''
       if (property1) {
-        description.push('<h3>' + property1 + '</h3>')
         property1 = properties['memorial:text']
         if (property1) {
           description.push('<div class="stolperstein-quote">')
@@ -59,14 +58,14 @@ window.stolpersteine.fn.addStolpersteine = function () {
         }
         property1 = properties['person:date_of_birth']
         if (property1) {
-          geborenGestorben = 'geb. ' + property1
+          geborenGestorben = 'geboren ' + property1
         }
         property2 = properties['person:date_of_death']
         if (property2) {
           if (property1) {
             geborenGestorben += ', '
           }
-          geborenGestorben += 'gest. ' + property2
+          geborenGestorben += 'gestorben ' + property2
         }
         if (geborenGestorben) {
           description.push('<div>' + geborenGestorben + '</div>')
@@ -94,8 +93,12 @@ window.stolpersteine.fn.addStolpersteine = function () {
           description.push('<div>' + ort + '</div>')
         }
       }
-      layer.bindPopup(description.join(''), {
-        autoPan: false
+      layer.on('click', function () {
+        window.L.control.window(window.stolpersteine.map, {
+          title: name,
+          content: description.join('')
+        })
+          .show()
       })
     }
   }))
