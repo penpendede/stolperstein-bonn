@@ -92,14 +92,25 @@ window.stolpersteine.fn.addStolpersteine = function () {
         if (ort) {
           description.push('<div>' + ort + '</div>')
         }
-      }
-      layer.on('click', function () {
-        window.L.control.window(window.stolpersteine.map, {
-          title: name,
-          content: description.join('')
+        var imageUrl = decodeURIComponent(properties.image)
+        if (imageUrl) {
+          var urls = window.stolpersteine.fn.resolveImageUrl(imageUrl)
+          description.push([
+            '<p style="min-height:300px;">',
+            '<a href="' + urls.link + '" target="_blank">',
+            '<img src="' + urls.thumb + '" />',
+            '</a>',
+            '</p>'
+          ].join(''))
+        }
+        layer.on('click', function () {
+          window.L.control.window(window.stolpersteine.map, {
+            title: name,
+            content: description.join('')
+          })
+            .show()
         })
-          .show()
-      })
+      }
     }
   }))
   window.stolpersteine.map.addLayer(markers)
