@@ -21,15 +21,26 @@ tasks.forEach(task => {
         download(task)
         break
       case 'overpass':
-        task.args = {
-          source: task.args.apiUrl + 'data=' + task.args.data.join(''),
-          target: 'stolpersteine'
-        }
+        task.args.source = task.args.apiUrl + 'data=' + task.args.data.join('')
         download(task)
+        break
+      case 'wikimedia-images':
+        fetchImageUrls(task)
         break
     }
   }
 })
+
+function fetchImageUrls (task) {
+  const data = 'window.stolpersteine.data.' + task.args.target + ' = {}'
+  fs.writeFile(path.join('js', task.args.target + '.js'), data, err => {
+    if (err) {
+      console.log(chalk.redBright.bold('[FAIL]') + ' ' + err)
+      return
+    }
+    console.log(chalk.greenBright.bold('[OKAY]') + ' ' + task.info)
+  })
+}
 
 function download (task) {
   try {
