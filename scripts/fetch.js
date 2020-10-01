@@ -5,19 +5,14 @@ const JSON5 = require('json5')
 const path = require('path')
 
 const tasks = JSON5.parse(fs.readFileSync('fetch_tasks.json5'))
-let taskNames = []
-const possibleTaskNames = []
+const taskNames = []
 
 tasks.forEach(element => {
   const name = element.name
-  possibleTaskNames.push(name)
   if (process.argv.includes(name)) {
     taskNames.push(name)
   }
 })
-if (!taskNames.length) {
-  taskNames = possibleTaskNames
-}
 
 tasks.forEach(task => {
   if (taskNames.includes(task.name)) {
