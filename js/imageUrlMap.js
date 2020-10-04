@@ -1,1 +1,0 @@
-window.stolpersteine.data.imageUrlMap = {}

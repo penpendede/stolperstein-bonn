@@ -45,13 +45,5 @@
       ],
       target: 'stolpersteine'
     }
-  },
-  {
-    name: 'imageUrls',
-    info: 'Bildadressen der Stolpersteine',
-    type: 'wikimedia-images',
-    args: {
-      target: 'imageUrlMap'
-    }
   }
 ]

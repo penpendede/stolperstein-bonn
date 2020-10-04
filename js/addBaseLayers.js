@@ -1,6 +1,6 @@
 window.stolpersteine.fn.addBaseLayers = function () {
   window.stolpersteine.layers.baseLayers.grayscale = new window.L.tileLayer.colorFilter(
-    'https://mapintosh.de/tiles/osm/{z}/{x}/{y}.png', {
+    'https://penpendede.hopto.org/osm-de/{z}/{x}/{y}.png', {
       maxZoom: 18,
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
           '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
@@ -14,7 +14,7 @@ window.stolpersteine.fn.addBaseLayers = function () {
   ).addTo(window.stolpersteine.map)
 
   window.stolpersteine.layers.baseLayers.cityOnlyColor = new window.L.TileLayer.BoundaryCanvas(
-    'https://mapintosh.de/tiles/osm/{z}/{x}/{y}.png', {
+    'https://penpendede.hopto.org/osm-de/{z}/{x}/{y}.png', {
       maxZoom: 18,
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
           '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',

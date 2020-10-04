@@ -94,14 +94,7 @@ window.stolpersteine.fn.addStolpersteine = function () {
         }
         var imageUrl = decodeURIComponent(properties.image)
         if (imageUrl) {
-          var urls = window.stolpersteine.fn.resolveImageUrl(imageUrl)
-          description.push([
-            '<p style="min-height:300px;">',
-            '<a href="' + urls.link + '" target="_blank">',
-            '<img src="' + urls.thumb + '" />',
-            '</a>',
-            '</p>'
-          ].join(''))
+          description.push('<a href="' + window.stolpersteine.fn.resolveImageUrl(imageUrl) + '" target="_blank">Foto verfügbar</a>')
         }
         layer.on('click', function () {
           window.L.control.window(window.stolpersteine.map, {
