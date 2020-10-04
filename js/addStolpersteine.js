@@ -93,9 +93,33 @@ window.stolpersteine.fn.addStolpersteine = function () {
           description.push('<div>' + ort + '</div>')
         }
         var imageUrl = decodeURIComponent(properties.image)
-        if (imageUrl) {
-          description.push('<a href="' + window.stolpersteine.fn.resolveImageUrl(imageUrl) + '" target="_blank">Foto verfügbar</a>')
+        if (imageUrl && imageUrl !== 'undefined') {
+          if (/^(File|Datei):/i.test(imageUrl)) {
+            imageUrl = 'https://commons.wikimedia.org/wiki/' + imageUrl
+          }
+          description.push([
+            '<p>',
+            '<a href="' + imageUrl + '" target="_blank" style="text-decoration: none;">',
+            '<i class="fas fa-camera fa-lg"></i> ',
+            'Foto verfügbar',
+            '</a>',
+            '</p>'
+          ].join(''))
+          if (/^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons/.test(imageUrl) ||
+            /^https:\/\/commons\.wikimedia\.org\/wiki\/(Datei|File)/i.test(imageUrl)
+          ) {
+            var split = imageUrl.split('/')
+            var thumbName = split[split.length - 1].replace(/^(File|Datei):/, '')
+            description.push([
+              '<p style="min-height: 300px;">',
+              '<a href="', imageUrl, '" target="_blank">',
+              '<img src="https://commons.wikimedia.org/w/thumb.php?f=', thumbName, '&w=300">',
+              '</a>',
+              '</p>'
+            ].join(''))
+          }
         }
+        // console.log(description)
         layer.on('click', function () {
           window.L.control.window(window.stolpersteine.map, {
             title: name,
