@@ -1,4 +1,14 @@
 window.stolpersteine.fn.addStolpersteine = function () {
+  var grayIcon = window.L.icon({
+    iconUrl: 'images/marker-gray-icon.png',
+    shadowUrl: 'images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+    shadowAnchor: [12, 41]
+  })
+
   function link (text) {
     var tokens = window.stolpersteine.tokens
     var tokenized = [text]
@@ -7,6 +17,7 @@ window.stolpersteine.fn.addStolpersteine = function () {
     var pre
     var post
     var match
+
     Object.keys(tokens).forEach(function (key) {
       for (var index = 0; index < tokenized.length; index++) {
         position = tokenized[index].indexOf(key)
@@ -37,6 +48,13 @@ window.stolpersteine.fn.addStolpersteine = function () {
     maxClusterRadius: 50
   })
   markers.addLayer(window.L.geoJson(geojson, {
+    pointToLayer: function (feature, latlng) {
+      if (!feature.properties.image) {
+        return window.L.marker(latlng, { icon: grayIcon })
+      } else {
+        // return window.L.marker(latlng)
+      }
+    },
     onEachFeature: function (feature, layer) {
       var properties = feature.properties
       var description = []
