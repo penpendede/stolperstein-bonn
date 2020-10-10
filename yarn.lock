@@ -211,6 +211,13 @@ leaflet-easybutton@^2.4.0:
   dependencies:
     leaflet "^1.0.1"
 
+leaflet-gps@^1.7.6:
+  version "1.7.6"
+  resolved "https://registry.yarnpkg.com/leaflet-gps/-/leaflet-gps-1.7.6.tgz#8b61708b3f0ffd4e05b61e350d48c18a56ef5899"
+  integrity sha512-h50J2UZ4Z3YRSm3gdpwgFykoCqkgs9q8wSgabLDkuS6jvnqRbKx/v0PG350Q87do/LXQzcN8RfzLWlM41/7M5A==
+  dependencies:
+    leaflet "*"
+
 leaflet-loading@^0.1.24:
   version "0.1.24"
   resolved "https://registry.yarnpkg.com/leaflet-loading/-/leaflet-loading-0.1.24.tgz#eafdfc188718eb13d3cf7b9226c4c06b16e92919"

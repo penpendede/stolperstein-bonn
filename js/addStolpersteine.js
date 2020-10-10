@@ -52,7 +52,7 @@ window.stolpersteine.fn.addStolpersteine = function () {
       if (!feature.properties.image) {
         return window.L.marker(latlng, { icon: grayIcon })
       } else {
-        // return window.L.marker(latlng)
+        return window.L.marker(latlng)
       }
     },
     onEachFeature: function (feature, layer) {
