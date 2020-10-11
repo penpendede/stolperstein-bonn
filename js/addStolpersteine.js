@@ -44,10 +44,10 @@ window.stolpersteine.fn.addStolpersteine = function () {
   }
 
   var geojson = window.osmtogeojson(window.stolpersteine.data.stolpersteine)
-  var markers = window.L.markerClusterGroup({
+  window.stolpersteine.markers = window.L.markerClusterGroup({
     maxClusterRadius: 50
   })
-  markers.addLayer(window.L.geoJson(geojson, {
+  window.stolpersteine.markers.addLayer(window.L.geoJson(geojson, {
     pointToLayer: function (feature, latlng) {
       if (!feature.properties.image) {
         return window.L.marker(latlng, { icon: grayIcon })
@@ -148,5 +148,5 @@ window.stolpersteine.fn.addStolpersteine = function () {
       }
     }
   }))
-  window.stolpersteine.map.addLayer(markers)
+  window.stolpersteine.map.addLayer(window.stolpersteine.markers)
 }
