@@ -20,10 +20,21 @@ window.stolpersteine.fn.stolpersteinFilter = function (feature) {
           filter.filterBy = 'equals' // if no filterBy is provided it is assumed to be 'equals'
         }
         // Actual filtering
+        var property
         switch (filter.filterBy) {
+          case 'contains':
+            if (Object.prototype.hasOwnProperty.call(properties, filter.property)) {
+              property = properties[filter.property]
+              filter.values.forEach(function (value) {
+                if (property.indexOf(value) > -1) {
+                  passesFilter = true
+                }
+              })
+            }
+            break
           case 'equals':
             if (Object.prototype.hasOwnProperty.call(properties, filter.property)) {
-              var property = properties[filter.property]
+              property = properties[filter.property]
               filter.values.forEach(function (value) {
                 if (property === value) {
                   passesFilter = true
@@ -32,9 +43,9 @@ window.stolpersteine.fn.stolpersteinFilter = function (feature) {
             }
             break
           case 'isSet':
-            var isSet = Object.prototype.hasOwnProperty.call(properties, filter.property)
+            property = Object.prototype.hasOwnProperty.call(properties, filter.property)
             filter.values.forEach(function (value) {
-              if (isSet === value) {
+              if (property === value) {
                 passesFilter = true
               }
             })
