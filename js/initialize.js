@@ -6,6 +6,9 @@ window.stolpersteine.fn.initialize = function (mapId) {
       property: 'image',
       filterBy: 'isSet',
       values: [true, false]
+    },
+    {
+      property: 'name'
     }
   ]
   window.stolpersteine.map = window.L.map(mapId, {

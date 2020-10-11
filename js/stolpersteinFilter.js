@@ -21,6 +21,16 @@ window.stolpersteine.fn.stolpersteinFilter = function (feature) {
         }
         // Actual filtering
         switch (filter.filterBy) {
+          case 'equals':
+            if (Object.prototype.hasOwnProperty.call(properties, filter.property)) {
+              var property = properties[filter.property]
+              filter.values.forEach(function (value) {
+                if (property === value) {
+                  passesFilter = true
+                }
+              })
+            }
+            break
           case 'isSet':
             var isSet = Object.prototype.hasOwnProperty.call(properties, filter.property)
             filter.values.forEach(function (value) {
