@@ -3,12 +3,14 @@ window.stolpersteine.fn.initialize = function (mapId) {
   window.stolpersteine.markers = null
   window.stolpersteine.data.filterSetup = [
     {
-      property: 'image',
+      attribute: 'image',
       filterBy: 'isSet',
       values: [true, false]
     },
     {
-      property: 'name'
+      attribute: 'name',
+      filterBy: 'partSoundsLike',
+      values: ['Levi']
     }
   ]
   window.stolpersteine.map = window.L.map(mapId, {
