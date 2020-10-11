@@ -23,7 +23,7 @@ window.stolpersteine.fn.initialize = function (mapId) {
     marker: null,
     accuracy: true,
     title: 'Karte auf aktuelle Position zentrieren',
-    position: 'topleft',
+    position: 'topright',
     transform: function (latlng) {
       return latlng
     },
