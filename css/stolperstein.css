@@ -100,3 +100,14 @@ table.no-line-break tr td {
   position: relative;
   z-index: 1;
 }
+
+form {
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+  width: 300px;
+}
+
+form textarea {
+  width: 100%;
+}

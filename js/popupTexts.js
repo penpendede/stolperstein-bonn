@@ -113,6 +113,24 @@ window.stolpersteine.popupTexts = {
       '</ul>'
     ].join('\n')
   },
+  filter: {
+    title: 'Filter',
+    text: [
+      '<form>',
+      '<p><b>Bild</b></p>',
+      '<input type="checkbox" name="withImage" id="withImage"',
+      'onchange="window.stolpersteine.fn.updateFilter()"> mit<br>',
+      '<input type="checkbox" name="withoutImage" id="withoutImage"',
+      'onchange="window.stolpersteine.fn.updateFilter()"> ohne',
+      '<p><b>Name des NS-Opfers</b></p>',
+      '<textarea name="name" id="name" rows="3" ',
+      'onkeyup="window.stolpersteine.fn.updateFilter()" onpaste="window.stolpersteine.fn.updateFilter()"></textarea>',
+      '<p><b>Inschrift</b></p>',
+      '<textarea name="memorialText" id="memorialText" rows="3" ',
+      'onkeyup="window.stolpersteine.fn.updateFilter()" onpaste="window.stolpersteine.fn.updateFilter()"></textarea>',
+      '</form>'
+    ].join('\n')
+  },
   links: {
     title: 'Links',
     text: [
