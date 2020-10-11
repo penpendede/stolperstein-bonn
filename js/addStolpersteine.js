@@ -43,11 +43,14 @@ window.stolpersteine.fn.addStolpersteine = function () {
     return tokenized.join('')
   }
 
-  var geojson = window.osmtogeojson(window.stolpersteine.data.stolpersteine)
+  var geojson = window.osmtogeojson(
+    window.stolpersteine.data.stolpersteine
+  )
   window.stolpersteine.markers = window.L.markerClusterGroup({
     maxClusterRadius: 50
   })
   window.stolpersteine.markers.addLayer(window.L.geoJson(geojson, {
+    filter: window.stolpersteine.fn.stolpersteinFilter,
     pointToLayer: function (feature, latlng) {
       if (!feature.properties.image) {
         return window.L.marker(latlng, { icon: grayIcon })
