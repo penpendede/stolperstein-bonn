@@ -45,7 +45,7 @@ window.stolpersteine.fn.stolpersteinFilter = function (feature) {
             break
           case 'partSoundsLike': // check if part of the attribute sounds like the string
             if (Object.prototype.hasOwnProperty.call(attributes, filter.attribute)) {
-              var attributeParts = attributes[filter.attribute].split(' ')
+              var attributeParts = attributes[filter.attribute].replace('-', '').split(/\b/)
               attributeParts.forEach(function (attributePart) {
                 var compare = window.stolpersteine.fn.colognePhonetics(attributePart)
                 filter.values.forEach(function (value) {

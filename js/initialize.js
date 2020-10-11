@@ -1,18 +1,7 @@
 window.stolpersteine.fn.initialize = function (mapId) {
   window.stolpersteine.mapId = mapId
   window.stolpersteine.markers = null
-  window.stolpersteine.data.filterSetup = [
-    {
-      attribute: 'image',
-      filterBy: 'isSet',
-      values: [true, false]
-    },
-    {
-      attribute: 'name',
-      filterBy: 'partSoundsLike',
-      values: ['Levi']
-    }
-  ]
+  window.stolpersteine.data.filterSetup = []
   window.stolpersteine.map = window.L.map(mapId, {
     center: [50.7085234, 7.115605],
     zoom: 12,
