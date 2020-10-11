@@ -50,6 +50,19 @@ window.stolpersteine.fn.stolpersteinFilter = function (feature) {
               }
             })
             break
+          case 'partSoundsLike':
+            if (Object.prototype.hasOwnProperty.call(properties, filter.property)) {
+              var propertyParts = properties[filter.property].split(' ')
+              propertyParts.forEach(function (propertyPart) {
+                var compare = window.stolpersteine.fn.colognePhonetics(propertyPart)
+                filter.values.forEach(function (value) {
+                  if (compare === window.stolpersteine.fn.colognePhonetics(value)) {
+                    passesFilter = true
+                  }
+                })
+              })
+            }
+            break
           case 'soundsLike':
             if (Object.prototype.hasOwnProperty.call(properties, filter.property)) {
               property = window.stolpersteine.fn.colognePhonetics(properties[filter.property])
