@@ -13,7 +13,7 @@ window.stolpersteine.fn.initialize = function (mapId) {
     autoActive: false,
     autoCenter: false,
     maxZoom: 18,
-    textErr: 'Orttsbestimmung nicht möglich',
+    textErr: 'Ortsbestimmung nicht möglich',
     callErr: null,
     style: {
       radius: 5,
