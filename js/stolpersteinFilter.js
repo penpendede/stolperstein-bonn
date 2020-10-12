@@ -14,6 +14,7 @@ window.stolpersteine.fn.stolpersteinFilter = function (feature) {
         }
         // Actual filtering
         var attribute
+        var attributeParts
         switch (filter.filterBy) {
           case 'contains': // check if attribute contains the string
             if (Object.prototype.hasOwnProperty.call(attributes, filter.attribute)) {
@@ -45,7 +46,7 @@ window.stolpersteine.fn.stolpersteinFilter = function (feature) {
             break
           case 'partSoundsLike': // check if part of the attribute sounds like the string
             if (Object.prototype.hasOwnProperty.call(attributes, filter.attribute)) {
-              var attributeParts = attributes[filter.attribute].replace('-', '').split(/\b/)
+              attributeParts = attributes[filter.attribute].replace('-', '').split(/\b/)
               attributeParts.forEach(function (attributePart) {
                 var compare = window.stolpersteine.fn.colognePhonetics(attributePart)
                 filter.values.forEach(function (value) {
@@ -54,6 +55,27 @@ window.stolpersteine.fn.stolpersteinFilter = function (feature) {
                   }
                 })
               })
+            }
+            break
+          case 'possiblePart': // check if part of the attribute sounds like the string
+            if (Object.prototype.hasOwnProperty.call(attributes, filter.attribute)) {
+              attribute = attributes[filter.attribute]
+              filter.values.forEach(function (value) {
+                if (attribute.indexOf(value) > -1) {
+                  passesFilter = true
+                }
+              })
+              if (!passesFilter) {
+                attributeParts = attributes[filter.attribute].replace('-', '').split(/\b/)
+                attributeParts.forEach(function (attributePart) {
+                  var compare = window.stolpersteine.fn.colognePhonetics(attributePart)
+                  filter.values.forEach(function (value) {
+                    if (compare === window.stolpersteine.fn.colognePhonetics(value)) {
+                      passesFilter = true
+                    }
+                  })
+                })
+              }
             }
             break
           case 'soundsLike': // check if the attribute sounds like the string

@@ -111,3 +111,9 @@ form {
 form textarea {
   width: 100%;
 }
+
+form .half {
+  box-sizing: border-box;
+  display: inline-block;
+  width: calc( 50% - 2px );
+}

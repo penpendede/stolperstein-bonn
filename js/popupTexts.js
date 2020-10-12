@@ -114,14 +114,18 @@ window.stolpersteine.popupTexts = {
     ].join('\n')
   },
   filter: {
-    title: 'Filter',
+    title: 'Stolpersteine auswählen',
     text: [
       '<form>',
       '<p><b>Bild</b></p>',
-      '<input type="checkbox" name="withImage" id="withImage"',
-      'onchange="window.stolpersteine.fn.updateFilter()"> mit<br>',
-      '<input type="checkbox" name="withoutImage" id="withoutImage"',
+      '<div class="half">',
+      '<input type="checkbox" name="withImage" id="withImage" checked',
+      'onchange="window.stolpersteine.fn.updateFilter()"> mit',
+      '</div>',
+      '<div class="half">',
+      '<input type="checkbox" name="withoutImage" id="withoutImage" checked',
       'onchange="window.stolpersteine.fn.updateFilter()"> ohne',
+      '</div>',
       '<p><b>Name des NS-Opfers</b></p>',
       '<textarea name="name" id="name" rows="3" ',
       'onkeyup="window.stolpersteine.fn.updateFilter()" onpaste="window.stolpersteine.fn.updateFilter()"></textarea>',
