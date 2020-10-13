@@ -26,7 +26,7 @@ html {
   position: absolute;
   text-align: center;
   width: 100%;
-  z-index: 1000;
+  z-index: 500;
 }
 
 .pagetitle > div {
@@ -116,4 +116,14 @@ form .half {
   box-sizing: border-box;
   display: inline-block;
   width: calc( 50% - 2px );
+}
+
+#tooltip {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(96, 96, 96, 0.7);
+  border-radius: 5px;
+  color: rgba(96, 96, 96, 1);
+  padding: 2px 5px;
+  position: fixed;
+  z-index: 600;
 }
