@@ -1,0 +1,90 @@
+<!DOCTYPE html style="background: white">
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="images/stolperstein.png" type="image/png" />
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="node_modules/leaflet.fullscreen/Control.FullScreen.css" />
+    <link rel="stylesheet" href="node_modules/leaflet-loading/src/Control.Loading.css" />
+    <link rel="stylesheet" href="node_modules/leaflet.fullscreen/Control.FullScreen.css" />
+    <link rel="stylesheet" href="node_modules/leaflet-menu/src/leaflet.menu.min.css" />
+    <link rel="stylesheet" href="node_modules/leaflet-easybutton/src/easy-button.css" />
+    <link rel="stylesheet" href="node_modules/leaflet-control-window/src/L.Control.Window.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/regular.min.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/solid.min.css" />
+    <link rel="stylesheet" href="node_modules/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="node_modules/leaflet-gps/dist/leaflet-gps.min.css" />
+    <link rel="stylesheet" href="css/stolperstein.css" />
+
+    <script>
+      // Two initializations that better are in the HTML file
+      window.stolpersteine = {
+        data: {},
+        fn: {},
+        layers: {
+          baseLayers: {},
+          featureLayers: {}
+        }
+      }
+
+      document.ready = function (fn) {
+        if (document.readyState != 'loading'){
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+    </script>
+    <script src="js/stadtgebiet.js"></script>
+    <script src="js/bezirke.js"></script>
+    <script src="js/ortsteile.js"></script>
+    <script src="js/popupTexts.js"></script>
+    <script src="js/ortsteilCount.js"></script>
+    <script src="js/bezirkCount.js"></script>
+    <script src="node_modules/leaflet/dist/leaflet.js"></script>
+    <script src="node_modules/leaflet.fullscreen/Control.FullScreen.js"></script>
+    <script src="node_modules/leaflet-loading/src/Control.Loading.js"></script>
+    <script src="node_modules/leaflet.tilelayer.colorfilter/src/leaflet-tilelayer-colorfilter.min.js"></script>
+    <script src="node_modules/leaflet-boundary-canvas/src/BoundaryCanvas.js"></script>
+    <script src="node_modules/leaflet-menu/src/leaflet.menu.min.js"></script>
+    <script src="node_modules/leaflet-easybutton/src/easy-button.js"></script>
+    <script src="node_modules/leaflet-control-window/src/L.Control.Window.js"></script>
+    <script src="node_modules/osmtogeojson/osmtogeojson.js"></script>
+    <script src="node_modules/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="node_modules/leaflet-gps/dist/leaflet-gps.min.js"></script>
+    <script src="js/initialize.js"></script>
+    <script src="js/addBaseLayers.js"></script>
+    <script src="js/addBezirke.js"></script>
+    <script src="js/addOrtsteile.js"></script>
+    <script src="js/addStolpersteine.js"></script>
+    <script src="js/addToolTip.js"></script>
+    <script src="js/removeStolpersteine.js"></script>
+    <script src="js/stolpersteinFilter.js"></script>
+    <script src="js/addMenu.js"></script>
+    <script src="js/stolpersteine.js"></script>
+    <script src="js/addPopupWindows.js"></script>
+    <script src="js/extractGebiete.js"></script>
+    <script src="js/zusatzdaten.js"></script>
+    <script src="js/colognePhonetics.js"></script>
+    <script src="js/updateFilter.js"></script>
+    <script src="js/onReady.js"></script>
+
+    <title>Stolpersteine f&uuml;r NS-Opfer in Bonn und Umgebung</title>
+
+  </head>
+
+  <body>
+
+    <div class="pagetitle">
+      <div>Stol&shy;per&shy;stei&shy;ne f&uuml;r NS-Op&shy;fer in Bonn und Um&shy;ge&shy;bung</div>
+    </div>
+
+    <div id="tooltip" style="display: none;"></div>
+    <div id="map" class="map" style="overflow:hidden;"></div>
+
+  </body>
+</html>

@@ -1,0 +1,129 @@
+body {
+  background: rgba(240, 240, 240, 1);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+html {
+  background: rgba(240, 240, 240, 1);
+  height: 100%;
+  width: 100%;
+}
+
+.map {
+  background: rgba(240, 240, 240, 1);
+  height: 100%;
+  width: 100%;
+}
+
+.pagetitle {
+  bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 500;
+}
+
+.pagetitle > div {
+  max-width: calc( 100% - 40px );
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.easy-button-button .button-state {
+  display: initial !important;
+}
+
+.leaflet-control-attribution.leaflet-control {
+  display: none;
+}
+
+table {
+  border: 1px solid #cccccc;
+  border-collapse: collapse;
+}
+
+tr {
+  border: 1px solid #cccccc;
+}
+
+th {
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  padding: 3px 7px;
+}
+
+td {
+  border: 1px solid #cccccc;
+  padding: 3px 7px;
+}
+
+table.no-line-break tr td {
+  hyphens: auto;
+}
+
+.stolperstein-quote {
+  display:inline-block;
+  font-family:sans-serif;
+  margin:1em;
+  max-width:20em;
+  text-transform: uppercase;
+}
+
+.stolperstein-quote blockquote {
+  border: solid 1em #cccccc;
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+
+.stolperstein-quote blockquote:before {
+  background-color: #ffffff;
+  bottom: -1em;
+  content: "";
+  left: 2em;
+  position: absolute;
+  right: 2em;
+  top: -1em;
+}
+.stolperstein-quote blockquote > * {
+  position: relative;
+  z-index: 1;
+}
+
+form {
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+  width: 300px;
+}
+
+form textarea {
+  width: 100%;
+}
+
+form .half {
+  box-sizing: border-box;
+  display: inline-block;
+  width: calc( 50% - 2px );
+}
+
+#tooltip {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(96, 96, 96, 0.7);
+  border-radius: 5px;
+  color: rgba(96, 96, 96, 1);
+  padding: 2px 5px;
+  position: fixed;
+  z-index: 600;
+}
