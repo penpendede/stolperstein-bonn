@@ -1,49 +1,40 @@
 window.stolpersteine.fn.addMenu = function () {
+  function genericOnClick (keyName) {
+    for (var key in window.stolpersteine.popupWindows) {
+      if (key === keyName) {
+        window.stolpersteine.popupWindows[keyName].show()
+      } else {
+        window.stolpersteine.popupWindows[key].hide()
+      }
+    }
+  }
+
   window.stolpersteine.menu = window.L.leafletMenu(
     window.stolpersteine.map, {
       items: {
         Stolpersteine: {
           onClick: function () {
-            for (var key in window.stolpersteine.popupWindows) {
-              if (key === 'stolpersteine') {
-                window.stolpersteine.popupWindows.stolpersteine.show()
-              } else {
-                window.stolpersteine.popupWindows[key].hide()
-              }
-            }
+            genericOnClick('stolpersteine')
           }
         },
         Links: {
           onClick: function () {
-            for (var key in window.stolpersteine.popupWindows) {
-              if (key === 'links') {
-                window.stolpersteine.popupWindows.links.show()
-              } else {
-                window.stolpersteine.popupWindows[key].hide()
-              }
-            }
+            genericOnClick('links')
           }
         },
         'Über diese Seite': {
           onClick: function () {
-            for (var key in window.stolpersteine.popupWindows) {
-              if (key === 'about') {
-                window.stolpersteine.popupWindows.about.show()
-              } else {
-                window.stolpersteine.popupWindows[key].hide()
-              }
-            }
+            genericOnClick('about')
           }
         },
         Copyright: {
           onClick: function () {
-            for (var key in window.stolpersteine.popupWindows) {
-              if (key === 'copyright') {
-                window.stolpersteine.popupWindows.copyright.show()
-              } else {
-                window.stolpersteine.popupWindows[key].hide()
-              }
-            }
+            genericOnClick('copyright')
+          }
+        },
+        'Stand der Daten': {
+          onClick: function () {
+            genericOnClick('lastModified')
           }
         }
       }
