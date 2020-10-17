@@ -127,11 +127,11 @@ window.stolpersteine.popupTexts = {
       'onchange="window.stolpersteine.fn.updateFilter()"> ohne',
       '</div>',
       '<p><b>Name des NS-Opfers</b></p>',
-      '<textarea name="name" id="name" rows="3" ',
-      'onkeyup="window.stolpersteine.fn.updateFilter()" onpaste="window.stolpersteine.fn.updateFilter()"></textarea>',
+      '<input name="name" id="name" onkeyup="window.stolpersteine.fn.updateFilter()" ',
+      'onpaste="window.stolpersteine.fn.updateFilter()">',
       '<p><b>Inschrift</b></p>',
-      '<textarea name="memorialText" id="memorialText" rows="3" ',
-      'onkeyup="window.stolpersteine.fn.updateFilter()" onpaste="window.stolpersteine.fn.updateFilter()"></textarea>',
+      '<input name="memorialText" id="memorialText" onkeyup="window.stolpersteine.fn.updateFilter()" ',
+      'onpaste="window.stolpersteine.fn.updateFilter()">',
       '</form>'
     ].join('\n')
   },

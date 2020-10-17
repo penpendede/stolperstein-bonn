@@ -61,7 +61,7 @@ window.stolpersteine.fn.addStolpersteine = function () {
     onEachFeature: function (feature, layer) {
       var properties = feature.properties
       var description = []
-      var property1 = properties.name || properties['memorial::name']
+      var property1 = properties.name || properties['memorial:name']
       var name = property1
       var property2
       var ort = ''

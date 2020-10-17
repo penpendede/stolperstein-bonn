@@ -108,6 +108,10 @@ form {
   width: 300px;
 }
 
+form input {
+  width: 100%;
+}
+
 form textarea {
   width: 100%;
 }
@@ -126,4 +130,8 @@ form .half {
   padding: 2px 5px;
   position: fixed;
   z-index: 600;
+}
+
+.awesomplete {
+  width: 100%;
 }

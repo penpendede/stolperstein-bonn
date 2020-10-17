@@ -13,6 +13,7 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
+    "awesomplete": "^1.1.5",
     "leaflet": "^1.7.1",
     "leaflet-boundary-canvas": "^1.0.0",
     "leaflet-control-window": "^1.0.0",

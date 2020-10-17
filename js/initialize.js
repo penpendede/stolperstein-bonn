@@ -39,5 +39,4 @@ window.stolpersteine.fn.initialize = function (mapId) {
     maxZoom: 16,
     watch: true
   })
-  window.stolpersteine.fn.addToolTip()
 }
