@@ -108,7 +108,7 @@ form {
   width: 300px;
 }
 
-form input {
+form input[type="text"] {
   width: 100%;
 }
 

@@ -127,10 +127,10 @@ window.stolpersteine.popupTexts = {
       'onchange="window.stolpersteine.fn.updateFilter()"> ohne',
       '</div>',
       '<p><b>Name des NS-Opfers</b></p>',
-      '<input name="name" id="name" onkeyup="window.stolpersteine.fn.updateFilter()" ',
+      '<input type="text" name="name" id="name" onkeyup="window.stolpersteine.fn.updateFilter()" ',
       'onpaste="window.stolpersteine.fn.updateFilter()">',
       '<p><b>Inschrift</b></p>',
-      '<input name="memorialText" id="memorialText" onkeyup="window.stolpersteine.fn.updateFilter()" ',
+      '<input type="text" name="memorialText" id="memorialText" onkeyup="window.stolpersteine.fn.updateFilter()" ',
       'onpaste="window.stolpersteine.fn.updateFilter()">',
       '</form>'
     ].join('\n')

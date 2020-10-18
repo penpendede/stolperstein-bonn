@@ -14,10 +14,16 @@ window.stolpersteine.fn.updateFilter = function (feature) {
     }
   ]
   if (document.getElementById('name').value) {
+    values = []
+    document.getElementById('name').value.replace('-', '').split(/\b/).forEach(function (value) {
+      if (!value.match(/^\s*$/)) {
+        values.push(value)
+      }
+    })
     window.stolpersteine.data.filterSetup.push({
       attribute: 'name',
       filterBy: 'partSoundsLike',
-      values: [document.getElementById('name').value]
+      values: values
     })
   }
   if (document.getElementById('memorialText').value) {
