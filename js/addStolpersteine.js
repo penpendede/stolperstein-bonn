@@ -49,7 +49,7 @@ window.stolpersteine.fn.addStolpersteine = function () {
   window.stolpersteine.markers = window.L.markerClusterGroup({
     maxClusterRadius: 50
   })
-  window.stolpersteine.markers.addLayer(window.L.geoJson(geojson, {
+  var markerLayer = window.L.geoJson(geojson, {
     filter: window.stolpersteine.fn.stolpersteinFilter,
     pointToLayer: function (feature, latlng) {
       if (!feature.properties.image) {
@@ -150,6 +150,19 @@ window.stolpersteine.fn.addStolpersteine = function () {
         })
       }
     }
+  })
+  window.stolpersteine.markers.addLayer(markerLayer)
+  window.stolpersteine.map.addControl(new window.L.Control.Search({
+    layer: markerLayer,
+    marker: {
+      circle: {
+        color: '#ff6600',
+        radius: 20
+      },
+      icon: null
+    },
+    propertyName: 'name',
+    zoom: 17
   }))
   window.stolpersteine.map.addLayer(window.stolpersteine.markers)
 }
