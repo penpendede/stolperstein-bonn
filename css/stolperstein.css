@@ -106,6 +106,7 @@ form {
   margin: 5px;
   padding: 5px;
   width: 300px;
+  height: 450px;
 }
 
 form input[type="text"] {
