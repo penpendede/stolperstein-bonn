@@ -140,7 +140,6 @@ window.stolpersteine.fn.addStolpersteine = function () {
             ].join(''))
           }
         }
-        // console.log(description)
         layer.on('click', function () {
           window.L.control.window(window.stolpersteine.map, {
             title: name,
@@ -153,7 +152,7 @@ window.stolpersteine.fn.addStolpersteine = function () {
   })
   window.stolpersteine.markers.addLayer(markerLayer)
   window.stolpersteine.map.addControl(new window.L.Control.Search({
-    layer: markerLayer,
+    layer: window.stolpersteine.markers,
     marker: {
       circle: {
         color: '#ff6600',
