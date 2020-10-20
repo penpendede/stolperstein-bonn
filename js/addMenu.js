@@ -36,6 +36,16 @@ window.stolpersteine.fn.addMenu = function () {
           onClick: function () {
             genericOnClick('lastModified')
           }
+        },
+        Impressum: {
+          onClick: function () {
+            genericOnClick('impressum')
+          }
+        },
+        Datenschutz: {
+          onClick: function () {
+            genericOnClick('datenschutz')
+          }
         }
       }
     })
