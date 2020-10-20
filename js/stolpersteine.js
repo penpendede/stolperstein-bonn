@@ -2,7 +2,7 @@ window.stolpersteine.data.stolpersteine = {
   "version": 0.6,
   "generator": "Overpass API 0.7.56.6 474850e8",
   "osm3s": {
-    "timestamp_osm_base": "2020-10-20T18:28:03Z",
+    "timestamp_osm_base": "2020-10-20T19:01:03Z",
     "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
   },
   "elements": [
@@ -19237,9 +19237,9 @@ window.stolpersteine.data.stolpersteine = {
   "id": 8026038190,
   "lat": 50.6590739,
   "lon": 7.1860836,
-  "timestamp": "2020-10-20T18:24:45Z",
-  "version": 2,
-  "changeset": 92785206,
+  "timestamp": "2020-10-20T18:55:20Z",
+  "version": 3,
+  "changeset": 92786287,
   "user": "penpendede",
   "uid": 3038686,
   "tags": {
@@ -19251,7 +19251,7 @@ window.stolpersteine.data.stolpersteine = {
     "historic": "memorial",
     "material": "brass",
     "material:de": "Messing",
-    "memorial:text": "Hier wohnte Berta Schlauss geb. Schleier Jg. 1874 verhaftet 1944 'Septemberaktion' Arbeitserziehungslager Hunswinkel-Lüdenschied ermordet 4.4.1945",
+    "memorial:text": "Hier wohnte Berta Schlauss geb. Schleier Jg. 1874 verhaftet 1944 'Septemberaktion' Arbeitserziehungslager Hunswinkel-Lüdenscheid ermordet 4.4.1945",
     "memorial:type": "stolperstein",
     "name": "Berta Schlauß",
     "person:date_of_birth": "1874",
