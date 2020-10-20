@@ -47,14 +47,18 @@ window.stolpersteine.fn.stolpersteinFilter = function (feature) {
           case 'partSoundsLike': // check if part of the attribute sounds like the string
             if (Object.prototype.hasOwnProperty.call(attributes, filter.attribute)) {
               attributeParts = attributes[filter.attribute].replace('-', '').split(/\b/)
+              var matchCount = 0
               attributeParts.forEach(function (attributePart) {
                 var compare = window.stolpersteine.fn.colognePhonetics(attributePart)
                 filter.values.forEach(function (value) {
                   if (compare === window.stolpersteine.fn.colognePhonetics(value)) {
-                    passesFilter = true
+                    matchCount++
                   }
                 })
               })
+              if (matchCount === filter.values.length) {
+                passesFilter = true
+              }
             }
             break
           case 'possiblePart': // check if part of the attribute sounds like the string

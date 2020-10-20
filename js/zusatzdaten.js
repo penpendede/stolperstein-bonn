@@ -47,6 +47,10 @@ window.stolpersteine.tokens = {
     url: 'https://de.wikipedia.org/wiki/Tötungsanstalt_Hadamar',
     short: 'In der Tötungsanstalt Hadamar im mittelhessischen Hadamar wurden zwischen Januar 1941 und März 1945, im Rahmen der sogenannten Aktion T4, etwa 14.500 Menschen mit Behinderungen und psychischen Erkrankungen in einer Gaskammer, durch tödliche Injektionen und Medikationen sowie durch vorsätzliches Verhungernlassen ermordet.'
   },
+  'Hunswinkel-Lüdenscheid': {
+    url: 'https://de.wikipedia.org/wiki/Arbeitserziehungslager_Hunswinkel',
+    short: 'Das Arbeitserziehungslager (AEL) Hunswinkel lag etwa einen Kilometer südlich von Lüdenscheid, auf dem heutigen Grund der Versetalsperre. Dieses Lager wurde 1932 von der Fa. Hochtief im Rahmen des Baus der Versetalsperre für Arbeitskräfte des freiwilligen Arbeitsdienstes errichtet. 1938 wurde dieses Lager vom Reichsarbeitsdienst übernommen. Im August 1940 wurde es zum AEL Hunswinkel. Zu diesem Zeitpunkt bestand es aus zwei Baracken für je 100 Personen und außerhalb der Umzäunung aus einer Kantinenbaracke. Die Baracken besaßen keine Heizungen. In dies zur nachhaltig abschreckenden Disziplinierung betriebene Lager wurden Deutsche und Ausländer eingewiesen. Während des in der Regel sechs Wochen mit einer täglichen Arbeitszeit von zwölf Stunden dauernden Dienstes waren Misshandlungen an der Tagesordnung. 1945 war das AEL Hunswinkel gleichzeitig ein KZ.'
+  },
   Izbica: {
     url: 'https://de.wikipedia.org/wiki/Ghetto_Izbica',
     short: 'Das Ghetto Izbica war ab 1942 eine Durchgangsstation für deportierte Juden. Von dort führte der Weg in die Vernichtungslager des Holocausts, insbesondere nach Belzec und Sobibor.'

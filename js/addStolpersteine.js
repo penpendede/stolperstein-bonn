@@ -49,7 +49,7 @@ window.stolpersteine.fn.addStolpersteine = function () {
   window.stolpersteine.markers = window.L.markerClusterGroup({
     maxClusterRadius: 50
   })
-  window.stolpersteine.markers.addLayer(window.L.geoJson(geojson, {
+  var markerLayer = window.L.geoJson(geojson, {
     filter: window.stolpersteine.fn.stolpersteinFilter,
     pointToLayer: function (feature, latlng) {
       if (!feature.properties.image) {
@@ -61,7 +61,7 @@ window.stolpersteine.fn.addStolpersteine = function () {
     onEachFeature: function (feature, layer) {
       var properties = feature.properties
       var description = []
-      var property1 = properties.name || properties['memorial::name']
+      var property1 = properties.name || properties['memorial:name']
       var name = property1
       var property2
       var ort = ''
@@ -140,7 +140,6 @@ window.stolpersteine.fn.addStolpersteine = function () {
             ].join(''))
           }
         }
-        // console.log(description)
         layer.on('click', function () {
           window.L.control.window(window.stolpersteine.map, {
             title: name,
@@ -150,6 +149,19 @@ window.stolpersteine.fn.addStolpersteine = function () {
         })
       }
     }
+  })
+  window.stolpersteine.markers.addLayer(markerLayer)
+  window.stolpersteine.map.addControl(new window.L.Control.Search({
+    layer: window.stolpersteine.markers,
+    marker: {
+      circle: {
+        color: '#ff6600',
+        radius: 20
+      },
+      icon: null
+    },
+    propertyName: 'name',
+    zoom: 17
   }))
   window.stolpersteine.map.addLayer(window.stolpersteine.markers)
 }
