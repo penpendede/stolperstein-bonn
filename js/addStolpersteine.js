@@ -151,17 +151,19 @@ window.stolpersteine.fn.addStolpersteine = function () {
     }
   })
   window.stolpersteine.markers.addLayer(markerLayer)
-  window.stolpersteine.map.addControl(new window.L.Control.Search({
-    layer: window.stolpersteine.markers,
-    marker: {
-      circle: {
-        color: '#ff6600',
-        radius: 20
+  if (!window.stolpersteine.searchControl) {
+    window.stolpersteine.searchControl = window.stolpersteine.map.addControl(new window.L.Control.Search({
+      layer: window.stolpersteine.markers,
+      marker: {
+        circle: {
+          color: '#ff6600',
+          radius: 20
+        },
+        icon: null
       },
-      icon: null
-    },
-    propertyName: 'name',
-    zoom: 17
-  }))
+      propertyName: 'name',
+      zoom: 17
+    }))
+  }
   window.stolpersteine.map.addLayer(window.stolpersteine.markers)
 }
