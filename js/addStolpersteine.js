@@ -91,19 +91,19 @@ window.stolpersteine.fn.addStolpersteine = function () {
         if (geborenGestorben) {
           description.push('<div>' + geborenGestorben + '</div>')
         }
-        property1 = properties['addr:street']
+        property1 = properties['object:street'] || properties['addr:street']
         if (property1) {
           ort = property1
-          property1 = properties['addr:housenumber']
+          property1 = properties['object:housenumber'] || properties['addr:housenumber']
           if (property1) {
             ort += ' ' + property1
           }
-          property1 = properties['addr:city']
+          property1 = properties['object:city'] || properties['addr:city']
           if (property1) {
             if (ort) {
               ort += ', '
             }
-            property2 = properties['addr:postcode']
+            property2 = properties['object:postcode'] || properties['addr:postcode']
             if (property2) {
               ort += property2 + ' '
             }
