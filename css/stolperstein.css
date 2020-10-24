@@ -136,3 +136,23 @@ form .half {
 .awesomplete {
   width: 100%;
 }
+
+input.displaySwitcher {
+  display: none;
+}
+
+input.displaySwitcher:not(:checked) + div {
+  visibility: hidden;
+}
+
+a:link, a:visited, .pseudolink {
+  color: rgba(0, 0, 192, 1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.pseudolink:hover, a:active, a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

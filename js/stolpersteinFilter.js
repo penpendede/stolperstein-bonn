@@ -44,6 +44,31 @@ window.stolpersteine.fn.stolpersteinFilter = function (feature) {
               }
             })
             break
+          case 'isUsedPrefix':
+            var key
+            if (filter.values.indexOf(true) > -1) {
+              if (filter.values.indexOf(false) > -1) {
+                passesFilter = true
+              } else {
+                for (key in attributes) {
+                  if (key.startsWith(filter.attribute)) {
+                    passesFilter = true
+                  }
+                }
+              }
+            } else {
+              if (filter.values.indexOf(false) > -1) {
+                passesFilter = true
+                for (key in attributes) {
+                  if (key.startsWith(filter.attribute)) {
+                    passesFilter = false
+                  }
+                }
+              } else {
+                passesFilter = true
+              }
+            }
+            break
           case 'partSoundsLike': // check if part of the attribute sounds like the string
             if (Object.prototype.hasOwnProperty.call(attributes, filter.attribute)) {
               attributeParts = attributes[filter.attribute].replace('-', '').split(/\b/)
@@ -95,7 +120,7 @@ window.stolpersteine.fn.stolpersteinFilter = function (feature) {
         }
       }
     }
-    display &= passesFilter
+    display = display && passesFilter
   })
   return display
 }
