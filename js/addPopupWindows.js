@@ -5,7 +5,7 @@ window.stolpersteine.fn.addPopupWindows = function () {
       window.stolpersteine.map,
       {
         title: window.stolpersteine.popupTexts[key].title,
-        content: window.stolpersteine.popupTexts[key].text,
+        content: window.stolpersteine.popupTexts[key].template,
         visible: false
       }
     )

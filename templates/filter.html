@@ -1,0 +1,55 @@
+<form style="margin-top: 0;">
+  <div>
+    <p style="margin-top: 0;"><b>Name des NS-Opfers</b></p>
+    <input type="text" name="name" id="name" onkeyup="window.stolpersteine.fn.updateFilter()"
+      onpaste="window.stolpersteine.fn.updateFilter()">
+    <p>
+      <b>Inschrift</b>
+    </p>
+    <input type="text" name="memorialText" id="memorialText" onkeyup="window.stolpersteine.fn.updateFilter()"
+      onpaste="window.stolpersteine.fn.updateFilter()">
+    <p onclick="e=document.getElementById('additionalFilterSwitcher');e.checked = !e.checked">
+      <b class="pseudolink" title="Diese Filter sind vorwiegend für die Pflege der OSM-Datenbank nützlich">Weitere
+        Filter ein/ausblenden</b>
+    </p>
+    <input type="checkbox" class="displaySwitcher" id="additionalFilterSwitcher">
+    <div>
+      <p><b><b>Attribut "image"</b></p>
+      <div class="half">
+        <input type="checkbox" name="withImage" id="withImage" checked
+          onchange="window.stolpersteine.fn.updateFilter()"> mit
+      </div>
+      <div class="half">
+        <input type="checkbox" name="withoutImage" id="withoutImage" checked
+          onchange="window.stolpersteine.fn.updateFilter()"> ohne
+      </div>
+      <p><b>Attribut "memorial:addr"</b></p>
+      <div class="half">
+        <input type="checkbox" name="withMemorialAddr" id="withMemorialAddr" checked
+          onchange="window.stolpersteine.fn.updateFilter()"> mit
+      </div>
+      <div class="half">
+        <input type="checkbox" name="withoutMemorialAddr" id="withoutMemorialAddr" checked
+          onchange="window.stolpersteine.fn.updateFilter()"> ohne
+      </div>
+      <p><b>Attribut-Gruppe "addr:"</b></p>
+      <div class="half">
+        <input type="checkbox" name="withAddr" id="withAddr" checked onchange="window.stolpersteine.fn.updateFilter()">
+        mit
+      </div>
+      <div class="half">
+        <input type="checkbox" name="withoutAddr" id="withoutAddr" checked
+          onchange="window.stolpersteine.fn.updateFilter()"> ohne
+      </div>
+      <p><b>Attribut-Gruppe "object:"</b></p>
+      <div class="half">
+        <input type="checkbox" name="withObject" id="withObject" checked
+          onchange="window.stolpersteine.fn.updateFilter()"> mit
+      </div>
+      <div class="half">
+        <input type="checkbox" name="withoutObject" id="withoutObject" checked
+          onchange="window.stolpersteine.fn.updateFilter()"> ohne
+      </div>
+    </div>
+  </div>
+</form>
