@@ -47,3 +47,14 @@
     }
   }
 ]
+/*
+[out:json][timeout:25][bbox:50.5,6.9,50.88,7.4];
+(
+	node["memorial:type"="stolperstein"];
+	way["memorial:type"="stolperstein"];
+	rel["memorial:type"="stolperstein"];
+);
+out meta;
+>;
+out meta qt;
+*/
