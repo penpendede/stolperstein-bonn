@@ -1,32 +1,41 @@
 [
   {
-    description: 'Diese Übersicht'
+    id: 'overview',
+    description: 'Diese Übersicht',
+    file: ''
   },
   {
+    id: 'stadtgebiet',
     description: 'Stadtgebiet',
     file: 'js/stadtgebiet.js'
   },
   {
+    id: 'bezirke',
     description: 'Stadtbezirke',
     file: 'js/bezirke.js'
   },
   {
+    id: 'ortsteile',
     description: 'Ortsteile',
     file: 'js/ortsteile.js'
   },
   {
+    id: 'stolpersteine',
     description: 'Stolpersteine',
     file: 'js/stolpersteine.js'
   },
   {
+    id: 'zusatzdaten',
     description: 'Zusatzdaten',
     file: 'js/zusatzdaten.js'
   },
   {
+    id: 'bezirkCount',
     description: 'Anzahl der Stolpersteine in den einzelnen Stadtbezirken',
     file: 'js/bezirkCount.js'
   },
   {
+    id: 'ortsteilCount',
     description: 'Anzahl der Stolpersteine in den einzelnen Ortsteilen',
     file: 'js/ortsteilCount.js'
   }

@@ -31,7 +31,7 @@ window.stolpersteine.fn.initialize = function (mapId) {
     },
     setView: false
   }))
-  window.L.easyButton('fa-filter fa-lg', function () {
+  window.L.easyButton('fa-filter', function () {
     window.stolpersteine.popupWindows.filter.show()
   }).addTo(window.stolpersteine.map)
   window.stolpersteine.map.locate({

@@ -52,7 +52,7 @@ window.stolpersteine.fn.addMenu = function () {
   var menuButton = window.L.easyButton({
     states: [{
       stateName: 'show-menu',
-      icon: 'fa fa-bars fa-lg',
+      icon: 'fa fa-bars',
       title: 'Show Menu',
       onClick: function (btn, map) {
         window.stolpersteine.menu.options.button = btn
@@ -61,7 +61,7 @@ window.stolpersteine.fn.addMenu = function () {
       }
     }, {
       stateName: 'hide-menu',
-      icon: 'fa fa-bars fa-lg',
+      icon: 'fa fa-bars',
       title: 'Hide Menu',
       onClick: function (btn, map) {
         window.stolpersteine.menu.hide()

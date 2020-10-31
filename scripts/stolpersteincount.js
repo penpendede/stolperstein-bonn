@@ -44,7 +44,7 @@ stolpersteinPositions.forEach(stolpersteinPosition => {
   })
 })
 
-let data = 'window.stolpersteine.data.ortsteilCount = ' + JSON5.stringify(ortsteilCount)
+let data = 'window.stolpersteine.data.ortsteilCount = ' + JSON5.stringify(ortsteilCount, null, 2)
 fs.writeFile(path.join('js', 'ortsteilCount.js'), data, err => {
   if (err) {
     console.log(chalk.redBright.bold('[FAIL]') + ' ' + err)
@@ -53,7 +53,7 @@ fs.writeFile(path.join('js', 'ortsteilCount.js'), data, err => {
   console.log(chalk.greenBright.bold('[OKAY]') + ' ortsteil count')
 })
 
-data = 'window.stolpersteine.data.bezirkCount = ' + JSON5.stringify(bezirkCount)
+data = 'window.stolpersteine.data.bezirkCount = ' + JSON5.stringify(bezirkCount, null, 2)
 fs.writeFile(path.join('js', 'bezirkCount.js'), data, err => {
   if (err) {
     console.log(chalk.redBright.bold('[FAIL]') + ' ' + err)

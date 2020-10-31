@@ -11,7 +11,7 @@ for (let i = 0; i < tasks.length; i++) {
     tasks[i].modified = new Date().toLocaleString('de-DE')
   }
 }
-const data = 'window.stolpersteine.data.lastModified = ' + JSON5.stringify(tasks)
+const data = 'window.stolpersteine.data.lastModified = ' + JSON5.stringify(tasks, null, 2)
 
 fs.writeFile(path.join('js', 'lastModified.js'), data, err => {
   if (err) {
