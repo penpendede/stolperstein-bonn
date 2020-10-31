@@ -19,6 +19,10 @@ window.stolpersteine.popupTextFiles = {
     title: 'Stolpersteine',
     template: './templates/stolpersteine.html'
   },
+  erfassung: {
+    title: 'Stolpersteine in OpenStreetMap',
+    template: './templates/osm.html'
+  },
   lastModified: {
     title: 'Stand der Daten',
     template: './templates/lastModified.html'

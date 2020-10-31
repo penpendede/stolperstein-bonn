@@ -156,3 +156,12 @@ a:link, a:visited, .pseudolink {
   text-decoration: underline;
   cursor: pointer;
 }
+
+table tr.literally td {
+  font-weight: bold;
+  background: rgba(255, 255, 0, 0.1);
+}
+table tr.beware td {
+  font-style: italic;
+  background: rgba(255, 0, 0, 0.1);
+}

@@ -37,6 +37,11 @@ window.stolpersteine.fn.addMenu = function () {
             genericOnClick('lastModified')
           }
         },
+        'Stolpersteine in OpenStreetMap': {
+          onClick: function () {
+            genericOnClick('erfassung')
+          }
+        },
         Impressum: {
           onClick: function () {
             genericOnClick('impressum')
