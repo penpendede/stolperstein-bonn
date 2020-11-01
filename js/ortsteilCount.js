@@ -49,5 +49,5 @@ window.stolpersteine.data.ortsteilCount = {
   'Brüser Berg': 0,
   Duisdorf: 5,
   Hardthöhe: 0,
-  Lengsdorf: 0,
+  Lengsdorf: 0
 }

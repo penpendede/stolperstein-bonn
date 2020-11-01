@@ -3,6 +3,7 @@ const fs = require('fs')
 const JSON5 = require('json5')
 const path = require('path')
 const insidePolygon = require('point-in-polygon')
+const standard = require('standard')
 
 const ortsteile = JSON5.parse( // parse as JSON5
   fs.readFileSync('js/ortsteile.js', 'utf8') // content of ortsteile.js
@@ -44,8 +45,13 @@ stolpersteinPositions.forEach(stolpersteinPosition => {
   })
 })
 
-let data = 'window.stolpersteine.data.ortsteilCount = ' + JSON5.stringify(ortsteilCount, null, 2)
-fs.writeFile(path.join('js', 'ortsteilCount.js'), data, err => {
+let data = standard.lintTextSync(
+  'window.stolpersteine.data.ortsteilCount = ' + JSON5.stringify(ortsteilCount, null, 2),
+  {
+    fix: true
+  }
+)
+fs.writeFile(path.join('js', 'ortsteilCount.js'), data.results[0].output, err => {
   if (err) {
     console.log(chalk.redBright.bold('[FAIL]') + ' ' + err)
     return
@@ -53,8 +59,14 @@ fs.writeFile(path.join('js', 'ortsteilCount.js'), data, err => {
   console.log(chalk.greenBright.bold('[OKAY]') + ' ortsteil count')
 })
 
-data = 'window.stolpersteine.data.bezirkCount = ' + JSON5.stringify(bezirkCount, null, 2)
-fs.writeFile(path.join('js', 'bezirkCount.js'), data, err => {
+data = standard.lintTextSync(
+  'window.stolpersteine.data.bezirkCount = ' + JSON5.stringify(bezirkCount, null, 2),
+  {
+    fix: true
+  }
+)
+
+fs.writeFile(path.join('js', 'bezirkCount.js'), data.results[0].output, err => {
   if (err) {
     console.log(chalk.redBright.bold('[FAIL]') + ' ' + err)
     return
