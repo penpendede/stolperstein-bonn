@@ -19,7 +19,7 @@ window.stolpersteine.popupTextFiles = {
     title: 'Stolpersteine',
     template: './templates/stolpersteine.html'
   },
-  erfassung: {
+  osm: {
     title: 'Stolpersteine in OpenStreetMap',
     template: './templates/osm.html'
   },
@@ -31,7 +31,7 @@ window.stolpersteine.popupTextFiles = {
     title: 'Impressum',
     template: './templates/impressum.html'
   },
-  datenschutz: {
+  dsgvo: {
     title: 'Datenschutzerklärung',
     template: './templates/dsgvo.html'
   }

@@ -8,6 +8,8 @@ window.stolpersteine.fn.addPopupWindows = function () {
           console.log('Looks like there was a problem. Status Code: ' + response.status)
           return
         }
+        var urlSplit = response.url.split('/')
+        var key = urlSplit[urlSplit.length - 1].split('.')[0]
         // Examine the text in the response
         response.text()
           .then(function (template) {

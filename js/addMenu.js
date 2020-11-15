@@ -39,7 +39,7 @@ window.stolpersteine.fn.addMenu = function () {
         },
         'Stolpersteine in OpenStreetMap': {
           onClick: function () {
-            genericOnClick('erfassung')
+            genericOnClick('osm')
           }
         },
         Impressum: {
@@ -49,7 +49,7 @@ window.stolpersteine.fn.addMenu = function () {
         },
         Datenschutz: {
           onClick: function () {
-            genericOnClick('datenschutz')
+            genericOnClick('dsgvo')
           }
         }
       }
