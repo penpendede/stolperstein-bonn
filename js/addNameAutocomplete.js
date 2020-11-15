@@ -1,9 +1,9 @@
 
 window.stolpersteine.fn.addNameAutocomplete = function () {
-  const autocompleteList = []
+  var autocompleteList = []
   // window.stolpersteine.data.stolpersteine.elements[0].tags.name
   window.stolpersteine.data.stolpersteine.elements.forEach(function (element) {
-    const name = element.tags.name || element.tags['memorial:name']
+    var name = element.tags.name || element.tags['memorial:name']
     autocompleteList.push(name)
   })
   window.stolpersteine.nameAwesomeplete = new window.Awesomplete(document.getElementById('name'))

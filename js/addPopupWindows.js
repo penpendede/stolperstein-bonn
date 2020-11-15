@@ -1,7 +1,7 @@
 window.stolpersteine.fn.addPopupWindows = function () {
   window.stolpersteine.popupWindows = {}
   var count = Object.keys(window.stolpersteine.popupTextFiles).length
-  for (const key in window.stolpersteine.popupTextFiles) {
+  for (var key in window.stolpersteine.popupTextFiles) {
     window.fetch(window.stolpersteine.popupTextFiles[key].template)
       .then(function (response) {
         if (response.status !== 200) {
