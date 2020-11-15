@@ -3,6 +3,7 @@ window.stolpersteine.fn.updateFilter = function (feature) {
   var params = [
     ['Image', 'image', 'isSet'],
     ['MemorialAddr', 'memorial:addr', 'isSet'],
+    ['Inscription', 'inscription', 'isSet'],
     ['Addr', 'addr:', 'isUsedPrefix'],
     ['Object', 'object:', 'isUsedPrefix']
   ]
