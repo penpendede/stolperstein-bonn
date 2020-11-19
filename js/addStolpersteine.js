@@ -113,6 +113,16 @@ window.stolpersteine.fn.addStolpersteine = function () {
         if (ort) {
           description.push('<div>' + ort + '</div>')
         }
+        var memorialLink = properties['memorial:website']
+        var memorialLinkText = memorialLink
+        if (link) {
+          if (/https:\/\/yvng\.yadvashem\.org/i.test(memorialLink)) {
+            memorialLinkText = 'Yad Vashem'
+          }
+          description.push(
+            '<p>Link zu <a href="' + memorialLink + '" target="_blank">' + memorialLinkText + '</a></p>'
+          )
+        }
         var imageUrl = decodeURIComponent(properties.image)
         if (imageUrl && imageUrl !== 'undefined') {
           if (/^(File|Datei):/i.test(imageUrl)) {
