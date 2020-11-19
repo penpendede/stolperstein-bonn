@@ -3,7 +3,7 @@ window.stolpersteine.data.lastModified = [
     id: 'overview',
     description: 'Diese Übersicht',
     file: '',
-    modified: '2020-11-18 22:13:44'
+    modified: '2020-11-19 21:39:35'
   },
   {
     id: 'stadtgebiet',
@@ -27,7 +27,7 @@ window.stolpersteine.data.lastModified = [
     id: 'stolpersteine',
     description: 'Stolpersteine',
     file: 'js/stolpersteine.js',
-    modified: '2020-11-18 22:13:16'
+    modified: '2020-11-19 21:39:03'
   },
   {
     id: 'zusatzdaten',
@@ -39,12 +39,12 @@ window.stolpersteine.data.lastModified = [
     id: 'bezirkCount',
     description: 'Anzahl der Stolpersteine in den einzelnen Stadtbezirken',
     file: 'js/bezirkCount.js',
-    modified: '2020-11-18 22:13:34'
+    modified: '2020-11-19 21:39:30'
   },
   {
     id: 'ortsteilCount',
     description: 'Anzahl der Stolpersteine in den einzelnen Ortsteilen',
     file: 'js/ortsteilCount.js',
-    modified: '2020-11-18 22:13:34'
+    modified: '2020-11-19 21:39:30'
   }
 ]
